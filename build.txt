@@ -1,0 +1,3 @@
+displayName = Waasephi's Fishing Plus
+author = Waasephi
+version = 0.1

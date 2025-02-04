@@ -1,0 +1,9 @@
+This is an overall simple content mod that adds content entirely focused around fishing.
+
+As of now it doesn't add a large amount of items, but it adds a large new mechanic that is useful for a large period of the game.
+
+The Filleting Table is used to turn fish into useful items, many that you can't get normally by exclusively fishing.
+
+All you need is a Fish, and a strong enough Filleting Knife, and you can cut up every single fish, and more!
+
+I plan to update this mod and add more content, I'm not the best coder, so there might be some issues.
