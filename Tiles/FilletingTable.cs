@@ -1,7 +1,6 @@
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ID;
-using Terraria.DataStructures;
 using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
@@ -21,7 +20,8 @@ namespace WaasephisFishingPlus.Tiles
             TileID.Sets.HasOutlines[Type] = true;
             TileObjectData.newTile.CopyFrom(TileObjectData.Style3x3);
             TileObjectData.newTile.CoordinateHeights = new[] { 16, 16, 16 };
-            TileObjectData.addTile(Type);
+			TileObjectData.newTile.DrawYOffset = 2;
+			TileObjectData.addTile(Type);
             LocalizedText name = CreateMapEntryName();
             AddMapEntry(new Color(169, 125, 93), name);
             DustType = DustID.WoodFurniture;
@@ -61,6 +61,7 @@ namespace WaasephisFishingPlus.Tiles
             y++;
 
             FilletingUI.UIOpen = true;
+            FilletingUI.openingPos = new Vector2(x * 16f, y * 16f);
             SoundEngine.PlaySound(SoundID.MenuOpen, new Vector2(x * 16f, y * 16f));
             return true;
         }

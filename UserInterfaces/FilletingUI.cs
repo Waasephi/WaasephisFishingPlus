@@ -9,8 +9,6 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using System.Collections.Generic;
 using Terraria.UI.Chat;
-using WaasephisFishingPlus.Items.Filleting;
-using WaasephisFishingPlus.UserInterfaces;
 
 namespace WaasephisFishingPlus.UserInterfaces
 {
@@ -63,7 +61,6 @@ namespace WaasephisFishingPlus.UserInterfaces
         public static Rectangle MouseScreenArea => Utils.CenteredRectangle(Main.MouseScreen, Vector2.One * 2f);
 
         public static Item PreviousOutputItem = new Item();
-        private static readonly float MaxDistance = 420f;
         public static void Draw(SpriteBatch spriteBatch)
         {
             if (!UIOpen)
@@ -82,8 +79,7 @@ namespace WaasephisFishingPlus.UserInterfaces
                 closeUI();
             }
 
-            if (openingPos == Vector2.Zero) openingPos = Main.LocalPlayer.Center;
-            if (Vector2.Distance(Main.LocalPlayer.Center, openingPos) > MaxDistance)
+            if (Vector2.Distance(Main.LocalPlayer.Center, openingPos) > 200f)
             {
                 closeUI();
             }
