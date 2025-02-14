@@ -4,9 +4,9 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace WaasephisFishingPlus.Items.Filleting
+namespace WaasephisFishingPlus.Items.Food
 {
-    public class FishFillet : ModItem
+    public class PreparedUrchin : ModItem
     {
         public override void SetStaticDefaults()
         {
@@ -29,9 +29,9 @@ namespace WaasephisFishingPlus.Items.Filleting
             // whereas drink particles fall straight down and are slightly transparent
             ItemID.Sets.FoodParticleColors[Item.type] = 
             [
-                new (255, 157, 165),
-                new (213, 205, 205),
-                new (255, 66, 50)
+                new (9, 67, 161),
+                new (248, 205, 123),
+                new (235, 202, 172)
             ];
 
             ItemID.Sets.IsFood[Type] = true; //This allows it to be placed on a plate and held correctly
@@ -42,16 +42,16 @@ namespace WaasephisFishingPlus.Items.Filleting
             // This code matches the ApplePie code.
 
             // DefaultToFood sets all of the food related item defaults such as the buff type, buff duration, use sound, and animation time.
-            Item.DefaultToFood(22, 22, BuffID.WellFed2, 57600); // 57600 is 16 minutes: 16 * 60 * 60
-            Item.value = Item.buyPrice(0, 3);
-            Item.rare = ItemRarityID.Blue;
+            Item.DefaultToFood(22, 22, BuffID.WellFed3, 14400);
+            Item.value = Item.sellPrice(silver: 10);
+			Item.rare = ItemRarityID.Blue;
         }
 
-       /* // If you want multiple buffs, you can apply the remainder of buffs with this method.
+        // If you want multiple buffs, you can apply the remainder of buffs with this method.
         // Make sure the primary buff is set in SetDefaults so that the QuickBuff hotkey can work properly.
         public override void OnConsumeItem(Player player)
         {
-            player.AddBuff(BuffID.SugarRush, 3600);
-        }*/
+            player.AddBuff(BuffID.Sonar, 7200);
+        }
     }
 }

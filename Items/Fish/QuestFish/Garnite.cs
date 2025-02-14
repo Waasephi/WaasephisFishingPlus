@@ -16,6 +16,8 @@ namespace WaasephisFishingPlus.Items.Fish.QuestFish
             // Of note, it sets rare to ItemRarityID.Quest, which is the special rarity for quest items.
             // It also sets uniqueStack to true, which prevents players from picking up a 2nd copy of the item into their inventory.
             Item.DefaultToQuestFish();
+			Item.width = 38;
+			Item.height = 38;
         }
 
         public override bool IsQuestFish() => true; // Makes the item a quest fish

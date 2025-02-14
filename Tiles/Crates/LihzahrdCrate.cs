@@ -10,7 +10,7 @@ using Terraria.GameContent.Creative;
 
 namespace WaasephisFishingPlus.Tiles.Crates
 {
-	internal class OvergrownCrateTile : ModTile
+	internal class LihzahrdCrateTile : ModTile
 	{
 		public override void SetStaticDefaults()
 		{
@@ -31,7 +31,7 @@ namespace WaasephisFishingPlus.Tiles.Crates
         }
 	}
 
-	internal class OvergrownCrate : ModItem
+	internal class LihzahrdCrate : ModItem
 	{
 		public override void SetStaticDefaults()
 		{
@@ -50,7 +50,7 @@ namespace WaasephisFishingPlus.Tiles.Crates
             Item.maxStack = 9999;
             Item.rare = ItemRarityID.Lime;
             Item.value = Item.buyPrice(gold: 1);
-            Item.createTile = ModContent.TileType<OvergrownCrateTile>();
+            Item.createTile = ModContent.TileType<LihzahrdCrateTile>();
         }
         public override bool CanRightClick()
         {
@@ -105,14 +105,23 @@ namespace WaasephisFishingPlus.Tiles.Crates
             //coins
             itemLoot.Add(ItemDropRule.Common(ItemID.GoldCoin, 1, 2, 5));
 
-            //extra
-            IItemDropRule[] rareItem =
-            [
-            itemLoot.Add(ItemDropRule.Common(ItemID.LifeFruit, 3)),
-            itemLoot.Add(ItemDropRule.Common(ItemID.TurtleShell, 5)),
-            itemLoot.Add(ItemDropRule.Common(ItemID.Uzi, 15)),
-            ];
-            itemLoot.Add(new OneFromRulesRule(3, rareItem));
-        }
+			//extra
+			IItemDropRule[] rareItem =
+			[
+			itemLoot.Add(ItemDropRule.Common(ItemID.LifeFruit, 3)),
+			];
+			itemLoot.Add(new OneFromRulesRule(3, rareItem));
+
+			//extra
+			IItemDropRule[] templeItem =
+			[
+			itemLoot.Add(ItemDropRule.Common(ItemID.LunarTabletFragment, 3, 1, 4)),
+			itemLoot.Add(ItemDropRule.Common(ItemID.SolarTablet, 5)),
+			itemLoot.Add(ItemDropRule.Common(ItemID.LihzahrdPowerCell, 10)),
+			];
+			itemLoot.Add(new OneFromRulesRule(3, templeItem));
+
+
+		}
     }
 }

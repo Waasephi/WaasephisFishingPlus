@@ -4,15 +4,13 @@ using Microsoft.Xna.Framework;
 using Terraria.DataStructures;
 using WaasephisFishingPlus.Tiles.Crates;
 using WaasephisFishingPlus.Items.Fish.QuestFish;
-using System.Collections.Generic;
 using WaasephisFishingPlus.Items.Weapons.Summoner;
 using WaasephisFishingPlus.Items.Fish;
 using Terraria.ID;
 using WaasephisFishingPlus.Items.FishingRods;
-using Microsoft.CodeAnalysis;
-using System.Security.Policy;
 using WaasephisFishingPlus.Items.Pets;
-using WaasephisFishingPlus.Core;
+using WaasephisFishingPlus.Items.Weapons.Melee;
+using WaasephisFishingPlus.NPCs.Hostile;
 
 namespace WaasephisFishingPlus.Core
 {
@@ -42,6 +40,8 @@ namespace WaasephisFishingPlus.Core
 			bool restlessJungle = NPC.downedMechBoss1 && NPC.downedMechBoss2 && NPC.downedMechBoss3;
             bool underground = Player.ZoneNormalUnderground || Player.ZoneNormalCaverns;
             bool undergroundJungle = (Player.ZoneDirtLayerHeight || Player.ZoneRockLayerHeight) && Player.ZoneJungle;
+			bool temple = Main.hardMode && NPC.downedPlantBoss && Player.ZoneLihzhardTemple;
+			bool aether = Player.ZoneShimmer;
             #endregion
 
             #region Custom Catches
@@ -81,17 +81,22 @@ namespace WaasephisFishingPlus.Core
 
             #region Fish
 
-            if (inWater && underground && attempt.veryrare && Player.fishingSkill >= 40 && Main.rand.NextBool(5))
+            if (inWater && underground && attempt.rare && Player.fishingSkill >= 20 && Main.rand.NextBool(5))
             {
                 itemDrop = ModContent.ItemType<Heartang>();
             }
 
-            if (inWater && inCorruption && attempt.uncommon && Main.rand.NextBool(5))
-            {
-                itemDrop = ModContent.ItemType<Ebonthodian>();
-            }
+			if (inWater && inCorruption && attempt.uncommon && Main.rand.NextBool(5))
+			{
+				itemDrop = ModContent.ItemType<Ebonthodian>();
+			}
 
-            if (inWater && inMeteor && attempt.uncommon && Main.rand.NextBool(3))
+			if (inWater && Player.ZoneGraveyard && attempt.uncommon && Player.fishingSkill >= 30 && Main.rand.NextBool(3))
+			{
+				itemDrop = ModContent.ItemType<Ectolione>();
+			}
+
+			if (inWater && inMeteor && attempt.uncommon && Main.rand.NextBool(3))
             {
                 itemDrop = ModContent.ItemType<Asterovy>();
             }
@@ -106,22 +111,22 @@ namespace WaasephisFishingPlus.Core
                 itemDrop = ModContent.ItemType<Gobee>();
             }
 
-            if (inWater && attempt.veryrare && NPC.downedTowerSolar && Main.rand.NextBool(8))
+            if (inWater && attempt.veryrare && inSky && NPC.downedTowerSolar && Main.rand.NextBool(8))
             {
                 itemDrop = ModContent.ItemType<Solamola>();
             }
 
-            if (inWater && attempt.veryrare && NPC.downedTowerStardust && Main.rand.NextBool(8))
+            if (inWater && attempt.veryrare && inSky && NPC.downedTowerStardust && Main.rand.NextBool(8))
             {
                 itemDrop = ModContent.ItemType<Stardustfish>();
             }
 
-            if (inWater && attempt.veryrare && NPC.downedTowerNebula && Main.rand.NextBool(8))
+            if (inWater && attempt.veryrare && inSky && NPC.downedTowerNebula && Main.rand.NextBool(8))
             {
                 itemDrop = ModContent.ItemType<Nebulagazer>();
             }
 
-            if (inWater && attempt.veryrare && NPC.downedTowerVortex && Main.rand.NextBool(8))
+            if (inWater && attempt.veryrare && inSky && NPC.downedTowerVortex && Main.rand.NextBool(8))
             {
                 itemDrop = ModContent.ItemType<Vortexeye>();
             }
@@ -129,9 +134,9 @@ namespace WaasephisFishingPlus.Core
 
             #region Crates
 
-            if (inWater && inJungle && hardmode && restlessJungle && attempt.crate && attempt.uncommon)
+            if (inWater && temple && attempt.crate && attempt.uncommon)
 			{
-				itemDrop = ModContent.ItemType<OvergrownCrate>();
+				itemDrop = ModContent.ItemType<LihzahrdCrate>();
             }
 
             if (inWater && inTundra && hardmode && attempt.crate && attempt.uncommon)
@@ -143,22 +148,31 @@ namespace WaasephisFishingPlus.Core
             {
                 itemDrop = ModContent.ItemType<CryptCoffin>();
             }
-            #endregion
+			#endregion
 
-            #region Weapons
+			#region Weapons
 
-            if (NPC.downedMartians && inSky && attempt.legendary)
-            {
-                itemDrop = ModContent.ItemType<Scutleel>();
-            }
-            #endregion
+			if (NPC.downedMartians && inSky && attempt.legendary)
+			{
+				itemDrop = ModContent.ItemType<Scutleel>();
+			}
 
-            #region Quest Fish
+			if (inWater && Player.ZoneBeach && attempt.veryrare && Main.rand.NextBool(4))
+			{
+				itemDrop = ModContent.ItemType<SeaUrchin>();
+			}
+			#endregion
 
-            int mecherel = ModContent.ItemType<Mecherel>();
-            int garnite = ModContent.ItemType<Garnite>();
+			#region Quest Fish
 
-            if (attempt.questFish == mecherel)
+			int mecherel = ModContent.ItemType<Mecherel>();
+			int garnite = ModContent.ItemType<Garnite>();
+			int marbeel = ModContent.ItemType<Marbeel>();
+			int santaray = ModContent.ItemType<SantaRay>();
+			int aetherianAngler = ModContent.ItemType<AetherianAngler>();
+			int hellstoneSnail = ModContent.ItemType<HellstoneSnail>();
+
+			if (hardmode && NPC.downedMechBossAny && attempt.questFish == mecherel)
             {
                 if (attempt.uncommon)
                 {
@@ -167,45 +181,77 @@ namespace WaasephisFishingPlus.Core
                 }
             }
 
-            if (Player.ZoneGranite && attempt.questFish == garnite)
-            {
-                if (attempt.uncommon)
-                {
-                    itemDrop = garnite;
-                    return;
-                }
-            }
-            #endregion
+			if (Player.ZoneGranite && attempt.questFish == garnite)
+			{
+				if (attempt.uncommon)
+				{
+					itemDrop = garnite;
+					return;
+				}
+			}
 
-            #region Other
+			if (Player.ZoneMarble && attempt.questFish == marbeel)
+			{
+				if (attempt.uncommon)
+				{
+					itemDrop = marbeel;
+					return;
+				}
+			}
 
-            if (inWater && hardmode && attempt.legendary && Player.fishingSkill >= 75 && Main.rand.NextBool(10))
-            {
-                itemDrop = ModContent.ItemType<KeyShard>();
-                return;
-            }
+			if (NPC.downedBoss2 && aether && inWater && attempt.questFish == aetherianAngler)
+			{
+				if (attempt.uncommon)
+				{
+					itemDrop = aetherianAngler;
+					return;
+				}
+			}
 
-            if (inWater && Player.ZoneBeach && attempt.veryrare && Player.fishingSkill >= 30 && Main.rand.NextBool(5))
+			if (NPC.downedBoss2 && attempt.CanFishInLava && Player.ZoneUnderworldHeight && attempt.inLava && attempt.questFish == hellstoneSnail)
+			{
+				if (attempt.uncommon)
+				{
+					itemDrop = hellstoneSnail;
+					return;
+				}
+			}
+
+			if (Player.ZoneSnow && hardmode && attempt.questFish == santaray)
+			{
+				if (attempt.uncommon)
+				{
+					itemDrop = santaray;
+					return;
+				}
+			}
+			#endregion
+
+			#region Other
+
+            if (inWater && Player.ZoneBeach && attempt.veryrare && Player.fishingSkill >= 30 && Main.rand.NextBool(8))
             {
                 itemDrop = ModContent.ItemType<SeaCarrot>();
                 return;
             }
 
-            if (inWater && Player.ZoneDungeon && attempt.rare && Player.fishingSkill >= 20 && Main.rand.NextBool(10))
+            if (inWater && Player.ZoneDungeon && attempt.rare && Player.fishingSkill >= 20 && Main.rand.NextBool(20))
             {
                 itemDrop = ItemID.BoneWelder;
                 return;
             }
 
-            if (attempt.inLava && attempt.rare && Main.rand.NextBool(5))
-            {
-                itemDrop = ItemID.ObsidianRose;
-                return;
-            }
+			#endregion
 
-            #endregion
+			#region NPC Catches
 
-        }
+			if (attempt.inLava && Player.ZoneUnderworldHeight && attempt.uncommon && attempt.fishingLevel >= 30 && Main.rand.NextBool(5))
+			{
+				npcSpawn = ModContent.NPCType<LavaShark>();
+				return;
+			}
 
-    }
+			#endregion
+		}
+	}
 }

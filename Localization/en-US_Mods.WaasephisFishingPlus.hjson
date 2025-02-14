@@ -91,6 +91,7 @@ Items: {
 		Tooltip:
 			'''
 			Medium improvements to all stats
+			Increases Fishing Power for a short time
 			'A simple cut up fish'
 			'''
 	}
@@ -250,6 +251,61 @@ Items: {
 		DisplayName: Sea Carrot
 		Tooltip: Summons a pet Sea Slug
 	}
+
+	SantaRay: {
+		Tooltip: ""
+		DisplayName: Santa Ray
+	}
+
+	AetherianAngler: {
+		Tooltip: ""
+		DisplayName: Aetherian Angler
+	}
+
+	Ectolione: {
+		Tooltip: ""
+		DisplayName: Ectolione
+	}
+
+	LihzahrdCrate: {
+		DisplayName: Lihzahrd Crate
+		Tooltip: ""
+	}
+
+	BassStatueItem: {
+		DisplayName: Bass Statue
+		Tooltip: ""
+	}
+
+	SeaUrchin: {
+		DisplayName: Sea Urchin
+		Tooltip: Hitting an enemy breaks off a spike that envenoms the target
+	}
+
+	PreparedUrchin: {
+		DisplayName: Prepared Urchin
+		Tooltip:
+			'''
+			Major improvements to all stats
+			Allows you to detect hooked fish
+			'Some say it's a delicacy'
+			'''
+	}
+
+	HellstoneSnail: {
+		DisplayName: Hellstone Snail
+		Tooltip: ""
+	}
+
+	Marbeel: {
+		DisplayName: Marbeel
+		Tooltip: ""
+	}
+
+	LavaSharkBanner: {
+		DisplayName: Lava Shark Banner
+		Tooltip: ""
+	}
 }
 
 Projectiles: {
@@ -260,6 +316,8 @@ Projectiles: {
 	BoneBobber.DisplayName: Bone Bobber
 	InterstellarBobber.DisplayName: Interstellar Bobber
 	SeaSlug.DisplayName: Sea Slug
+	SeaUrchinProjectile.DisplayName: Sea Urchin
+	UrchinSpike.DisplayName: Urchin Spike
 }
 
 Buffs: {
@@ -274,4 +332,5 @@ NPCs: {
 	FlounderCritter.DisplayName: Flounder
 	AtlanticCodCritter.DisplayName: Atlantic Cod
 	ShrimpCritter.DisplayName: Shrimp
+	LavaShark.DisplayName: Lava Shark
 }

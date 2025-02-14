@@ -23,6 +23,7 @@ namespace WaasephisFishingPlus.Items.Filleting
 		public override void AddRecipes()
 		{
 			Recipe recipe = CreateRecipe();
+			recipe.AddIngredient(ModContent.ItemType<FilletKnife>());
 			recipe.AddIngredient(ItemID.HellstoneBar, 6);
 			recipe.AddIngredient(ItemID.Obsidian, 8);
 			recipe.AddTile(TileID.Anvils);

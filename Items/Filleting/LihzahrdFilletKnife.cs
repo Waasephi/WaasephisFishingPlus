@@ -23,7 +23,8 @@ namespace WaasephisFishingPlus.Items.Filleting
 		public override void AddRecipes()
 		{
             Recipe recipe = CreateRecipe();
-            recipe.AddIngredient(ItemID.BeetleHusk, 6);
+			recipe.AddIngredient(ModContent.ItemType<ChlorophyteFilletKnife>());
+			recipe.AddIngredient(ItemID.BeetleHusk, 6);
             recipe.AddIngredient(ItemID.LunarTabletFragment, 8);
             recipe.AddTile(TileID.LunarCraftingStation);
             recipe.Register();

@@ -1,0 +1,6 @@
+C:\Users\Slime\OneDrive\Documents\My Games\Terraria\tModLoader\ModSources\WaasephisFishingPlus\obj\Debug\net8.0\WaasephisFishingPlus.csproj.AssemblyReference.cache
+C:\Users\Slime\OneDrive\Documents\My Games\Terraria\tModLoader\ModSources\WaasephisFishingPlus\obj\Debug\net8.0\WaasephisFishingPlus.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Slime\OneDrive\Documents\My Games\Terraria\tModLoader\ModSources\WaasephisFishingPlus\obj\Debug\net8.0\WaasephisFishingPlus.AssemblyInfoInputs.cache
+C:\Users\Slime\OneDrive\Documents\My Games\Terraria\tModLoader\ModSources\WaasephisFishingPlus\obj\Debug\net8.0\WaasephisFishingPlus.AssemblyInfo.cs
+C:\Users\Slime\OneDrive\Documents\My Games\Terraria\tModLoader\ModSources\WaasephisFishingPlus\obj\Debug\net8.0\WaasephisFishingPlus.csproj.CoreCompileInputs.cache
+C:\Users\Slime\OneDrive\Documents\My Games\Terraria\tModLoader\ModSources\WaasephisFishingPlus\obj\Debug\net8.0\WaasephisFishingPlus.sourcelink.json

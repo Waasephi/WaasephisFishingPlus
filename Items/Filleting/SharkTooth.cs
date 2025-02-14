@@ -19,5 +19,15 @@ namespace WaasephisFishingPlus.Items.Filleting
 			Item.useTurn = true;
 			Item.maxStack = 9999;
 		}
+
+		public override void AddRecipes()
+		{
+			Recipe recipe = CreateRecipe();
+			recipe.AddIngredient(ModContent.ItemType<SharkTooth>(), 5);
+			recipe.AddIngredient(ItemID.Shackle);
+			recipe.AddTile(TileID.TinkerersWorkbench);
+			recipe.HasResult(ItemID.SharkToothNecklace);
+			recipe.Register();
+		}
 	}
 }

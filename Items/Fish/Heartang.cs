@@ -16,7 +16,7 @@ namespace WaasephisFishingPlus.Items.Fish
             Item.width = 30;
             Item.height = 30;
             Item.value = Item.sellPrice(gold: 1);
-            Item.rare = ItemRarityID.Blue;
+            Item.rare = ItemRarityID.Green;
             Item.useTurn = true;
             Item.maxStack = 9999;
         }
