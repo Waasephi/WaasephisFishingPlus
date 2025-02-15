@@ -9,6 +9,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using System.Collections.Generic;
 using Terraria.UI.Chat;
+using System.Linq;
 
 namespace WaasephisFishingPlus.UserInterfaces
 {
@@ -50,14 +51,27 @@ namespace WaasephisFishingPlus.UserInterfaces
 
         public static Vector2 UITopLeft => new Vector2(Main.screenWidth * 0.5f, Main.screenHeight * 0.5f);
         public static void AddKnife(Item knifeItem, int modifier, int knifeLevel)
-        {
-            knives.Add(new Knife { knife = knifeItem, modifier = modifier, level = knifeLevel });
-        }
+		{
+			if (knives.Any(k => k.knife.type == knifeItem.type))
+				return;
+			knives.Add(new Knife { knife = knifeItem, modifier = modifier, level = knifeLevel });
+		}
         public static void AddRecipe(Item inputItem, Item outputItem, int defaultAmount, int knifeLevel, bool ignoreKnifeModifier)
-        {
-            FishRecipes recipe = new FishRecipes { DefaultAmount = defaultAmount, Output = outputItem, KnifeLevel = knifeLevel, ignoreKnife = ignoreKnifeModifier };
-            recipes.Add(inputItem, recipe);
-        }
+		{
+			if (recipes.ContainsKey(inputItem))
+				return; // Prevent duplicate recipes
+
+			FishRecipes recipe = new FishRecipes
+			{
+				DefaultAmount = defaultAmount,
+				Output = outputItem,
+				KnifeLevel = knifeLevel,
+				ignoreKnife = ignoreKnifeModifier
+			};
+
+			recipes.Add(inputItem, recipe);
+		}
+		
         public static Rectangle MouseScreenArea => Utils.CenteredRectangle(Main.MouseScreen, Vector2.One * 2f);
 
         public static Item PreviousOutputItem = new Item();
@@ -89,9 +103,12 @@ namespace WaasephisFishingPlus.UserInterfaces
                 closeUI();
             }
 
-
-            Recipes.SetRecipes();
-            Knives.setKnives();
+			if (UIOpen)
+			{
+				Recipes.SetRecipes();
+				Knives.setKnives();
+			}
+            
             Main.playerInventory = true;
             Main.npcChatText = string.Empty;
 
@@ -209,6 +226,8 @@ namespace WaasephisFishingPlus.UserInterfaces
                     break;
                 }
             }
+            if (CurrentlyHeldItem3.stack <= 0)
+	            CurrentlyHeldItem3.TurnToAir();
         }
 
         public static int knifeModifierAmount()
