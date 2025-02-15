@@ -1,4 +1,4 @@
-﻿using WaasephisFishingPlus.Items.Filleting;
+using WaasephisFishingPlus.Items.Filleting;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,7 +16,9 @@ namespace WaasephisFishingPlus.UserInterfaces
         {
 
             if (knives == new List<Knife>()) return;
-
+            
+            knives.Clear();
+            
             Item knifeItem = new Item();
 
             knifeItem.SetDefaults(ModContent.ItemType<FilletKnife>());
