@@ -1,4 +1,4 @@
-﻿using static WaasephisFishingPlus.UserInterfaces.FilletingUI;
+using static WaasephisFishingPlus.UserInterfaces.FilletingUI;
 using Terraria.ID;
 using Terraria;
 using WaasephisFishingPlus.Items.Filleting;
@@ -13,6 +13,7 @@ namespace WaasephisFishingPlus.UserInterfaces
 {
     internal class Recipes
     {
+	    private static bool recipesInitialized = false;
         public static void SetRecipes()
         {
 
@@ -25,6 +26,8 @@ namespace WaasephisFishingPlus.UserInterfaces
             AddRecipe(item, Recipe);
             */
 
+            if (recipesInitialized) return; // Prevents duplicate recipes from being added
+            recipesInitialized = true;
             Item item = new Item();
             FishRecipes Recipe;
 
