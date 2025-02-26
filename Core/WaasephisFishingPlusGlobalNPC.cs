@@ -3,6 +3,7 @@ using Terraria.GameContent.ItemDropRules;
 using Terraria.ID;
 using Terraria.ModLoader;
 using WaasephisFishingPlus.Items.FishingRods;
+using WaasephisFishingPlus.Items.Pets.LightPets;
 
 namespace WaasephisFishingPlus.Core
 {
@@ -10,8 +11,11 @@ namespace WaasephisFishingPlus.Core
     {
         public override void ModifyNPCLoot(NPC npc, NPCLoot npcLoot)
         {
-            if (npc.type == NPCID.DukeFishron)
-                npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<RegalScepter>(), 3));
-        }
+			if (npc.type == NPCID.DukeFishron)
+				npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<RegalScepter>(), 3));
+
+			if (npc.type == NPCID.AnglerFish)
+				npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<AnglerLantern>(), 15));
+		}
     }
 }

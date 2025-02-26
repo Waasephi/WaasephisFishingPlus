@@ -1,4 +1,7 @@
-Tiles.FilletingTable.MapEntry: Filleting Table
+Tiles: {
+	FilletingTable.MapEntry: Filleting Table
+	LavaSharkBannerTile.MapEntry: Lava Shark Banner
+}
 
 Items: {
 	FilletingTableItem: {
@@ -121,11 +124,6 @@ Items: {
 		Tooltip: Its very sharp
 	}
 
-	Scutleel: {
-		DisplayName: Scutleel
-		Tooltip: Very slow, but packs a punch.
-	}
-
 	SharkToothPickaxe: {
 		DisplayName: Shark Tooth Pickaxe
 		Tooltip: As it should be
@@ -149,11 +147,6 @@ Items: {
 	HeartFin: {
 		DisplayName: Heart Fin
 		Tooltip: ""
-	}
-
-	KeyShard: {
-		Tooltip: A fragment of a once legendary key
-		DisplayName: Key Shard
 	}
 
 	Ebonthodian: {
@@ -304,7 +297,31 @@ Items: {
 
 	LavaSharkBanner: {
 		DisplayName: Lava Shark Banner
-		Tooltip: ""
+		Tooltip: Nearby players get a bonus against: Lava Shark
+	}
+
+	PortableShopBox: {
+		DisplayName: Portable Shop Box
+		Tooltip: Summons a temporary fish stand to sell items to
+	}
+
+	TrainingRod: {
+		DisplayName: Training Rod
+		Tooltip: Very weak, but the line cannot snap
+	}
+
+	AnglerLantern: {
+		DisplayName: Angler Lantern
+		Tooltip: Summons a friendly angler fish to light the way
+	}
+
+	BottomlessChumBucket: {
+		DisplayName: Bottomless Chum Bucket
+		Tooltip:
+			'''
+			Contains an endless amount of chum
+			Tosses 3 balls of chum to increase fishing power in water
+			'''
 	}
 }
 
@@ -312,18 +329,24 @@ Projectiles: {
 	CrystalBobber.DisplayName: Crystal Bobber
 	PrismBobber.DisplayName: Prism Bobber
 	RegalBobber.DisplayName: Regal Bobber
-	ScutleelProjectile.DisplayName: Scutleel
 	BoneBobber.DisplayName: Bone Bobber
 	InterstellarBobber.DisplayName: Interstellar Bobber
 	SeaSlug.DisplayName: Sea Slug
 	SeaUrchinProjectile.DisplayName: Sea Urchin
 	UrchinSpike.DisplayName: Urchin Spike
+	TrainingBobber.DisplayName: Training Bobber
+	AnglerFishPet.DisplayName: Angler Fish
 }
 
 Buffs: {
 	SeaSlugBuff: {
 		DisplayName: Sea Slug
 		Description: Technically it works, because Sea Slugs are called Sea Bunnies
+	}
+
+	AnglerFishBuff: {
+		DisplayName: Angler Fish
+		Description: A lot friendlier then expected...
 	}
 }
 
@@ -333,4 +356,5 @@ NPCs: {
 	AtlanticCodCritter.DisplayName: Atlantic Cod
 	ShrimpCritter.DisplayName: Shrimp
 	LavaShark.DisplayName: Lava Shark
+	PortableShop.DisplayName: Portable Shop
 }

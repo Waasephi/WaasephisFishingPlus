@@ -3,48 +3,23 @@
   "WorkspaceRootPath": "C:\\Users\\Slime\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\WaasephisFishingPlus\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{103EEBC9-B78A-4C93-B3F1-549745F35044}|WaasephisFishingPlus.csproj|c:\\users\\slime\\onedrive\\documents\\my games\\terraria\\tmodloader\\modsources\\waasephisfishingplus\\userinterfaces\\recipes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{103EEBC9-B78A-4C93-B3F1-549745F35044}|WaasephisFishingPlus.csproj|solutionrelative:userinterfaces\\recipes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{103EEBC9-B78A-4C93-B3F1-549745F35044}|WaasephisFishingPlus.csproj|c:\\users\\slime\\onedrive\\documents\\my games\\terraria\\tmodloader\\modsources\\waasephisfishingplus\\items\\tools\\bottomlesschumbucket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{103EEBC9-B78A-4C93-B3F1-549745F35044}|WaasephisFishingPlus.csproj|solutionrelative:items\\tools\\bottomlesschumbucket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{103EEBC9-B78A-4C93-B3F1-549745F35044}|WaasephisFishingPlus.csproj|c:\\users\\slime\\onedrive\\documents\\my games\\terraria\\tmodloader\\modsources\\waasephisfishingplus\\core\\waasephisfishingplusplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{103EEBC9-B78A-4C93-B3F1-549745F35044}|WaasephisFishingPlus.csproj|solutionrelative:core\\waasephisfishingplusplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{103EEBC9-B78A-4C93-B3F1-549745F35044}|WaasephisFishingPlus.csproj|c:\\users\\slime\\onedrive\\documents\\my games\\terraria\\tmodloader\\modsources\\waasephisfishingplus\\localization\\en-us_mods.waasephisfishingplus.hjson||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{103EEBC9-B78A-4C93-B3F1-549745F35044}|WaasephisFishingPlus.csproj|solutionrelative:localization\\en-us_mods.waasephisfishingplus.hjson||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{103EEBC9-B78A-4C93-B3F1-549745F35044}|WaasephisFishingPlus.csproj|c:\\users\\slime\\onedrive\\documents\\my games\\terraria\\tmodloader\\modsources\\waasephisfishingplus\\userinterfaces\\filletingui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{103EEBC9-B78A-4C93-B3F1-549745F35044}|WaasephisFishingPlus.csproj|solutionrelative:userinterfaces\\filletingui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{103EEBC9-B78A-4C93-B3F1-549745F35044}|WaasephisFishingPlus.csproj|c:\\users\\slime\\onedrive\\documents\\my games\\terraria\\tmodloader\\modsources\\waasephisfishingplus\\npcs\\friendly\\portableshop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{103EEBC9-B78A-4C93-B3F1-549745F35044}|WaasephisFishingPlus.csproj|solutionrelative:npcs\\friendly\\portableshop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{103EEBC9-B78A-4C93-B3F1-549745F35044}|WaasephisFishingPlus.csproj|c:\\users\\slime\\onedrive\\documents\\my games\\terraria\\tmodloader\\modsources\\waasephisfishingplus\\items\\filleting\\sharktooth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{103EEBC9-B78A-4C93-B3F1-549745F35044}|WaasephisFishingPlus.csproj|solutionrelative:items\\filleting\\sharktooth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Slime\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\Illuminum\\NPCs\\Friendly\\Explorer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{103EEBC9-B78A-4C93-B3F1-549745F35044}|WaasephisFishingPlus.csproj|c:\\users\\slime\\onedrive\\documents\\my games\\terraria\\tmodloader\\modsources\\waasephisfishingplus\\npcs\\hostile\\lavashark.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{103EEBC9-B78A-4C93-B3F1-549745F35044}|WaasephisFishingPlus.csproj|solutionrelative:npcs\\hostile\\lavashark.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{103EEBC9-B78A-4C93-B3F1-549745F35044}|WaasephisFishingPlus.csproj|c:\\users\\slime\\onedrive\\documents\\my games\\terraria\\tmodloader\\modsources\\waasephisfishingplus\\items\\filleting\\refinedfilletknife.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{103EEBC9-B78A-4C93-B3F1-549745F35044}|WaasephisFishingPlus.csproj|solutionrelative:items\\filleting\\refinedfilletknife.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{103EEBC9-B78A-4C93-B3F1-549745F35044}|WaasephisFishingPlus.csproj|c:\\users\\slime\\onedrive\\documents\\my games\\terraria\\tmodloader\\modsources\\waasephisfishingplus\\tiles\\banners\\lavasharkbanner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{103EEBC9-B78A-4C93-B3F1-549745F35044}|WaasephisFishingPlus.csproj|solutionrelative:tiles\\banners\\lavasharkbanner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{103EEBC9-B78A-4C93-B3F1-549745F35044}|WaasephisFishingPlus.csproj|c:\\users\\slime\\onedrive\\documents\\my games\\terraria\\tmodloader\\modsources\\waasephisfishingplus\\npcs\\passive\\basscritter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{103EEBC9-B78A-4C93-B3F1-549745F35044}|WaasephisFishingPlus.csproj|solutionrelative:npcs\\passive\\basscritter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{103EEBC9-B78A-4C93-B3F1-549745F35044}|WaasephisFishingPlus.csproj|c:\\users\\slime\\onedrive\\documents\\my games\\terraria\\tmodloader\\modsources\\waasephisfishingplus\\tiles\\decor\\bassstatue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{103EEBC9-B78A-4C93-B3F1-549745F35044}|WaasephisFishingPlus.csproj|solutionrelative:tiles\\decor\\bassstatue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{103EEBC9-B78A-4C93-B3F1-549745F35044}|WaasephisFishingPlus.csproj|c:\\users\\slime\\onedrive\\documents\\my games\\terraria\\tmodloader\\modsources\\waasephisfishingplus\\items\\weapons\\melee\\seaurchin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{103EEBC9-B78A-4C93-B3F1-549745F35044}|WaasephisFishingPlus.csproj|solutionrelative:items\\weapons\\melee\\seaurchin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{103EEBC9-B78A-4C93-B3F1-549745F35044}|WaasephisFishingPlus.csproj|c:\\users\\slime\\onedrive\\documents\\my games\\terraria\\tmodloader\\modsources\\waasephisfishingplus\\items\\fish\\questfish\\hellstonesnail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{103EEBC9-B78A-4C93-B3F1-549745F35044}|WaasephisFishingPlus.csproj|solutionrelative:items\\fish\\questfish\\hellstonesnail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{103EEBC9-B78A-4C93-B3F1-549745F35044}|WaasephisFishingPlus.csproj|c:\\users\\slime\\onedrive\\documents\\my games\\terraria\\tmodloader\\modsources\\waasephisfishingplus\\items\\fishingrods\\crystalcatcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{103EEBC9-B78A-4C93-B3F1-549745F35044}|WaasephisFishingPlus.csproj|solutionrelative:items\\fishingrods\\crystalcatcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,141 +29,71 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FilletingUI.cs",
-              "DocumentMoniker": "C:\\Users\\Slime\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\WaasephisFishingPlus\\UserInterfaces\\FilletingUI.cs",
-              "RelativeDocumentMoniker": "UserInterfaces\\FilletingUI.cs",
-              "ToolTip": "C:\\Users\\Slime\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\WaasephisFishingPlus\\UserInterfaces\\FilletingUI.cs",
-              "RelativeToolTip": "UserInterfaces\\FilletingUI.cs",
-              "ViewState": "AgIAAEoBAAAAAAAAAAAqwFwBAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T03:41:41.927Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Recipes.cs",
-              "DocumentMoniker": "C:\\Users\\Slime\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\WaasephisFishingPlus\\UserInterfaces\\Recipes.cs",
-              "RelativeDocumentMoniker": "UserInterfaces\\Recipes.cs",
-              "ToolTip": "C:\\Users\\Slime\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\WaasephisFishingPlus\\UserInterfaces\\Recipes.cs",
-              "RelativeToolTip": "UserInterfaces\\Recipes.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-14T03:03:51.726Z",
+              "DocumentIndex": 1,
+              "Title": "en-US_Mods.WaasephisFishingPlus.hjson",
+              "DocumentMoniker": "C:\\Users\\Slime\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\WaasephisFishingPlus\\Localization\\en-US_Mods.WaasephisFishingPlus.hjson",
+              "RelativeDocumentMoniker": "Localization\\en-US_Mods.WaasephisFishingPlus.hjson",
+              "ToolTip": "C:\\Users\\Slime\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\WaasephisFishingPlus\\Localization\\en-US_Mods.WaasephisFishingPlus.hjson",
+              "RelativeToolTip": "Localization\\en-US_Mods.WaasephisFishingPlus.hjson",
+              "ViewState": "AgIAACoBAAAAAAAAAAAcwDsBAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-02-26T21:27:59.132Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "SharkTooth.cs",
-              "DocumentMoniker": "C:\\Users\\Slime\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\WaasephisFishingPlus\\Items\\Filleting\\SharkTooth.cs",
-              "RelativeDocumentMoniker": "Items\\Filleting\\SharkTooth.cs",
-              "ToolTip": "C:\\Users\\Slime\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\WaasephisFishingPlus\\Items\\Filleting\\SharkTooth.cs",
-              "RelativeToolTip": "Items\\Filleting\\SharkTooth.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAXAAAAAAAAAA==",
+              "Title": "Explorer.cs",
+              "DocumentMoniker": "C:\\Users\\Slime\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\Illuminum\\NPCs\\Friendly\\Explorer.cs",
+              "RelativeDocumentMoniker": "..\\Illuminum\\NPCs\\Friendly\\Explorer.cs",
+              "ToolTip": "C:\\Users\\Slime\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\Illuminum\\NPCs\\Friendly\\Explorer.cs",
+              "RelativeToolTip": "..\\Illuminum\\NPCs\\Friendly\\Explorer.cs",
+              "ViewState": "AgIAAJwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-14T00:40:18.266Z"
+              "WhenOpened": "2025-02-26T21:23:36.105Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "RefinedFilletKnife.cs",
-              "DocumentMoniker": "C:\\Users\\Slime\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\WaasephisFishingPlus\\Items\\Filleting\\RefinedFilletKnife.cs",
-              "RelativeDocumentMoniker": "Items\\Filleting\\RefinedFilletKnife.cs",
-              "ToolTip": "C:\\Users\\Slime\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\WaasephisFishingPlus\\Items\\Filleting\\RefinedFilletKnife.cs",
-              "RelativeToolTip": "Items\\Filleting\\RefinedFilletKnife.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAgwB0AAAAeAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "PortableShop.cs",
+              "DocumentMoniker": "C:\\Users\\Slime\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\WaasephisFishingPlus\\NPCs\\Friendly\\PortableShop.cs",
+              "RelativeDocumentMoniker": "NPCs\\Friendly\\PortableShop.cs",
+              "ToolTip": "C:\\Users\\Slime\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\WaasephisFishingPlus\\NPCs\\Friendly\\PortableShop.cs",
+              "RelativeToolTip": "NPCs\\Friendly\\PortableShop.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAwwDgAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-14T00:14:25.429Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "LavaSharkBanner.cs",
-              "DocumentMoniker": "C:\\Users\\Slime\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\WaasephisFishingPlus\\Tiles\\Banners\\LavaSharkBanner.cs",
-              "RelativeDocumentMoniker": "Tiles\\Banners\\LavaSharkBanner.cs",
-              "ToolTip": "C:\\Users\\Slime\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\WaasephisFishingPlus\\Tiles\\Banners\\LavaSharkBanner.cs",
-              "RelativeToolTip": "Tiles\\Banners\\LavaSharkBanner.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAADAAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T05:10:53.774Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "BassCritter.cs",
-              "DocumentMoniker": "C:\\Users\\Slime\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\WaasephisFishingPlus\\NPCs\\Passive\\BassCritter.cs",
-              "RelativeDocumentMoniker": "NPCs\\Passive\\BassCritter.cs",
-              "ToolTip": "C:\\Users\\Slime\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\WaasephisFishingPlus\\NPCs\\Passive\\BassCritter.cs",
-              "RelativeToolTip": "NPCs\\Passive\\BassCritter.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAgwCAAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T04:58:39.078Z"
+              "WhenOpened": "2025-02-26T21:22:38.879Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "LavaShark.cs",
-              "DocumentMoniker": "C:\\Users\\Slime\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\WaasephisFishingPlus\\NPCs\\Hostile\\LavaShark.cs",
-              "RelativeDocumentMoniker": "NPCs\\Hostile\\LavaShark.cs",
-              "ToolTip": "C:\\Users\\Slime\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\WaasephisFishingPlus\\NPCs\\Hostile\\LavaShark.cs",
-              "RelativeToolTip": "NPCs\\Hostile\\LavaShark.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAACMAAAADAAAAAAAAAA==",
+              "Title": "CrystalCatcher.cs",
+              "DocumentMoniker": "C:\\Users\\Slime\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\WaasephisFishingPlus\\Items\\FishingRods\\CrystalCatcher.cs",
+              "RelativeDocumentMoniker": "Items\\FishingRods\\CrystalCatcher.cs",
+              "ToolTip": "C:\\Users\\Slime\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\WaasephisFishingPlus\\Items\\FishingRods\\CrystalCatcher.cs",
+              "RelativeToolTip": "Items\\FishingRods\\CrystalCatcher.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAowCUAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T04:57:13.888Z"
+              "WhenOpened": "2025-02-26T21:21:15.208Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "SeaUrchin.cs",
-              "DocumentMoniker": "C:\\Users\\Slime\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\WaasephisFishingPlus\\Items\\Weapons\\Melee\\SeaUrchin.cs",
-              "RelativeDocumentMoniker": "Items\\Weapons\\Melee\\SeaUrchin.cs",
-              "ToolTip": "C:\\Users\\Slime\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\WaasephisFishingPlus\\Items\\Weapons\\Melee\\SeaUrchin.cs",
-              "RelativeToolTip": "Items\\Weapons\\Melee\\SeaUrchin.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAgwCUAAAAQAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "BottomlessChumBucket.cs",
+              "DocumentMoniker": "C:\\Users\\Slime\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\WaasephisFishingPlus\\Items\\Tools\\BottomlessChumBucket.cs",
+              "RelativeDocumentMoniker": "Items\\Tools\\BottomlessChumBucket.cs",
+              "ToolTip": "C:\\Users\\Slime\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\WaasephisFishingPlus\\Items\\Tools\\BottomlessChumBucket.cs",
+              "RelativeToolTip": "Items\\Tools\\BottomlessChumBucket.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAiwBgAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-10T14:14:14.798Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "BassStatue.cs",
-              "DocumentMoniker": "C:\\Users\\Slime\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\WaasephisFishingPlus\\Tiles\\Decor\\BassStatue.cs",
-              "RelativeDocumentMoniker": "Tiles\\Decor\\BassStatue.cs",
-              "ToolTip": "C:\\Users\\Slime\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\WaasephisFishingPlus\\Tiles\\Decor\\BassStatue.cs",
-              "RelativeToolTip": "Tiles\\Decor\\BassStatue.cs",
-              "ViewState": "AgIAAE4AAAAAAAAAAAAowGAAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-10T14:13:41.129Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "HellstoneSnail.cs",
-              "DocumentMoniker": "C:\\Users\\Slime\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\WaasephisFishingPlus\\Items\\Fish\\QuestFish\\HellstoneSnail.cs",
-              "RelativeDocumentMoniker": "Items\\Fish\\QuestFish\\HellstoneSnail.cs",
-              "ToolTip": "C:\\Users\\Slime\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\WaasephisFishingPlus\\Items\\Fish\\QuestFish\\HellstoneSnail.cs",
-              "RelativeToolTip": "Items\\Fish\\QuestFish\\HellstoneSnail.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-10T04:21:25.761Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "WaasephisFishingPlusPlayer.cs",
-              "DocumentMoniker": "C:\\Users\\Slime\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\WaasephisFishingPlus\\Core\\WaasephisFishingPlusPlayer.cs",
-              "RelativeDocumentMoniker": "Core\\WaasephisFishingPlusPlayer.cs",
-              "ToolTip": "C:\\Users\\Slime\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\WaasephisFishingPlus\\Core\\WaasephisFishingPlusPlayer.cs",
-              "RelativeToolTip": "Core\\WaasephisFishingPlusPlayer.cs",
-              "ViewState": "AgIAAHgAAAAAAAAAAAAowJ4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-10T04:02:04.469Z",
+              "WhenOpened": "2025-02-26T21:19:48.958Z",
               "EditorCaption": ""
             }
           ]

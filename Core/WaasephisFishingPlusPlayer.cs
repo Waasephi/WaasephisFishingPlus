@@ -15,16 +15,6 @@ namespace WaasephisFishingPlus.Core
 {
 	public class WaasephisFishingPlusPlayer : ModPlayer
 	{
-
-        // Pets	
-        public bool possessedCandle;
-
-        public override void ResetEffects()
-        {
-            // Pets
-            possessedCandle = false;
-        }
-
         public override void CatchFish(FishingAttempt attempt, ref int itemDrop, ref int npcSpawn, ref AdvancedPopupRequest sonar, ref Vector2 sonarPosition)
 		{
             #region Bools
@@ -166,7 +156,7 @@ namespace WaasephisFishingPlus.Core
 			int aetherianAngler = ModContent.ItemType<AetherianAngler>();
 			int hellstoneSnail = ModContent.ItemType<HellstoneSnail>();
 
-			if (hardmode && NPC.downedMechBossAny && attempt.questFish == mecherel)
+			if (Main.hardMode && NPC.downedMechBossAny && attempt.questFish == mecherel)
             {
                 if (attempt.uncommon)
                 {
@@ -211,7 +201,7 @@ namespace WaasephisFishingPlus.Core
 				}
 			}
 
-			if (hardmode && Player.ZoneSnow && attempt.questFish == santaray)
+			if (Main.hardMode && Player.ZoneSnow && attempt.questFish == santaray)
 			{
 				if (attempt.uncommon)
 				{

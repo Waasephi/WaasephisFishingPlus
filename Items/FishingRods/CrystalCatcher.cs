@@ -31,10 +31,6 @@ namespace WaasephisFishingPlus.Items.FishingRods
 
         // Grants the High Test Fishing Line bool if holding the item.
         // NOTE: Only triggers through the hotbar, not if you hold the item by hand outside of the inventory.
-        public override void HoldItem(Player player)
-        {
-            player.accFishingLine = true;
-        }
 
         // Overrides the default shooting method to fire multiple bobbers.
         // NOTE: This will allow the fishing rod to summon multiple Duke Fishrons with multiple Truffle Worms in the inventory.
