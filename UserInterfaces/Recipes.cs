@@ -5,7 +5,6 @@ using WaasephisFishingPlus.Items.Filleting;
 using Terraria.ModLoader;
 using WaasephisFishingPlus.Items.Fish.QuestFish;
 using WaasephisFishingPlus.Items.Fish;
-using WaasephisFishingPlus.Items.Weapons.Summoner;
 using WaasephisFishingPlus.Items.Weapons.Melee;
 using WaasephisFishingPlus.Items.Food;
 
@@ -1008,12 +1007,6 @@ namespace WaasephisFishingPlus.UserInterfaces
             Recipe = new FishRecipes { DefaultAmount = 1, Output = new Item(), KnifeLevel = 0 };
             Recipe.Output.SetDefaults(ItemID.GoldOre);
             AddRecipe(item, Recipe);
-
-			item = new Item();
-			item.SetDefaults(ModContent.ItemType<Scutleel>());
-			Recipe = new FishRecipes { DefaultAmount = 1, Output = new Item(), KnifeLevel = 0, ignoreKnife = true };
-			Recipe.Output.SetDefaults(ItemID.BrainScrambler);
-			AddRecipe(item, Recipe);
 
 			item = new Item();
 			item.SetDefaults(ItemID.WhiteString);

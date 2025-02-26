@@ -4,7 +4,6 @@ using Microsoft.Xna.Framework;
 using Terraria.DataStructures;
 using WaasephisFishingPlus.Tiles.Crates;
 using WaasephisFishingPlus.Items.Fish.QuestFish;
-using WaasephisFishingPlus.Items.Weapons.Summoner;
 using WaasephisFishingPlus.Items.Fish;
 using Terraria.ID;
 using WaasephisFishingPlus.Items.FishingRods;
@@ -152,11 +151,6 @@ namespace WaasephisFishingPlus.Core
 
 			#region Weapons
 
-			if (NPC.downedMartians && inSky && attempt.legendary)
-			{
-				itemDrop = ModContent.ItemType<Scutleel>();
-			}
-
 			if (inWater && Player.ZoneBeach && attempt.veryrare && Main.rand.NextBool(4))
 			{
 				itemDrop = ModContent.ItemType<SeaUrchin>();
@@ -217,7 +211,7 @@ namespace WaasephisFishingPlus.Core
 				}
 			}
 
-			if (Player.ZoneSnow && hardmode && attempt.questFish == santaray)
+			if (hardmode && Player.ZoneSnow && attempt.questFish == santaray)
 			{
 				if (attempt.uncommon)
 				{

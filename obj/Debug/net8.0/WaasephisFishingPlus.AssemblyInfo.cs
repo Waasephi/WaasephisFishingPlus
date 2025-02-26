@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WaasephisFishingPlus")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a6ffda6b018e46ef792587d00ad17a53b6320096")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+287d7e94426894aa7e5646182a2387dea4025b6f")]
 [assembly: System.Reflection.AssemblyProductAttribute("WaasephisFishingPlus")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WaasephisFishingPlus")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
