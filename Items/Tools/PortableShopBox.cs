@@ -47,6 +47,7 @@ namespace WaasephisFishingPlus.Items.Tools
 			Recipe recipe = CreateRecipe();
             recipe.AddIngredient(ItemID.GoldCoin, 20);
             recipe.AddIngredient(ItemID.WoodenCrate, 5);
+			recipe.AddIngredient(ItemID.Goldfish);
 			recipe.AddTile(TileID.Anvils);
 			recipe.Register();
 		}
