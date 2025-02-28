@@ -123,17 +123,12 @@ namespace WaasephisFishingPlus.Core
 
             #region Crates
 
-            if (inWater && temple && attempt.crate && attempt.uncommon)
+            if (inWater && Main.hardMode && NPC.downedPlantBoss && Player.ZoneLihzhardTemple && attempt.crate && attempt.rare)
 			{
 				itemDrop = ModContent.ItemType<LihzahrdCrate>();
             }
 
-            if (inWater && inTundra && hardmode && attempt.crate && attempt.uncommon)
-            {
-                itemDrop = ModContent.ItemType<FrigidCrate>();
-            }
-
-            if (inWater && Player.ZoneDungeon && hardmode && NPC.downedPlantBoss && attempt.crate && attempt.uncommon)
+            if (inWater && Player.ZoneDungeon && Main.hardMode && NPC.downedPlantBoss && attempt.crate && attempt.rare)
             {
                 itemDrop = ModContent.ItemType<CryptCoffin>();
             }

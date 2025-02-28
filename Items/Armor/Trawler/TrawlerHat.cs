@@ -38,7 +38,7 @@ namespace WaasephisFishingPlus.Items.Armor.Trawler
 
 		public override void UpdateArmorSet(Player player)
 		{	
-			player.setBonus = "Greatly reduced enemy spawn rate"; //this should probably be localized
+			player.setBonus = "Greatly reduced enemy spawn rate, and adds an extra bobber to all fishing rods"; //this should probably be localized
 			player.GetModPlayer<TrawlerSetbonusPlayer>().SetBonus = true;
 			player.anglerSetSpawnReduction = true;
 			player.calmed = true;

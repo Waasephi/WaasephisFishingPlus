@@ -51,8 +51,9 @@ namespace WaasephisFishingPlus.Items.FishingRods
             recipe.AddIngredient(ItemID.GoldenFishingRod);
             recipe.AddIngredient(ModContent.ItemType<BonePole>());
             recipe.AddIngredient(ModContent.ItemType<CrystalCatcher>());
-            recipe.AddIngredient(ModContent.ItemType<RegalScepter>());
-            recipe.AddIngredient(ItemID.LunarBar, 10);
+			recipe.AddIngredient(ModContent.ItemType<ChlorophyteFishingRod>());
+			recipe.AddIngredient(ModContent.ItemType<RegalScepter>());			
+			recipe.AddIngredient(ItemID.LunarBar, 10);
             recipe.AddTile(TileID.LunarCraftingStation);
             recipe.Register();
         }
