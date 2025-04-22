@@ -13,22 +13,23 @@ namespace WaasephisFishingPlus.NPCs.Friendly
 {
 	public class PortableShop : ModNPC
 	{
-		private static Profiles.StackedNPCProfile NPCProfile;
 		public const string ShopName = "Shop";
-		public override void SetStaticDefaults()
+
+        private static Profiles.StackedNPCProfile NPCProfile;
+
+        public override void SetStaticDefaults()
 		{
-			NPCID.Sets.ActsLikeTownNPC[Type] = true;
-			NPCID.Sets.ShimmerTownTransform[Type] = true;
+            NPCID.Sets.ActsLikeTownNPC[Type] = true;
+            NPCID.Sets.ShimmerTownTransform[Type] = true;
 			NPCID.Sets.NoTownNPCHappiness[Type] = true;
 
-			NPCProfile = new Profiles.StackedNPCProfile(
-				new Profiles.DefaultNPCProfile(Texture, -1), new Profiles.DefaultNPCProfile(Texture + "_Shimmer", -1)
-			);
-		}
-		public override ITownNPCProfile TownNPCProfile()
-		{
-			return NPCProfile;
-		}
+            NPCProfile = new Profiles.StackedNPCProfile(new Profiles.DefaultNPCProfile(Texture, -1), new Profiles.DefaultNPCProfile(Texture + "_Shimmer", -1));
+        }
+
+        public override ITownNPCProfile TownNPCProfile()
+        {
+            return NPCProfile;
+        }
 
 		public override void SetDefaults()
 		{
@@ -42,9 +43,10 @@ namespace WaasephisFishingPlus.NPCs.Friendly
 			NPC.HitSound = SoundID.NPCHit1;
 			NPC.DeathSound = SoundID.NPCDeath14;
 			NPC.knockBackResist = 0f;
+			NPC.aiStyle = 7;
 			TownNPCStayingHomeless = true;
-
 		}
+
 		public override bool CanChat()
 		{
 			return true;
@@ -66,24 +68,23 @@ namespace WaasephisFishingPlus.NPCs.Friendly
 		public override void AddShops()
 		{
 			var npcShop = new NPCShop(Type, ShopName)
-				.Add<GoldfishMirror>()
-				.Add(ItemID.WoodFishingPole)
-				.Add(ItemID.ReinforcedFishingPole, Condition.DownedSkeletron)
-				.Add<GoldfishingRod>(Condition.Hardmode)
-				.Add<BudGold>(Condition.DownedEowOrBoc)
-				.Add(ItemID.ApprenticeBait, Condition.DownedEyeOfCthulhu)
-				.Add(ItemID.JourneymanBait, Condition.Hardmode)
-				.Add(ItemID.MasterBait, Condition.DownedGolem)
-				.Add(ItemID.ChumBucket, Condition.BloodMoon)
-				.Add(ItemID.BottomlessBucket, Condition.Hardmode, Condition.InRain)
-				.Add(ItemID.SuperAbsorbantSponge, Condition.Hardmode, Condition.InRain)
-				.Add(ItemID.BottomlessLavaBucket, Condition.Hardmode, Condition.InUnderworldHeight)
-				.Add(ItemID.LavaAbsorbantSponge, Condition.Hardmode, Condition.InUnderworldHeight)
-				.Add(ItemID.BottomlessHoneyBucket, Condition.Hardmode, Condition.DownedQueenBee, Condition.InJungle)
-				.Add(ItemID.HoneyAbsorbantSponge, Condition.Hardmode, Condition.DownedQueenBee, Condition.InJungle)
-				.Add<BottomlessChumBucket>(Condition.BloodMoon, Condition.Hardmode)
-				.Add(ItemID.FishingBobber, Condition.Hardmode)
-				;
+			.Add<GoldfishMirror>()
+			.Add(ItemID.WoodFishingPole)
+			.Add(ItemID.ReinforcedFishingPole, Condition.DownedSkeletron)
+			.Add<GoldfishingRod>(Condition.Hardmode)
+			.Add<BudGold>(Condition.DownedEowOrBoc)
+			.Add(ItemID.ApprenticeBait, Condition.DownedEyeOfCthulhu)
+			.Add(ItemID.JourneymanBait, Condition.Hardmode)
+			.Add(ItemID.MasterBait, Condition.DownedGolem)
+			.Add(ItemID.ChumBucket, Condition.BloodMoon)
+			.Add(ItemID.BottomlessBucket, Condition.Hardmode, Condition.InRain)
+			.Add(ItemID.SuperAbsorbantSponge, Condition.Hardmode, Condition.InRain)
+			.Add(ItemID.BottomlessLavaBucket, Condition.Hardmode, Condition.InUnderworldHeight)
+			.Add(ItemID.LavaAbsorbantSponge, Condition.Hardmode, Condition.InUnderworldHeight)
+			.Add(ItemID.BottomlessHoneyBucket, Condition.Hardmode, Condition.DownedQueenBee, Condition.InJungle)
+			.Add(ItemID.HoneyAbsorbantSponge, Condition.Hardmode, Condition.DownedQueenBee, Condition.InJungle)
+			.Add<BottomlessChumBucket>(Condition.BloodMoon, Condition.Hardmode)
+			.Add(ItemID.FishingBobber, Condition.Hardmode);
 
 			npcShop.Register();
 		}
@@ -105,11 +106,15 @@ namespace WaasephisFishingPlus.NPCs.Friendly
 				return "*Fish Noise*";
 			}
 		}
+
 		public override void AI()
 		{
+			NPC.TargetClosest(true);
+            Player player = Main.player[NPC.target];
+			
 			NPC.spriteDirection = NPC.direction;
 
-			NPC.velocity.X *= 0;
+			NPC.velocity.X = 0;
 
 			if (Main.rand.NextBool(1500))
 			{
@@ -124,6 +129,7 @@ namespace WaasephisFishingPlus.NPCs.Friendly
 			NPC.SpawnedFromStatue = true;
 			NPC.netUpdate = true;
 		}
+
 		public override void SetBestiary(BestiaryDatabase database, BestiaryEntry bestiaryEntry)
 		{
 			bestiaryEntry.Info.AddRange(new IBestiaryInfoElement[]
