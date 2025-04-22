@@ -37,8 +37,9 @@ namespace WaasephisFishingPlus.NPCs.Hostile
 
 		public override void ModifyNPCLoot(NPCLoot npcLoot)
 		{
-			npcLoot.Add(ItemDropRule.Common(ItemID.ObsidianRose, 20));
+			npcLoot.Add(ItemDropRule.Common(ItemID.Obsidian, 1, 1, 5));
 			npcLoot.Add(ItemDropRule.Common(ItemID.SuperheatedBlood, 10));
+			npcLoot.Add(ItemDropRule.Common(ItemID.ObsidianRose, 20));
 		}
 
 		public override void SetBestiary(BestiaryDatabase database, BestiaryEntry bestiaryEntry)

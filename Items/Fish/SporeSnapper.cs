@@ -24,7 +24,7 @@ namespace WaasephisFishingPlus.Items.Fish
         {
             Recipe recipe = Recipe.Create(ItemID.SummoningPotion);
             recipe.AddIngredient(ItemID.BottledWater);
-            recipe.AddIngredient(ModContent.ItemType<SporeSnapper>(), 2);
+            recipe.AddIngredient(ModContent.ItemType<SporeSnapper>());
             recipe.AddIngredient(ItemID.Moonglow, 2);
             recipe.AddTile(TileID.Bottles);
             recipe.Register();

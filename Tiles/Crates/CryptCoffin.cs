@@ -7,6 +7,7 @@ using Terraria.ModLoader;
 using Terraria.ObjectData;
 using Terraria.GameContent.ItemDropRules;
 using Terraria.GameContent.Creative;
+using WaasephisFishingPlus.Items.LockBoxes;
 
 namespace WaasephisFishingPlus.Tiles.Crates
 {
@@ -94,11 +95,14 @@ namespace WaasephisFishingPlus.Tiles.Crates
             };
             itemLoot.Add(new OneFromRulesRule(1, highendBait));
 
-            //coins
-            itemLoot.Add(ItemDropRule.Common(ItemID.GoldCoin, 1, 5, 10));
+			//coins
+			itemLoot.Add(ItemDropRule.Common(ItemID.GoldCoin, 1, 5, 10));
 
-            //extra
-            IItemDropRule[] rareAccessory =
+			//Lock Box Mold
+			itemLoot.Add(ItemDropRule.Common(ModContent.ItemType<LockBoxMold>(), 5));
+
+			//extra
+			IItemDropRule[] rareAccessory =
             [
             itemLoot.Add(ItemDropRule.Common(ItemID.BlackBelt, 10)),
             itemLoot.Add(ItemDropRule.Common(ItemID.Tabi, 10)),
@@ -123,7 +127,7 @@ namespace WaasephisFishingPlus.Tiles.Crates
             itemLoot.Add(ItemDropRule.Common(ItemID.MaceWhip, 15)),
             itemLoot.Add(ItemDropRule.Common(ItemID.ShadowJoustingLance, 10)),
             ];
-            itemLoot.Add(new OneFromRulesRule(7, rareWeapon));
+            itemLoot.Add(new OneFromRulesRule(12, rareWeapon));
         }
     }
 }

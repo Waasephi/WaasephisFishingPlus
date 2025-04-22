@@ -10,6 +10,7 @@ using WaasephisFishingPlus.Items.FishingRods;
 using WaasephisFishingPlus.Items.Pets;
 using WaasephisFishingPlus.Items.Weapons.Melee;
 using WaasephisFishingPlus.NPCs.Hostile;
+using Terraria.GameContent.Personalities;
 
 namespace WaasephisFishingPlus.Core
 {
@@ -19,18 +20,9 @@ namespace WaasephisFishingPlus.Core
 		{
             #region Bools
             bool inWater = !attempt.inLava && !attempt.inHoney;
-			bool inJungle = Player.ZoneJungle;
-			bool inTundra = Player.ZoneSnow;
-            bool inCorruption = Player.ZoneCorrupt;
             bool inEvil = Player.ZoneCorrupt || Player.ZoneCrimson;
-            bool inSky = Player.ZoneNormalSpace;
-            bool inMeteor = Player.ZoneMeteor;
-			bool hardmode = Main.hardMode;
-			bool restlessJungle = NPC.downedMechBoss1 && NPC.downedMechBoss2 && NPC.downedMechBoss3;
             bool underground = Player.ZoneNormalUnderground || Player.ZoneNormalCaverns;
             bool undergroundJungle = (Player.ZoneDirtLayerHeight || Player.ZoneRockLayerHeight) && Player.ZoneJungle;
-			bool temple = Main.hardMode && NPC.downedPlantBoss && Player.ZoneLihzhardTemple;
-			bool aether = Player.ZoneShimmer;
             #endregion
 
             #region Custom Catches
@@ -75,9 +67,19 @@ namespace WaasephisFishingPlus.Core
                 itemDrop = ModContent.ItemType<Heartang>();
             }
 
-			if (inWater && inCorruption && attempt.uncommon && Main.rand.NextBool(5))
+			if (inWater && Player.ZoneCorrupt && attempt.uncommon && Main.rand.NextBool(5))
 			{
 				itemDrop = ModContent.ItemType<Ebonthodian>();
+			}
+
+			if (inWater && Player.ZoneForest && attempt.common && Main.rand.NextBool(8))
+			{
+				itemDrop = ModContent.ItemType<Woodskip>();
+			}
+
+			if (inWater && Player.ZoneSandstorm &&Player.ZoneDesert && attempt.uncommon && Main.rand.NextBool(5))
+			{
+				itemDrop = ModContent.ItemType<AncientSquid>();
 			}
 
 			if (inWater && Player.ZoneGraveyard && attempt.uncommon && Player.fishingSkill >= 30 && Main.rand.NextBool(3))
@@ -85,37 +87,42 @@ namespace WaasephisFishingPlus.Core
 				itemDrop = ModContent.ItemType<Ectolione>();
 			}
 
-			if (inWater && inMeteor && attempt.uncommon && Main.rand.NextBool(3))
+			if (inWater && Player.ZoneMeteor && attempt.uncommon && Main.rand.NextBool(3))
             {
                 itemDrop = ModContent.ItemType<Asterovy>();
             }
 
-            if (inWater && undergroundJungle && attempt.uncommon && Main.rand.NextBool(3))
-            {
-                itemDrop = ModContent.ItemType<SporeSnapper>();
-            }
+			if (inWater && undergroundJungle && attempt.uncommon && Main.rand.NextBool(3))
+			{
+				itemDrop = ModContent.ItemType<SporeSnapper>();
+			}
 
-            if (attempt.inHoney && attempt.uncommon && Main.rand.NextBool(3))
+			if (inWater && Player.ZoneBeach && attempt.uncommon && Main.rand.NextBool(3))
+			{
+				itemDrop = ModContent.ItemType<Squid>();
+			}
+
+			if (attempt.inHoney && attempt.uncommon && Main.rand.NextBool(3))
             {
                 itemDrop = ModContent.ItemType<Gobee>();
             }
 
-            if (inWater && attempt.veryrare && inSky && NPC.downedTowerSolar && Main.rand.NextBool(8))
+            if (inWater && attempt.veryrare && Player.ZoneNormalSpace && NPC.downedTowerSolar && Main.rand.NextBool(8))
             {
                 itemDrop = ModContent.ItemType<Solamola>();
             }
 
-            if (inWater && attempt.veryrare && inSky && NPC.downedTowerStardust && Main.rand.NextBool(8))
+            if (inWater && attempt.veryrare && Player.ZoneNormalSpace && NPC.downedTowerStardust && Main.rand.NextBool(8))
             {
                 itemDrop = ModContent.ItemType<Stardustfish>();
             }
 
-            if (inWater && attempt.veryrare && inSky && NPC.downedTowerNebula && Main.rand.NextBool(8))
+            if (inWater && attempt.veryrare && Player.ZoneNormalSpace && NPC.downedTowerNebula && Main.rand.NextBool(8))
             {
                 itemDrop = ModContent.ItemType<Nebulagazer>();
             }
 
-            if (inWater && attempt.veryrare && inSky && NPC.downedTowerVortex && Main.rand.NextBool(8))
+            if (inWater && attempt.veryrare && Player.ZoneNormalSpace && NPC.downedTowerVortex && Main.rand.NextBool(8))
             {
                 itemDrop = ModContent.ItemType<Vortexeye>();
             }
@@ -128,7 +135,7 @@ namespace WaasephisFishingPlus.Core
 				itemDrop = ModContent.ItemType<LihzahrdCrate>();
             }
 
-            if (inWater && Player.ZoneDungeon && Main.hardMode && NPC.downedPlantBoss && attempt.crate && attempt.rare)
+            if (inWater && Player.ZoneDungeon && Main.hardMode && NPC.downedPlantBoss && attempt.crate && attempt.legendary)
             {
                 itemDrop = ModContent.ItemType<CryptCoffin>();
             }
@@ -136,7 +143,7 @@ namespace WaasephisFishingPlus.Core
 
 			#region Weapons
 
-			if (inWater && Player.ZoneBeach && attempt.veryrare && Main.rand.NextBool(4))
+			if (inWater && Player.ZoneBeach && attempt.veryrare && Main.rand.NextBool(6))
 			{
 				itemDrop = ModContent.ItemType<SeaUrchin>();
 			}
@@ -178,7 +185,7 @@ namespace WaasephisFishingPlus.Core
 				}
 			}
 
-			if (NPC.downedBoss2 && aether && inWater && attempt.questFish == aetherianAngler)
+			if (NPC.downedBoss2 && Player.ZoneShimmer && inWater && attempt.questFish == aetherianAngler)
 			{
 				if (attempt.uncommon)
 				{
@@ -224,7 +231,7 @@ namespace WaasephisFishingPlus.Core
 
 			#region NPC Catches
 
-			if (attempt.inLava && Player.ZoneUnderworldHeight && attempt.uncommon && attempt.fishingLevel >= 30 && Main.rand.NextBool(5))
+			if (attempt.inLava && Player.ZoneUnderworldHeight && attempt.CanFishInLava && attempt.uncommon && attempt.fishingLevel >= 30 && Main.rand.NextBool(5))
 			{
 				npcSpawn = ModContent.NPCType<LavaShark>();
 				return;

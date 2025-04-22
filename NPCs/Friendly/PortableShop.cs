@@ -1,24 +1,38 @@
 using Terraria;
+using Terraria.GameContent;
+using Terraria.GameContent.Bestiary;
 using Terraria.GameContent.UI;
 using Terraria.ID;
 using Terraria.ModLoader;
+using WaasephisFishingPlus.Items.FishingRods;
+using WaasephisFishingPlus.Items.Food;
+using WaasephisFishingPlus.Items.Potions;
 using WaasephisFishingPlus.Items.Tools;
 
 namespace WaasephisFishingPlus.NPCs.Friendly
 {
 	public class PortableShop : ModNPC
 	{
+		private static Profiles.StackedNPCProfile NPCProfile;
 		public const string ShopName = "Shop";
 		public override void SetStaticDefaults()
 		{
 			NPCID.Sets.ActsLikeTownNPC[Type] = true;
-			NPCID.Sets.ShimmerTownTransform[Type] = false;
+			NPCID.Sets.ShimmerTownTransform[Type] = true;
 			NPCID.Sets.NoTownNPCHappiness[Type] = true;
+
+			NPCProfile = new Profiles.StackedNPCProfile(
+				new Profiles.DefaultNPCProfile(Texture, -1), new Profiles.DefaultNPCProfile(Texture + "_Shimmer", -1)
+			);
+		}
+		public override ITownNPCProfile TownNPCProfile()
+		{
+			return NPCProfile;
 		}
 
 		public override void SetDefaults()
 		{
-			NPC.townNPC = false; // Sets NPC to be a Town NPC
+			NPC.townNPC = true; // Sets NPC to be a Town NPC
 			NPC.friendly = true; // NPC Will not attack player
 			NPC.width = 42;
 			NPC.height = 40;
@@ -26,8 +40,8 @@ namespace WaasephisFishingPlus.NPCs.Friendly
 			NPC.defense = 0;
 			NPC.lifeMax = 250;
 			NPC.HitSound = SoundID.NPCHit1;
-			NPC.DeathSound = SoundID.NPCDeath1;
-			NPC.knockBackResist = 0.5f;
+			NPC.DeathSound = SoundID.NPCDeath14;
+			NPC.knockBackResist = 0f;
 			TownNPCStayingHomeless = true;
 
 		}
@@ -52,13 +66,23 @@ namespace WaasephisFishingPlus.NPCs.Friendly
 		public override void AddShops()
 		{
 			var npcShop = new NPCShop(Type, ShopName)
+				.Add<GoldfishMirror>()
 				.Add(ItemID.WoodFishingPole)
 				.Add(ItemID.ReinforcedFishingPole, Condition.DownedSkeletron)
+				.Add<GoldfishingRod>(Condition.Hardmode)
+				.Add<BudGold>(Condition.DownedEowOrBoc)
 				.Add(ItemID.ApprenticeBait, Condition.DownedEyeOfCthulhu)
 				.Add(ItemID.JourneymanBait, Condition.Hardmode)
 				.Add(ItemID.MasterBait, Condition.DownedGolem)
 				.Add(ItemID.ChumBucket, Condition.BloodMoon)
+				.Add(ItemID.BottomlessBucket, Condition.Hardmode, Condition.InRain)
+				.Add(ItemID.SuperAbsorbantSponge, Condition.Hardmode, Condition.InRain)
+				.Add(ItemID.BottomlessLavaBucket, Condition.Hardmode, Condition.InUnderworldHeight)
+				.Add(ItemID.LavaAbsorbantSponge, Condition.Hardmode, Condition.InUnderworldHeight)
+				.Add(ItemID.BottomlessHoneyBucket, Condition.Hardmode, Condition.DownedQueenBee, Condition.InJungle)
+				.Add(ItemID.HoneyAbsorbantSponge, Condition.Hardmode, Condition.DownedQueenBee, Condition.InJungle)
 				.Add<BottomlessChumBucket>(Condition.BloodMoon, Condition.Hardmode)
+				.Add(ItemID.FishingBobber, Condition.Hardmode)
 				;
 
 			npcShop.Register();
@@ -91,6 +115,22 @@ namespace WaasephisFishingPlus.NPCs.Friendly
 			{
 				EmoteBubble.NewBubble(EmoteID.ItemFishingRod, new WorldUIAnchor(NPC), 200);
 			}
+		}
+
+		public override void OnKill()
+		{
+			EmoteBubble.NewBubble(EmoteID.EmoteSadness, new WorldUIAnchor(NPC), 100);
+			NPC.NewNPC(NPC.GetSource_FromAI(), (int)NPC.Center.X, (int)NPC.Center.Y, NPCID.GoldfishWalker, ai3: NPC.whoAmI);
+			NPC.SpawnedFromStatue = true;
+			NPC.netUpdate = true;
+		}
+		public override void SetBestiary(BestiaryDatabase database, BestiaryEntry bestiaryEntry)
+		{
+			bestiaryEntry.Info.AddRange(new IBestiaryInfoElement[]
+			{
+			   BestiaryDatabaseNPCsPopulator.CommonTags.SpawnConditions.Biomes.Ocean,
+				new FlavorTextBestiaryInfoElement("A goldfish that owns his own fishing stand where he sells helpful fishing items. He made the stand all by himself! I'm so proud.")
+			});
 		}
 	}
 }

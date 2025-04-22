@@ -328,6 +328,126 @@ Items: {
 		DisplayName: Chlorophyte Fishing Rod
 		Tooltip: ""
 	}
+
+	CorruptionLockBox: {
+		DisplayName: Corruption Lock Box
+		Tooltip: ""
+	}
+
+	CrimsonLockBox: {
+		DisplayName: Crimson Lock Box
+		Tooltip: ""
+	}
+
+	DesertLockBox: {
+		DisplayName: Desert Lock Box
+		Tooltip: ""
+	}
+
+	FrozenLockBox: {
+		DisplayName: Frozen Lock Box
+		Tooltip: ""
+	}
+
+	HallowedLockBox: {
+		DisplayName: Hallowed Lock Box
+		Tooltip: ""
+	}
+
+	JungleLockBox: {
+		DisplayName: Jungle Lock Box
+		Tooltip: ""
+	}
+
+	LockBoxMold: {
+		DisplayName: Lock Box Mold
+		Tooltip: ""
+	}
+
+	StablizingPotion: {
+		Tooltip: Provides immunity to the wind of sandstorms
+		DisplayName: Stablizing Potion
+	}
+
+	Woodskip: {
+		Tooltip: ""
+		DisplayName: Woodskip
+	}
+
+	AncientSquid: {
+		Tooltip: ""
+		DisplayName: Ancient Squid
+	}
+
+	HeartBobber: {
+		Tooltip:
+			'''
+			Increases fishing power by 10
+			Your bobber now glows and emits particles
+			'''
+		DisplayName: Heart Crystal Fishing Bobber
+	}
+
+	ManaBobber: {
+		Tooltip:
+			'''
+			Increases fishing power by 10
+			Your bobber now glows and emits particles
+			'''
+		DisplayName: Mana Crystal Fishing Bobber
+	}
+
+	LifeBobber: {
+		Tooltip:
+			'''
+			Increases fishing power by 10
+			Your bobber now glows and emits particles
+			'''
+		DisplayName: Life Fruit Fishing Bobber
+	}
+
+	Squid: {
+		DisplayName: Squid
+		Tooltip: ""
+	}
+
+	Calamari: {
+		DisplayName: Calamari
+		Tooltip:
+			'''
+			Moderate improvements to all stats
+			Increases the chance to get a crate
+			'Goes great with some lemon'
+			'''
+	}
+
+	BaxterBobber: {
+		DisplayName: Baxter Fishing Bobber
+		Tooltip:
+			'''
+			Increases fishing power by 10
+			Your bobber now glows and is my cat
+			'''
+	}
+
+	GoldfishMirror: {
+		DisplayName: Goldfish Mirror
+		Tooltip: Gaze into the fish to return home
+	}
+
+	GoldfishingRod: {
+		DisplayName: Goldfish-ing Rod
+		Tooltip: Casts 2 bobbers
+	}
+
+	BudGold: {
+		DisplayName: Bud Gold
+		Tooltip:
+			'''
+			Minor improvements to melee stats & lowered defense
+			This stuff is... highly alcoholic...
+			'''
+	}
 }
 
 Projectiles: {
@@ -342,6 +462,11 @@ Projectiles: {
 	TrainingBobber.DisplayName: Training Bobber
 	AnglerFishPet.DisplayName: Angler Fish
 	ChlorophyteBobber.DisplayName: Chlorophyte Bobber
+	HeartBobberProjectile.DisplayName: Heart Bobber
+	ManaBobberProjectile.DisplayName: Mana Bobber
+	LifeBobberProjectile.DisplayName: Life Bobber
+	BaxterBobberProjectile.DisplayName: Baxter Bobber
+	GoldfishBobber.DisplayName: Goldfish Bobber
 }
 
 Buffs: {
@@ -353,6 +478,11 @@ Buffs: {
 	AnglerFishBuff: {
 		DisplayName: Angler Fish
 		Description: A lot friendlier then expected...
+	}
+
+	StablizedBuff: {
+		Description: Immunity to strong winds
+		DisplayName: Stablized
 	}
 }
 

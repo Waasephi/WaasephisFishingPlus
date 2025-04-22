@@ -3,6 +3,8 @@ using Terraria;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
+using WaasephisFishingPlus.Items.Fish;
+using WaasephisFishingPlus.Items.Weapons.Melee;
 
 namespace WaasephisFishingPlus.Items.Food
 {
@@ -53,5 +55,12 @@ namespace WaasephisFishingPlus.Items.Food
         {
             player.AddBuff(BuffID.Sonar, 7200);
         }
-    }
+		public override void AddRecipes()
+		{
+			Recipe recipe = CreateRecipe();
+			recipe.AddIngredient(ModContent.ItemType<SeaUrchin>());
+			recipe.AddTile(TileID.CookingPots);
+			recipe.Register();
+		}
+	}
 }

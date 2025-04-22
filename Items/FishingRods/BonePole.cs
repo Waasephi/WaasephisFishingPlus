@@ -24,7 +24,9 @@ namespace WaasephisFishingPlus.Items.FishingRods
             Item.useTime = 8;
             Item.UseSound = SoundID.Item1;
             Item.rare = ItemRarityID.Orange;
-            Item.fishingPole = 22; // Sets the poles fishing power
+			Item.value = Item.buyPrice(gold: 1);
+			Item.value = Item.sellPrice(silver: 50);
+			Item.fishingPole = 22; // Sets the poles fishing power
             Item.shootSpeed = 15f; // Sets the speed in which the bobbers are launched. Wooden Fishing Pole is 9f and Golden Fishing Rod is 17f.
             Item.shoot = ModContent.ProjectileType<BoneBobber>(); // The bobber projectile. Note that this will be overridden by Fishing Bobber accessories if present, so don't assume the bobber spawned is the specified projectile. https://terraria.wiki.gg/wiki/Fishing_Bobbers
         }

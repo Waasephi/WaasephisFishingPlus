@@ -30,8 +30,15 @@ namespace WaasephisFishingPlus.UserInterfaces
             Item item = new Item();
             FishRecipes Recipe;
 
-            #region Regular Fish
-            item = new Item();
+			#region Regular Fish
+
+			item = new Item();
+			item.SetDefaults(ModContent.ItemType<AncientSquid>());
+			Recipe = new FishRecipes { DefaultAmount = 1, Output = new Item(), KnifeLevel = 1 };
+			Recipe.Output.SetDefaults(ItemID.AncientCloth);
+			AddRecipe(item, Recipe);
+
+			item = new Item();
             item.SetDefaults(ModContent.ItemType<Asterovy>());
             Recipe = new FishRecipes { DefaultAmount = 2, Output = new Item(), KnifeLevel = 0 };
             Recipe.Output.SetDefaults(ItemID.Meteorite);
@@ -235,13 +242,19 @@ namespace WaasephisFishingPlus.UserInterfaces
             Recipe.Output.SetDefaults(ModContent.ItemType<FishFillet>());
             AddRecipe(item, Recipe);
 
-            item = new Item();
-            item.SetDefaults(ModContent.ItemType<SporeSnapper>());
-            Recipe = new FishRecipes { DefaultAmount = 2, Output = new Item(), KnifeLevel = 0 };
-            Recipe.Output.SetDefaults(ItemID.JungleSpores);
-            AddRecipe(item, Recipe);
+			item = new Item();
+			item.SetDefaults(ModContent.ItemType<SporeSnapper>());
+			Recipe = new FishRecipes { DefaultAmount = 2, Output = new Item(), KnifeLevel = 0 };
+			Recipe.Output.SetDefaults(ItemID.JungleSpores);
+			AddRecipe(item, Recipe);
 
-            item = new Item();
+			item = new Item();
+			item.SetDefaults(ModContent.ItemType<Squid>());
+			Recipe = new FishRecipes { DefaultAmount = 2, Output = new Item(), KnifeLevel = 0 };
+			Recipe.Output.SetDefaults(ItemID.BlackInk);
+			AddRecipe(item, Recipe);
+
+			item = new Item();
             item.SetDefaults(ModContent.ItemType<Stardustfish>());
             Recipe = new FishRecipes { DefaultAmount = 2, Output = new Item(), KnifeLevel = 2 };
             Recipe.Output.SetDefaults(ItemID.FragmentStardust);
@@ -271,16 +284,22 @@ namespace WaasephisFishingPlus.UserInterfaces
             Recipe.Output.SetDefaults(ModContent.ItemType<FishFillet>());
             AddRecipe(item, Recipe);
 
-            item = new Item();
-            item.SetDefaults(ModContent.ItemType<Vortexeye>());
-            Recipe = new FishRecipes { DefaultAmount = 2, Output = new Item(), KnifeLevel = 2 };
-            Recipe.Output.SetDefaults(ItemID.FragmentVortex);
-            AddRecipe(item, Recipe);
+			item = new Item();
+			item.SetDefaults(ModContent.ItemType<Vortexeye>());
+			Recipe = new FishRecipes { DefaultAmount = 2, Output = new Item(), KnifeLevel = 2 };
+			Recipe.Output.SetDefaults(ItemID.FragmentVortex);
+			AddRecipe(item, Recipe);
 
-            #endregion
+			item = new Item();
+			item.SetDefaults(ModContent.ItemType<Woodskip>());
+			Recipe = new FishRecipes { DefaultAmount = 15, Output = new Item(), KnifeLevel = 0 };
+			Recipe.Output.SetDefaults(ItemID.Wood);
+			AddRecipe(item, Recipe);
 
-            #region Quest Fish
-            item = new Item();
+			#endregion
+
+			#region Quest Fish
+			item = new Item();
             item.SetDefaults(ItemID.AmanitaFungifin);
             Recipe = new FishRecipes { DefaultAmount = 5, Output = new Item(), KnifeLevel = 0 };
             Recipe.Output.SetDefaults(ItemID.GlowingMushroom);
@@ -668,8 +687,8 @@ namespace WaasephisFishingPlus.UserInterfaces
 
 			item = new Item();
 			item.SetDefaults(ModContent.ItemType<SeaUrchin>());
-			Recipe = new FishRecipes { DefaultAmount = 1, Output = new Item(), KnifeLevel = 0 };
-			Recipe.Output.SetDefaults(ModContent.ItemType<PreparedUrchin>());
+			Recipe = new FishRecipes { DefaultAmount = 1, Output = new Item(), KnifeLevel = 1 };
+			Recipe.Output.SetDefaults(ItemID.VialofVenom);
 			AddRecipe(item, Recipe);
 			#endregion
 
