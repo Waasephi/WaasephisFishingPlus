@@ -21,12 +21,5 @@ namespace WaasephisFishingPlus.Items.Fish.QuestFish
         }
 
         public override bool IsQuestFish() => true; // Makes the item a quest fish
-
-
-        public override void AnglerQuestChat(ref string description, ref string catchLocation)
-        {
-            description = "Have you been to the Underworld yet? There are unique fish that live in lava down there! I've GOT to see some! I'm not going myself, that place isn't very kid friendly, you do it! You can fish in lava with the critters found down there, just need a fireproof net to get them.";
-            catchLocation = "Caught in the Underworld.";
-        }
     }
 }

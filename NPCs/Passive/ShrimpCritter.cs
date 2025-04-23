@@ -56,8 +56,8 @@ namespace WaasephisFishingPlus.NPCs.Passive
             bestiaryEntry.Info.AddRange(
             [
                BestiaryDatabaseNPCsPopulator.CommonTags.SpawnConditions.Biomes.Ocean,
-                new FlavorTextBestiaryInfoElement("Despite the similarities in name, it cannot be used to make the Shrimp Po' Boy.")
-            ]);
+				new FlavorTextBestiaryInfoElement("Mods.WaasephisFishingPlus.Bestiary.ShrimpCritter"),
+			]);
         }
     }
 }

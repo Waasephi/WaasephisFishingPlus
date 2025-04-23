@@ -1,0 +1,29 @@
+AetherianAngler: {
+	Description: Have you seen the shimmer? I tried fishing in it once to see what lived in there, and thats an experience I'd never like to have ever again... There has to be some weird creatures nearby though, try fishing nearby!
+	CatchLocation: Caught in the Aether
+}
+
+Garnite: {
+	Description: I've heard that there are fish in the Granite Caves made out of super sharp stone, I want to see how sharp they really are. Go get me one!
+	CatchLocation: Caught in Granite Caves
+}
+
+HellstoneSnail: {
+	Description: Have you been to the Underworld yet? There are unique fish that live in lava down there! I've GOT to see some! I'm not going myself, that place isn't very kid friendly, you do it! You can fish in lava with the critters found down there, just need a fireproof net to get them.
+	CatchLocation: Caught in the Underworld
+}
+
+Marbeel: {
+	Description: Have you ever been to the caves of marble? Fierce warriors from a long time ago wander them, I bet theres some super cool fish around there. Go look for me!
+	CatchLocation: Caught in Marble Caves
+}
+
+Mecherel: {
+	Description: You know those huge robots? I heard a rumor that there are more of them! I heard that one of them is even a fish! Go find it!
+	CatchLocation: Caught Anywhere
+}
+
+SantaRay: {
+	Description: Every winter, Santa Claus comes around and gives us presents. I've heard he has a collection of pet fish, Get me one so I can blackmail Santa to get me good presents!
+	CatchLocation: Caught in the Tundra
+}

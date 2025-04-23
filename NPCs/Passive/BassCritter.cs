@@ -56,8 +56,8 @@ namespace WaasephisFishingPlus.NPCs.Passive
             bestiaryEntry.Info.AddRange(
             [
                BestiaryDatabaseNPCsPopulator.CommonTags.SpawnConditions.Biomes.Surface,
-                new FlavorTextBestiaryInfoElement("One of the most common fish out there, it tastes okay...")
-            ]);
+				new FlavorTextBestiaryInfoElement("Mods.WaasephisFishingPlus.Bestiary.BassCritter"),
+			]);
         }
     }
 }

@@ -4,6 +4,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.DataStructures;
 using Microsoft.Xna.Framework;
+using Terraria.Localization;
 
 namespace WaasephisFishingPlus.Items.Armor.Trawler
 {
@@ -38,7 +39,7 @@ namespace WaasephisFishingPlus.Items.Armor.Trawler
 
 		public override void UpdateArmorSet(Player player)
 		{	
-			player.setBonus = "Greatly reduced enemy spawn rate, and adds an extra bobber to all fishing rods"; //this should probably be localized
+			player.setBonus = Language.GetTextValue("Mods.WaasephisFishingPlus.ArmorSetBonus.TrawlerArmor");
 			player.GetModPlayer<TrawlerSetbonusPlayer>().SetBonus = true;
 			player.anglerSetSpawnReduction = true;
 			player.calmed = true;

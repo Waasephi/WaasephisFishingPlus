@@ -56,8 +56,8 @@ namespace WaasephisFishingPlus.NPCs.Passive
             bestiaryEntry.Info.AddRange(
             [
                BestiaryDatabaseNPCsPopulator.CommonTags.SpawnConditions.Biomes.Surface,
-                new FlavorTextBestiaryInfoElement("A common flat fish in the desert, very low in mercury.")
-            ]);
+				new FlavorTextBestiaryInfoElement("Mods.WaasephisFishingPlus.Bestiary.FlounderCritter"),
+			]);
         }
     }
 }

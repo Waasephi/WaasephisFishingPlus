@@ -56,8 +56,8 @@ namespace WaasephisFishingPlus.NPCs.Passive
             bestiaryEntry.Info.AddRange(
             [
                BestiaryDatabaseNPCsPopulator.CommonTags.SpawnConditions.Biomes.Snow,
-                new FlavorTextBestiaryInfoElement("I learned while making this guy that its basically a recolor of a bass...")
-            ]);
+				new FlavorTextBestiaryInfoElement("Mods.WaasephisFishingPlus.Bestiary.AtlanticCodCritter"),
+			]);
         }
     }
 }

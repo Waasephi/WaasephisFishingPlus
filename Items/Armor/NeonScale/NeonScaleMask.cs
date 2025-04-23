@@ -2,6 +2,7 @@ using WaasephisFishingPlus.Items.Filleting;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
+using Terraria.Localization;
 
 namespace WaasephisFishingPlus.Items.Armor.NeonScale
 {
@@ -37,7 +38,7 @@ namespace WaasephisFishingPlus.Items.Armor.NeonScale
 
 		public override void UpdateArmorSet(Player player)
 		{
-			player.setBonus = "Your glistening scales reduce shop prices";
+			player.setBonus = Language.GetTextValue("Mods.WaasephisFishingPlus.ArmorSetBonus.NeonScaleArmor");
 			player.discountAvailable = true;
 			player.discountEquipped = true;
 		}

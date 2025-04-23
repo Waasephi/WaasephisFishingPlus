@@ -21,12 +21,5 @@ namespace WaasephisFishingPlus.Items.Fish.QuestFish
 		}
 
         public override bool IsQuestFish() => true; // Makes the item a quest fish
-
-
-        public override void AnglerQuestChat(ref string description, ref string catchLocation)
-        {
-            description = "Have you seen the shimmer? I tried fishing in it once to see what lived in there, and thats an experience I'd never like to have ever again... There has to be some weird creatures nearby though, try fishing nearby!";
-            catchLocation = "Caught in the Aether.";
-        }
     }
 }

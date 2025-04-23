@@ -1,0 +1,14 @@
+SeaSlugBuff: {
+	DisplayName: Sea Slug
+	Description: Technically it works, because Sea Slugs are called Sea Bunnies
+}
+
+AnglerFishBuff: {
+	DisplayName: Angler Fish
+	Description: A lot friendlier then expected...
+}
+
+StablizedBuff: {
+	Description: Immunity to strong winds
+	DisplayName: Stablized
+}

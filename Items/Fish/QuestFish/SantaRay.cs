@@ -21,12 +21,5 @@ namespace WaasephisFishingPlus.Items.Fish.QuestFish
 		}
 
         public override bool IsQuestFish() => true; // Makes the item a quest fish
-
-
-        public override void AnglerQuestChat(ref string description, ref string catchLocation)
-        {
-            description = "Every winter, Santa Claus comes around and gives us presents. I've heard he has a collection of pet fish, Get me one so I can blackmail Santa to get me good presents!";
-            catchLocation = "Caught in the Tundra.";
-        }
     }
 }

@@ -47,7 +47,7 @@ namespace WaasephisFishingPlus.NPCs.Hostile
 			bestiaryEntry.Info.AddRange(new IBestiaryInfoElement[]
 			{
 			   BestiaryDatabaseNPCsPopulator.CommonTags.SpawnConditions.Biomes.TheUnderworld,
-				new FlavorTextBestiaryInfoElement("A shark that evolved to have scales as tough as obsidian, these scales are incredibly heatproof, giving immunity to lava.")
+				new FlavorTextBestiaryInfoElement("Mods.WaasephisFishingPlus.Bestiary.LavaShark"),
 			});
 		}
 

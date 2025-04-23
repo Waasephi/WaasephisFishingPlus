@@ -3,6 +3,7 @@ using Terraria.GameContent;
 using Terraria.GameContent.Bestiary;
 using Terraria.GameContent.UI;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 using WaasephisFishingPlus.Items.FishingRods;
 using WaasephisFishingPlus.Items.Food;
@@ -91,20 +92,7 @@ namespace WaasephisFishingPlus.NPCs.Friendly
 
 		public override string GetChat()       //Allows you to give this town NPC a chat message when a player talks to it.
 		{
-			switch (Main.rand.Next(4))    //this are the messages when you talk to the npc
-			{
-			case 0:
-				return "*Blub*";
-
-			case 1:
-				return "*Glub*";
-
-			case 2:
-				return "...";
-
-			default:
-				return "*Fish Noise*";
-			}
+			return Language.GetTextValue("Mods.WaasephisFishingPlus.Dialogue.PortableShop.Default" + Main.rand.Next(1, 5));
 		}
 
 		public override void AI()
@@ -135,7 +123,7 @@ namespace WaasephisFishingPlus.NPCs.Friendly
 			bestiaryEntry.Info.AddRange(new IBestiaryInfoElement[]
 			{
 			   BestiaryDatabaseNPCsPopulator.CommonTags.SpawnConditions.Biomes.Ocean,
-				new FlavorTextBestiaryInfoElement("A goldfish that owns his own fishing stand where he sells helpful fishing items. He made the stand all by himself! I'm so proud.")
+				new FlavorTextBestiaryInfoElement("Mods.WaasephisFishingPlus.Bestiary.PortableShop"),
 			});
 		}
 	}

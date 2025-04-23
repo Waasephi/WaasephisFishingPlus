@@ -23,11 +23,5 @@ namespace WaasephisFishingPlus.Items.Fish.QuestFish
         public override bool IsQuestFish() => true; // Makes the item a quest fish
 
         public override bool IsAnglerQuestAvailable() => NPC.downedMechBossAny && Main.hardMode; // Makes the quest only appear in hard mode. Adding a '!' before Main.hardMode makes it ONLY available in pre-hardmode.
-
-        public override void AnglerQuestChat(ref string description, ref string catchLocation)
-        {
-            description = "You know those huge robots? I heard a rumor that there are more of them! I heard that one of them is even a fish! Go find it!";
-            catchLocation = "Caught Anywhere.";
-        }
     }
 }

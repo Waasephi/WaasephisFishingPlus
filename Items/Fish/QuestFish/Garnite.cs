@@ -21,12 +21,5 @@ namespace WaasephisFishingPlus.Items.Fish.QuestFish
         }
 
         public override bool IsQuestFish() => true; // Makes the item a quest fish
-
-
-        public override void AnglerQuestChat(ref string description, ref string catchLocation)
-        {
-            description = "I've heard that there are fish in the Granite Caves made out of super sharp stone, I want to see how sharp they really are. Go get me one!";
-            catchLocation = "Caught in Granite Caves.";
-        }
     }
 }

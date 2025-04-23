@@ -21,12 +21,5 @@ namespace WaasephisFishingPlus.Items.Fish.QuestFish
         }
 
         public override bool IsQuestFish() => true; // Makes the item a quest fish
-
-
-        public override void AnglerQuestChat(ref string description, ref string catchLocation)
-        {
-            description = "Have you ever been to the caves of marble? Fierce warriors from a long time ago wander them, I bet theres some super cool fish around there. Go look for me!";
-            catchLocation = "Caught in Marble Caves.";
-        }
     }
 }
