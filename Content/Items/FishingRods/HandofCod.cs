@@ -1,6 +1,10 @@
+using Microsoft.CodeAnalysis;
+using Microsoft.Xna.Framework;
 using Terraria;
+using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
+using WaasephisFishingPlus.Content.Items.Tools;
 
 namespace WaasephisFishingPlus.Content.Items.FishingRods
 {
@@ -28,11 +32,21 @@ namespace WaasephisFishingPlus.Content.Items.FishingRods
             Item.shootSpeed = 15f; // Sets the speed in which the bobbers are launched. Wooden Fishing Pole is 9f and Golden Fishing Rod is 17f.
             Item.shoot = ProjectileID.ConfettiGun; // The bobber projectile. Note that this will be overridden by Fishing Bobber accessories if present, so don't assume the bobber spawned is the specified projectile. https://terraria.wiki.gg/wiki/Fishing_Bobbers
         }
-
-        // Grants the High Test Fishing Line bool if holding the item.
-        // NOTE: Only triggers through the hotbar, not if you hold the item by hand outside of the inventory.
-
-        public override void AddRecipes()
+		public override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback)
+		{
+			for(int i = -60; i <= 60; i += 30)
+			{
+				Projectile.NewProjectile(source, position, velocity.RotatedBy(MathHelper.ToRadians(i)) * Main.rand.NextFloat(0.3f, 1.0f), 
+					Main.rand.NextFromList(ProjectileID.ExplosiveBunny, ProjectileID.ConfettiGun, ProjectileID.RocketFireworkBlue, ProjectileID.RocketFireworkGreen, ProjectileID.RocketFireworkRed, ProjectileID.RocketFireworkYellow)
+					, 0, 0, Main.myPlayer);
+				if(Main.rand.NextBool(1000))
+					Projectile.NewProjectile(source, position, velocity.RotatedBy(MathHelper.ToRadians(i)) * Main.rand.NextFloat(0.3f, 1.0f),
+						ModContent.ProjectileType<EnderPearlProjectile>(),
+						0, 0, Main.myPlayer, 1);
+			}
+			return false;
+		}
+		public override void AddRecipes()
         {
             Recipe recipe = CreateRecipe();
             recipe.AddIngredient(ItemID.WoodFishingPole);

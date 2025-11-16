@@ -631,3 +631,14 @@ ShellstoneClockItem: {
 	Tooltip: ""
 	DisplayName: Shellstone Clock Item
 }
+
+EnderPearl: {
+	DisplayName: Ender Pearl
+	Tooltip:
+		'''
+		'What's this junk?'
+		'An ENDER PEARL, teleports you to wherever you throw it!'
+		'Yeah right.'
+		'NOOOOOOO!'
+		'''
+}
