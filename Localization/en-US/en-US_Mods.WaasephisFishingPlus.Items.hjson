@@ -100,7 +100,7 @@ NeonScales: {
 
 NeonScaleGreaves: {
 	DisplayName: Neon Scale Greaves
-	Tooltip: Slightly increases fishing skill and allows you to walk on water
+	Tooltip: Slightly increases fishing skill and allows you to walk faster in water
 }
 
 NeonScalemail: {
@@ -110,7 +110,7 @@ NeonScalemail: {
 
 NeonScaleMask: {
 	DisplayName: Neon Scale Mask
-	Tooltip: Slightly increases fishing skill and allows you to breathe underwater
+	Tooltip: Slightly increases fishing skill and allows you to breathe underwater longer
 }
 
 SharkTooth: {
@@ -450,4 +450,184 @@ HappyNimbus: {
 		Increases fishing power while it is raining
 		'He finally took a chill pill'
 		'''
+}
+
+FleshySpewer: {
+	DisplayName: Fleshy Spewer
+	Tooltip:
+		'''
+		Spits out an endless supply of blood
+		'Where does it even get this much blood?'
+		'''
+}
+
+Oarfish: {
+	DisplayName: Oarfish
+	Tooltip:
+		'''
+		A Legendary fish that is rarely found under the ocean.
+		'So big you can barely fit it in your pocket!'
+		'''
+}
+
+SunRay: {
+	DisplayName: Sun Ray
+	Tooltip: ""
+}
+
+TrashHook: {
+	DisplayName: Trash Hook
+	Tooltip:
+		'''
+		Increases your fishing power by 10, but makes you smell bad.
+		'Beauty is in the eye of the beholder, smell however is not...'
+		'''
+}
+
+Searobin: {
+	DisplayName: Searobin
+	Tooltip:
+		'''
+		A Legendary fish that is found rarely in Lava.
+		'Little guy, massive heat.'
+		'''
+}
+
+RegalMoonsquid: {
+	DisplayName: Regal Moonsquid
+	Tooltip:
+		'''
+		A Legendary fish that is found rarely in space after the Moon Lord is defeated.
+		'The King of the Cephalopods.'
+		'''
+}
+
+OarfishTrophyItem: {
+	DisplayName: Oarfish Trophy
+	Tooltip: ""
+}
+
+DreadnautilusTrophyItem: {
+	DisplayName: Dreadnautilus Trophy
+	Tooltip: ""
+}
+
+RegalMoonsquidTrophyItem: {
+	DisplayName: Regal Moonsquid Trophy
+	Tooltip: ""
+}
+
+SearobinTrophyItem: {
+	DisplayName: Searobin Trophy
+	Tooltip: ""
+}
+
+MoltenRod: {
+	Tooltip: Allows you to fish in lava
+	DisplayName: Molten Rod
+}
+
+FishMush: {
+	Tooltip: A coagulation of an unknown amount of fish... gross...
+	DisplayName: Ball of Fish Mush
+}
+
+FishFlakes: {
+	Tooltip: ""
+	DisplayName: Fish Flakes
+}
+
+EtherianSeadragon: {
+	DisplayName: Etherian Seadragon
+	Tooltip: Can be caught during an Old One's Army after Golem has been defeated
+}
+
+FlaskofBetsy: {
+	DisplayName: Flask of Betsy
+	Tooltip: Melee and Whip attacks inflict enemies with Betsy's Curse
+}
+
+WaterBombDispenserItem: {
+	Tooltip: Consumes Bottled Water and launches Wet Bombs
+	DisplayName: Wet Bomb Dispenser
+}
+
+HallowedDredger: {
+	DisplayName: Hallowed Dredger
+	Tooltip: Has an increased chance to catch Crates
+}
+
+ClamBanner: {
+	Tooltip: Nearby players get a bonus against: Clam
+	DisplayName: Clam Banner
+}
+
+ClamShell: {
+	Tooltip: A very tough shell, tastes like seawater...
+	DisplayName: Clam Shell
+}
+
+ShellstoneBrickItem: {
+	DisplayName: Shellstone Brick
+	Tooltip: ""
+}
+
+ShellstoneCandleItem: {
+	Tooltip: ""
+	DisplayName: Shellstone Candle Item
+}
+
+ShellstoneDoorItem: {
+	Tooltip: ""
+	DisplayName: Shellstone Door Item
+}
+
+ShellstoneChairItem: {
+	Tooltip: ""
+	DisplayName: Shellstone Chair Item
+}
+
+ShellstoneLanternItem: {
+	DisplayName: Shellstone Lantern Item
+	Tooltip: ""
+}
+
+ShellstoneTableItem: {
+	DisplayName: Shellstone Table Item
+	Tooltip: ""
+}
+
+ShellstoneWallItem: {
+	DisplayName: Shellstone Wall Item
+	Tooltip: ""
+}
+
+ShellstoneLampItem: {
+	Tooltip: ""
+	DisplayName: Shellstone Lamp Item
+}
+
+ShellstoneChestItem: {
+	DisplayName: Shellstone Chest Item
+	Tooltip: ""
+}
+
+ShellstoneWorkbenchItem: {
+	DisplayName: Shellstone Workbench Item
+	Tooltip: ""
+}
+
+ShellstoneSinkItem: {
+	Tooltip: ""
+	DisplayName: Shellstone Sink Item
+}
+
+ShellstoneCandelabraItem: {
+	DisplayName: Shellstone Candelabra Item
+	Tooltip: ""
+}
+
+ShellstoneClockItem: {
+	Tooltip: ""
+	DisplayName: Shellstone Clock Item
 }

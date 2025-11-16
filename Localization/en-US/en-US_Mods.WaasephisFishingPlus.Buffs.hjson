@@ -12,3 +12,8 @@ StablizedBuff: {
 	Description: Immunity to strong winds
 	DisplayName: Stablized
 }
+
+BetsyCurseImbue: {
+	DisplayName: Betsy Curse Imbue
+	Description: Mods.WaasephisFishingPlus.Buffs.BetsyCurseImbue.Description
+}

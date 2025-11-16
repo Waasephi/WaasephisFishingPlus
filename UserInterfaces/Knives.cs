@@ -1,4 +1,3 @@
-using WaasephisFishingPlus.Items.Filleting;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,6 +6,7 @@ using System.Threading.Tasks;
 using static WaasephisFishingPlus.UserInterfaces.FilletingUI;
 using Terraria.ModLoader;
 using Terraria;
+using WaasephisFishingPlus.Content.Items.Filleting;
 
 namespace WaasephisFishingPlus.UserInterfaces
 {
