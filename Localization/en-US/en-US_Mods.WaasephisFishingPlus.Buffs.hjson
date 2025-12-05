@@ -15,5 +15,10 @@ StablizedBuff: {
 
 BetsyCurseImbue: {
 	DisplayName: Betsy Curse Imbue
-	Description: Mods.WaasephisFishingPlus.Buffs.BetsyCurseImbue.Description
+	Description: Melee attacks inflict enemies with Betsy's Curse
+}
+
+TackleBoxBuff: {
+	DisplayName: Relaxed
+	Description: Increases fishing power, decreases chance to consume bait, and reduces enemy spawnrates
 }

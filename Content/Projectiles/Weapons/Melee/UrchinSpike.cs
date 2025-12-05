@@ -21,7 +21,7 @@ namespace WaasephisFishingPlus.Content.Projectiles.Weapons.Melee
 			Projectile.width = 16;
 			Projectile.penetrate = 1;
 			Projectile.timeLeft = 300;
-			Projectile.aiStyle = 2;
+			Projectile.aiStyle = ProjAIStyleID.ThrownProjectile;
 		}
 		public override bool? CanHitNPC(NPC target)
 		{

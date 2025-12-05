@@ -2,6 +2,7 @@ using Terraria;
 using Terraria.GameContent.ItemDropRules;
 using Terraria.ID;
 using Terraria.ModLoader;
+using WaasephisFishingPlus.Content.Buffs;
 using WaasephisFishingPlus.Content.Items.Accessories;
 using WaasephisFishingPlus.Content.Items.Bait;
 using WaasephisFishingPlus.Content.Items.FishingRods;
@@ -70,6 +71,14 @@ namespace WaasephisFishingPlus.Core
 
 			if (npc.type == NPCID.Arapaima)
 				npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<FishMush>(), 3, 3, 6));
+		}
+
+		public override void EditSpawnRate(Player player, ref int spawnRate, ref int maxSpawns)
+		{
+			if (player.HasBuff(ModContent.BuffType<TackleBoxBuff>()))
+			{
+				maxSpawns /= 2;
+			}
 		}
     }
 }

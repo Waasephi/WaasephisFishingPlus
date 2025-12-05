@@ -3,6 +3,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using WaasephisFishingPlus.Content.Items.Materials;
 using WaasephisFishingPlus.Content.Tiles.Blocks;
+using WaasephisFishingPlus.Content.Tiles.Decor;
 using static Terraria.ModLoader.ModContent;
 
 namespace WaasephisFishingPlus.Content.Items.Blocks
@@ -37,7 +38,7 @@ namespace WaasephisFishingPlus.Content.Items.Blocks
 			recipe.AddIngredient(ItemType<ClamShell>(), 2);
 			recipe.AddIngredient(ItemID.WhitePearl);
 			recipe.AddIngredient(ItemID.StoneBlock, 50);
-			recipe.AddTile(TileID.Furnaces);
+			recipe.AddTile(TileType<Shellforge>());
 			recipe.Register();
 		}
 	}

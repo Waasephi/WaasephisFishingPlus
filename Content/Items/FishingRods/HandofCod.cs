@@ -37,7 +37,7 @@ namespace WaasephisFishingPlus.Content.Items.FishingRods
 			for(int i = -60; i <= 60; i += 30)
 			{
 				Projectile.NewProjectile(source, position, velocity.RotatedBy(MathHelper.ToRadians(i)) * Main.rand.NextFloat(0.3f, 1.0f), 
-					Main.rand.NextFromList(ProjectileID.ExplosiveBunny, ProjectileID.ConfettiGun, ProjectileID.RocketFireworkBlue, ProjectileID.RocketFireworkGreen, ProjectileID.RocketFireworkRed, ProjectileID.RocketFireworkYellow)
+					Main.rand.NextFromList(ProjectileID.ConfettiGun, ProjectileID.RocketFireworkBlue, ProjectileID.RocketFireworkGreen, ProjectileID.RocketFireworkRed, ProjectileID.RocketFireworkYellow)
 					, 0, 0, Main.myPlayer);
 				if(Main.rand.NextBool(1000))
 					Projectile.NewProjectile(source, position, velocity.RotatedBy(MathHelper.ToRadians(i)) * Main.rand.NextFloat(0.3f, 1.0f),

@@ -24,7 +24,7 @@ namespace WaasephisFishingPlus.Content.Tiles.Decor.Furniture.Shellstone
 			TileObjectData.newTile.DrawYOffset = -2;
 			TileObjectData.addTile(Type);
 			LocalizedText name = CreateMapEntryName();
-			AddMapEntry(new Color(83, 89, 104), name);
+			AddMapEntry(new Color(83, 89, 104), Language.GetText("MapObject.Sink"));
 			DustType = DustID.Cobalt;
 			HitSound = SoundID.Tink;
 			AdjTiles = new int[] { TileID.Sinks };

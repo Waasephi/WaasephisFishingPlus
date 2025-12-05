@@ -67,7 +67,7 @@ namespace WaasephisFishingPlus.Content.Tiles.Decor.Furniture.Shellstone
 			TileObjectData.addTile(Type);
 			LocalizedText name = CreateMapEntryName();
 			RegisterItemDrop(ModContent.ItemType<ShellstoneDoorItem>());
-			AddMapEntry(new Color(83, 89, 104), name);
+			AddMapEntry(new Color(83, 89, 104), Lang.GetItemName(ItemID.WoodenDoor));
 			DustType = DustID.Cobalt;
 			HitSound = SoundID.Tink;
 			AddToArray(ref TileID.Sets.RoomNeeds.CountsAsDoor);

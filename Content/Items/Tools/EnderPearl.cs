@@ -55,7 +55,7 @@ namespace WaasephisFishingPlus.Content.Items.Tools
 			Item.autoReuse = false;
 			Item.noUseGraphic = true;
 			Item.noMelee = true;
-			Item.maxStack = 9999;
+			Item.maxStack = 16;
 			Item.consumable = true;
 		}
 		public override void HoldItem(Player player)

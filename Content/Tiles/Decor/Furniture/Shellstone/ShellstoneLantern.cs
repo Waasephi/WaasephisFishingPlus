@@ -35,7 +35,7 @@ namespace WaasephisFishingPlus.Content.Tiles.Decor.Furniture.Shellstone
 			TileObjectData.newTile.WaterPlacement = LiquidPlacement.Allowed;
 			TileObjectData.newTile.LavaPlacement = LiquidPlacement.NotAllowed;
 			LocalizedText name = CreateMapEntryName();
-			AddMapEntry(new Color(83, 89, 104), name);
+			AddMapEntry(new Color(83, 89, 104), Language.GetText("MapObject.Lantern"));
 			DustType = DustID.Cobalt;
 			HitSound = SoundID.Tink;
 			RegisterItemDrop(ModContent.ItemType<ShellstoneLanternItem>());

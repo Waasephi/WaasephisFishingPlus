@@ -20,9 +20,9 @@ namespace WaasephisFishingPlus.Content.NPCs.Hostile
 			NPC.width = 30;
 			NPC.height = 24;
 			NPC.damage = 25;
-			NPC.lifeMax = 200;
-			NPC.life = 200;
-			NPC.defense = 20;
+			NPC.lifeMax = 50;
+			NPC.life = 50;
+			NPC.defense = 10;
 			NPC.lavaImmune = false;
 			NPC.HitSound = SoundID.NPCHit4;
 			NPC.DeathSound = SoundID.NPCDeath1;

@@ -35,7 +35,7 @@ namespace WaasephisFishingPlus.Content.Tiles.Decor.Furniture.Shellstone
 			TileObjectData.addAlternate(1);
 			TileObjectData.addTile(Type);
 			LocalizedText name = CreateMapEntryName();
-			AddMapEntry(new Color(83, 89, 104), name);
+			AddMapEntry(new Color(83, 89, 104), Language.GetText("MapObject.Chair"));
 			DustType = DustID.Cobalt;
 			HitSound = SoundID.Tink;
 			AddToArray(ref TileID.Sets.RoomNeeds.CountsAsChair);

@@ -13,6 +13,7 @@ namespace WaasephisFishingPlus.Content.Tiles.Blocks
 			Main.tileLighted[Type] = false;
 			Main.tileBlockLight[Type] = true;
 			Main.tileMergeDirt[Type] = true;
+			Main.tileBlendAll[Type] = true;
 			AddMapEntry(new Color(83, 89, 104));
 			HitSound = SoundID.Tink;
 			DustType = DustID.Cobalt;

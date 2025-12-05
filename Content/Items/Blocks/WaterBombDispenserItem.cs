@@ -24,15 +24,9 @@ namespace WaasephisFishingPlus.Content.Items.Blocks
 		{
 			Recipe recipe = CreateRecipe();
 			recipe.AddIngredient(ItemID.WaterBucket, 5);
-			recipe.AddIngredient(ItemID.SilverBar, 15);
+			recipe.AddRecipeGroup(nameof(ItemID.SilverBar), 15);
 			recipe.AddTile(TileID.HeavyWorkBench);
 			recipe.Register();
-
-			Recipe recipe2 = CreateRecipe();
-			recipe2.AddIngredient(ItemID.WaterBucket, 5);
-			recipe2.AddIngredient(ItemID.TungstenBar, 15);
-			recipe2.AddTile(TileID.HeavyWorkBench);
-			recipe2.Register();
 		}
 	}
 }

@@ -460,6 +460,12 @@ namespace WaasephisFishingPlus.Core
 				return;
 			}
 
+			if (inWater && Player.ZoneBeach && attempt.veryrare && attempt.fishingLevel >= 20 && Main.rand.NextBool(3))
+			{
+				npcSpawn = ModContent.NPCType<ClamEnderPearl>();
+				return;
+			}
+
 			#endregion
 		}
 	}

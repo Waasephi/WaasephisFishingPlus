@@ -18,7 +18,7 @@ namespace WaasephisFishingPlus.Content.Tiles.Decor.Furniture.Shellstone
 			CreateRecipe()
 			.AddIngredient(ModContent.ItemType<ShellstoneBrickItem>(), 5)
 			.AddIngredient(ItemID.Torch, 3)
-			.AddTile(TileID.Anvils)
+			.AddTile(ModContent.TileType<Shellforge>())
 			.Register();
 		}
 	}

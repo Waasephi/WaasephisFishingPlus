@@ -36,7 +36,7 @@ namespace WaasephisFishingPlus.Content.Items.Weapons.Melee
 
 			Item.UseSound = SoundID.Item1;
 			Item.value = Item.sellPrice(silver: 60);
-			Item.shoot = ModContent.ProjectileType<SeaUrchinProjectile>();
+			Item.shoot = ModContent.ProjectileType<SeaUrchinProj>();
 		}
 	}
 }

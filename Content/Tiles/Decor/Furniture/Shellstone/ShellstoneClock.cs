@@ -1,12 +1,13 @@
-using Terraria;
-using Terraria.ID;
-using Terraria.ModLoader;
-using Terraria.DataStructures;
-using Terraria.Localization;
-using Terraria.ObjectData;
-using ReLogic.Content;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using ReLogic.Content;
+using Terraria;
+using Terraria.DataStructures;
+using Terraria.GameContent.ObjectInteractions;
+using Terraria.ID;
+using Terraria.Localization;
+using Terraria.ModLoader;
+using Terraria.ObjectData;
 
 namespace WaasephisFishingPlus.Content.Tiles.Decor.Furniture.Shellstone
 {
@@ -25,9 +26,10 @@ namespace WaasephisFishingPlus.Content.Tiles.Decor.Furniture.Shellstone
 			TileObjectData.newTile.Height = 5;
 			TileObjectData.newTile.CoordinateHeights = new[] { 16, 16, 16, 16, 16 };
 			TileObjectData.newTile.Origin = new Point16(0, 4);
+			TileObjectData.newTile.DrawYOffset = 2;
 			TileObjectData.addTile(Type);
 			LocalizedText name = CreateMapEntryName();
-			AddMapEntry(new Color(83, 89, 104), name);
+			AddMapEntry(new Color(83, 89, 104), Lang.GetItemName(ItemID.GrandfatherClock));
 			DustType = DustID.Cobalt;
 			HitSound = SoundID.Tink;
 			AdjTiles = new int[] { TileID.GrandfatherClocks };
@@ -36,6 +38,11 @@ namespace WaasephisFishingPlus.Content.Tiles.Decor.Furniture.Shellstone
 		public override void NumDust(int i, int j, bool fail, ref int num)
 		{
 			num = fail ? 1 : 3;
+		}
+
+		public override bool HasSmartInteract(int i, int j, SmartInteractScanSettings settings)
+		{
+			return true;
 		}
 
 		public override bool RightClick(int x, int y)

@@ -1,15 +1,26 @@
-FilletingTable.MapEntry: Filleting Table
-OarfishTrophy.MapEntry: Trophy
-WaterBombDispenser.MapEntry: Water Bomb Dispenser
-ShellstoneCandle.MapEntry: Shellstone Candle
-ShellstoneTable.MapEntry: Shellstone Table
-ShellstoneLantern.MapEntry: Shellstone Lantern
-ShellstoneDoorOpen.MapEntry: Shellstone Door Open
-ShellstoneDoorClosed.MapEntry: Shellstone Door Closed
-ShellstoneChair.MapEntry: Shellstone Chair
-ShellstoneLamp.MapEntry: Shellstone Lamp
+ShellstoneDresser: {
+	ContainerName: Shellstone Dresser
+	MapEntry: Dresser
+}
+
 ShellstoneChest.MapEntry: Shellstone Chest
-ShellstoneWorkbench.MapEntry: Shellstone Workbench
-ShellstoneSink.MapEntry: Shellstone Sink
 ShellstoneCandelabra.MapEntry: Shellstone Candelabra
+ShellstoneCandle.MapEntry: Shellstone Candle
+ShellstoneChair.MapEntry: Shellstone Chair
 ShellstoneClock.MapEntry: Shellstone Clock
+ShellstoneDoorClosed.MapEntry: Shellstone Door Closed
+ShellstoneDoorOpen.MapEntry: Shellstone Door Open
+ShellstoneLamp.MapEntry: Shellstone Lamp
+ShellstoneLantern.MapEntry: Shellstone Lantern
+ShellstonePiano.MapEntry: Shellstone Piano
+ShellstoneSink.MapEntry: Shellstone Sink
+ShellstoneSofa.MapEntry: Shellstone Sofa
+ShellstoneTable.MapEntry: Shellstone Table
+ShellstoneWorkbench.MapEntry: Shellstone Workbench
+FilletingTable.MapEntry: Filleting Table
+WaterBombDispenser.MapEntry: Wet Bomb Dispenser
+Shellforge.MapEntry: Shellforge
+LavaBombDispenser.MapEntry: Lava Bomb Dispenser
+HoneyBombDispenser.MapEntry: Honey Bomb Dispenser
+DryBombDispenser.MapEntry: Dry Bomb Dispenser
+BaitBox.MapEntry: Bait Box

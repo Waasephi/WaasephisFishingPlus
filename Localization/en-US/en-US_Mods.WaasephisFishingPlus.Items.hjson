@@ -574,62 +574,62 @@ ShellstoneBrickItem: {
 
 ShellstoneCandleItem: {
 	Tooltip: ""
-	DisplayName: Shellstone Candle Item
+	DisplayName: Shellstone Candle
 }
 
 ShellstoneDoorItem: {
 	Tooltip: ""
-	DisplayName: Shellstone Door Item
+	DisplayName: Shellstone Door
 }
 
 ShellstoneChairItem: {
 	Tooltip: ""
-	DisplayName: Shellstone Chair Item
+	DisplayName: Shellstone Chair
 }
 
 ShellstoneLanternItem: {
-	DisplayName: Shellstone Lantern Item
+	DisplayName: Shellstone Lantern
 	Tooltip: ""
 }
 
 ShellstoneTableItem: {
-	DisplayName: Shellstone Table Item
+	DisplayName: Shellstone Table
 	Tooltip: ""
 }
 
 ShellstoneWallItem: {
-	DisplayName: Shellstone Wall Item
+	DisplayName: Shellstone Wall
 	Tooltip: ""
 }
 
 ShellstoneLampItem: {
 	Tooltip: ""
-	DisplayName: Shellstone Lamp Item
+	DisplayName: Shellstone Lamp
 }
 
 ShellstoneChestItem: {
-	DisplayName: Shellstone Chest Item
+	DisplayName: Shellstone Chest
 	Tooltip: ""
 }
 
 ShellstoneWorkbenchItem: {
-	DisplayName: Shellstone Workbench Item
+	DisplayName: Shellstone Workbench
 	Tooltip: ""
 }
 
 ShellstoneSinkItem: {
 	Tooltip: ""
-	DisplayName: Shellstone Sink Item
+	DisplayName: Shellstone Sink
 }
 
 ShellstoneCandelabraItem: {
-	DisplayName: Shellstone Candelabra Item
+	DisplayName: Shellstone Candelabra
 	Tooltip: ""
 }
 
 ShellstoneClockItem: {
 	Tooltip: ""
-	DisplayName: Shellstone Clock Item
+	DisplayName: Shellstone Clock
 }
 
 EnderPearl: {
@@ -641,4 +641,98 @@ EnderPearl: {
 		'Yeah right.'
 		'NOOOOOOO!'
 		'''
+}
+
+ShellstonePianoItem: {
+	Tooltip: ""
+	DisplayName: Shellstone Piano
+}
+
+ShellstoneSofaItem: {
+	DisplayName: Shellstone Sofa
+	Tooltip: ""
+}
+
+ShellstoneDresserItem: {
+	Tooltip: ""
+	DisplayName: Shellstone Dresser
+}
+
+ShellstoneChandelierItem: {
+	DisplayName: Shellstone Chandelier
+	Tooltip: ""
+}
+
+ShellstoneBookcaseItem: {
+	Tooltip: ""
+	DisplayName: Shellstone Bookcase
+}
+
+ShellstoneBedItem: {
+	DisplayName: Shellstone Bed
+	Tooltip: ""
+}
+
+ShellstoneBathtubItem: {
+	Tooltip: ""
+	DisplayName: Shellstone Bathtub
+}
+
+ShellstonePlatformItem: {
+	DisplayName: Shellstone Platform
+	Tooltip: ""
+}
+
+ShellforgeItem: {
+	Tooltip: Used for special crafting
+	DisplayName: Shellforge
+}
+
+BottledLava: {
+	Tooltip: While you COULD drink this... you probably shouldn't.
+	DisplayName: Bottled Lava
+	RestoreLifeText: Mods.WaasephisFishingPlus.Items.BottledLava.RestoreLifeText
+}
+
+LavaBombDispenserItem: {
+	Tooltip:
+		'''
+		Consumes Bottled Lava and launches Lava Bombs
+		'Likely to destroy itself'
+		'''
+	DisplayName: Lava Bomb Dispenser
+}
+
+HoneyBombDispenserItem: {
+	Tooltip: Consumes Bottled Honey and launches Honey Bombs
+	DisplayName: Honey Bomb Dispenser
+}
+
+DryBombDispenserItem: {
+	Tooltip: Consumes Empty Bottles and launches Dry Bombs
+	DisplayName: Dry Bomb Dispenser
+}
+
+PearlPurse: {
+	Tooltip: Launches a pearl at max distance
+	DisplayName: Pearl Purse
+}
+
+PearlMortar: {
+	Tooltip:
+		'''
+		Has a chance to shoot a bursting bubble instead of a pearl
+		'Not that easy to hold'
+		'''
+	DisplayName: Pearl Mortar
+}
+
+BaitBoxItem: {
+	DisplayName: Bait Box
+	Tooltip: Increases fishing power, decreases chance to consume bait, and reduces enemy spawnrates
+}
+
+ClamClapper: {
+	Tooltip: Shoots a bubble that bursts into streams of water
+	DisplayName: Clam Clapper
 }

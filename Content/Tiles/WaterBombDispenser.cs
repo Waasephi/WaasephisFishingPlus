@@ -26,8 +26,8 @@ namespace WaasephisFishingPlus.Content.Tiles
             TileObjectData.addTile(Type);
             AnimationFrameHeight = 36;
             LocalizedText name = CreateMapEntryName();
-            AddMapEntry(new Color(151, 163, 163));
-            MinPick = 210;
+            AddMapEntry(new Color(151, 163, 163), name);
+            MinPick = 50;
             DustType = DustID.Silver;
             HitSound = SoundID.Tink;
         }

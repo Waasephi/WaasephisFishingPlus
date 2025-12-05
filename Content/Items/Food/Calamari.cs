@@ -56,14 +56,9 @@ namespace WaasephisFishingPlus.Content.Items.Food
 		public override void AddRecipes()
 		{
 			Recipe recipe = CreateRecipe();
-			recipe.AddIngredient(ModContent.ItemType<Squid>());
+			recipe.AddRecipeGroup(nameof(Squid));
 			recipe.AddTile(TileID.CookingPots);
 			recipe.Register();
-
-			Recipe recipe2 = CreateRecipe();
-			recipe2.AddIngredient(ModContent.ItemType<AncientSquid>());
-			recipe2.AddTile(TileID.CookingPots);
-			recipe2.Register();
 		}
 	}
 }

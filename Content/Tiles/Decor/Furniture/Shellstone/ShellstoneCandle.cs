@@ -28,7 +28,7 @@ namespace WaasephisFishingPlus.Content.Tiles.Decor.Furniture.Shellstone
 			TileObjectData.newTile.WaterPlacement = LiquidPlacement.Allowed;
 			TileObjectData.newTile.LavaPlacement = LiquidPlacement.NotAllowed;
 			LocalizedText name = CreateMapEntryName();
-			AddMapEntry(new Color(83, 89, 104), name);
+			AddMapEntry(new Color(83, 89, 104), Lang.GetItemName(ItemID.Candle));
 			RegisterItemDrop(ModContent.ItemType<ShellstoneCandleItem>());
 			DustType = DustID.Pearlsand;
 			HitSound = SoundID.Tink;

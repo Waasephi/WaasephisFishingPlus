@@ -2,6 +2,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using WaasephisFishingPlus.Content.Items.Blocks;
+using WaasephisFishingPlus.Content.Tiles.Decor;
 
 namespace WaasephisFishingPlus.Content.Walls
 {
@@ -25,7 +26,7 @@ namespace WaasephisFishingPlus.Content.Walls
 		{
 			CreateRecipe(4)
 				.AddIngredient<ShellstoneBrickItem>()
-				.AddTile(TileID.Anvils)
+				.AddTile(ModContent.TileType<Shellforge>())
 				.Register();
 		}
 	}

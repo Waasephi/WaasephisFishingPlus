@@ -25,7 +25,7 @@ namespace WaasephisFishingPlus.Content.Tiles.Decor.Furniture.Shellstone
 			TileObjectData.newTile.StyleHorizontal = true;
 			TileObjectData.addTile(Type);
 			LocalizedText name = CreateMapEntryName();
-			AddMapEntry(new Color(83, 89, 104), name);
+			AddMapEntry(new Color(83, 89, 104), Language.GetText("MapObject.Table"));
 			DustType = DustID.Cobalt;
 			HitSound = SoundID.Tink;
 			AddToArray(ref TileID.Sets.RoomNeeds.CountsAsTable);
