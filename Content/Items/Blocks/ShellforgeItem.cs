@@ -26,7 +26,7 @@ namespace WaasephisFishingPlus.Content.Items.Blocks
 			Recipe recipe = CreateRecipe();
 			recipe.AddIngredient(ModContent.ItemType<ClamShell>(), 10);
 			recipe.AddIngredient(ItemID.WhitePearl, 5);
-			recipe.AddIngredient(ItemID.Furnace);
+			recipe.AddIngredient(ItemID.Hellforge);
 			recipe.AddTile(TileID.Anvils);
 			recipe.Register();
 		}

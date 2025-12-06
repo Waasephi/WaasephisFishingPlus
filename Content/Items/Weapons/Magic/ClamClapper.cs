@@ -13,7 +13,7 @@ namespace WaasephisFishingPlus.Content.Items.Weapons.Magic
 	{
 		public override void SetDefaults()
 		{
-			Item.damage = 26;
+			Item.damage = 28;
 			Item.DamageType = DamageClass.Magic;
 			Item.noMelee = true;
 			Item.autoReuse = false;

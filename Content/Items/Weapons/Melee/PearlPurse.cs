@@ -25,7 +25,7 @@ namespace WaasephisFishingPlus.Content.Items.Weapons.Melee
 			Item.knockBack = 8f; // The knockback of your flail, this is dynamically adjusted in the projectile code.
 			Item.width = 36; // Hitbox width of the item.
 			Item.height = 34; // Hitbox height of the item.
-			Item.damage = 22; // The damage of your flail, this is dynamically adjusted in the projectile code.
+			Item.damage = 30; // The damage of your flail, this is dynamically adjusted in the projectile code.
 			Item.noUseGraphic = true; // This makes sure the item does not get shown when the player swings his hand
 			Item.shoot = ModContent.ProjectileType<PearlPurseProj>(); // The flail projectile
 			Item.shootSpeed = 12f; // The speed of the projectile measured in pixels per frame.

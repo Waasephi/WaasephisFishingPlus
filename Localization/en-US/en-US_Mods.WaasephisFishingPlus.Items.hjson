@@ -100,17 +100,29 @@ NeonScales: {
 
 NeonScaleGreaves: {
 	DisplayName: Neon Scale Greaves
-	Tooltip: Slightly increases fishing skill and allows you to walk faster in water
+	Tooltip:
+		'''
+		Increases fishing skill by 2
+		Allows quick travel in water
+		'''
 }
 
 NeonScalemail: {
 	DisplayName: Neon Scalemail
-	Tooltip: Slightly increases fishing skill and allows you to swim
+	Tooltip:
+		'''
+		Increases fishing skill by 4
+		Grants the ability to swim
+		'''
 }
 
 NeonScaleMask: {
 	DisplayName: Neon Scale Mask
-	Tooltip: Slightly increases fishing skill and allows you to breathe underwater longer
+	Tooltip:
+		'''
+		Increases fishing skill by 2
+		Greatly extends underwater breathing
+		'''
 }
 
 SharkTooth: {
@@ -125,17 +137,17 @@ SharkToothPickaxe: {
 
 TrawlerHat: {
 	DisplayName: Trawler Hat
-	Tooltip: Increases fishing power by 10
+	Tooltip: Increases fishing skill by 10
 }
 
 TrawlerPants: {
 	DisplayName: Trawler Pants
-	Tooltip: Increases fishing power by 10
+	Tooltip: Increases fishing skill by 10
 }
 
 TrawlerVest: {
 	DisplayName: Trawler Vest
-	Tooltip: Increases fishing power by 10
+	Tooltip: Increases fishing skill by 10
 }
 
 HeartFin: {
@@ -738,6 +750,39 @@ ClamClapper: {
 }
 
 ClamTotem: {
-	Tooltip: ""
+	Tooltip: Summons a clam to fight for you
 	DisplayName: Clam Totem
+}
+
+ClamChestplate: {
+	DisplayName: Clam Chestplate
+	Tooltip:
+		'''
+		Increases fishing skill by 4
+		10% increased damage
+		5% increased critical strike chance
+		Enemies are more likely to target you
+		'''
+}
+
+ClamGreaves: {
+	DisplayName: Clam Greaves
+	Tooltip:
+		'''
+		Increases fishing skill by 4
+		5% reduced movement speed
+		Grants the ability to swim
+		Enemies are more likely to target you
+		'''
+}
+
+ClamHelmet: {
+	DisplayName: Clam Helmet
+	Tooltip:
+		'''
+		Increases fishing skill by 4
+		Increases maximum mana by 20
+		Provides a small amount of light when worn
+		Enemies are more likely to target you
+		'''
 }

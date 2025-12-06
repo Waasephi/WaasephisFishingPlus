@@ -21,7 +21,7 @@ namespace WaasephisFishingPlus.Content.Items.Weapons.Summon
 
         public override void SetDefaults()
         {
-            Item.damage = 23;
+            Item.damage = 25;
             Item.DamageType = DamageClass.Summon;
             Item.mana = 10;
             Item.width = 32;
