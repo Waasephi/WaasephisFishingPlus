@@ -22,3 +22,8 @@ TackleBoxBuff: {
 	DisplayName: Relaxed
 	Description: Increases fishing power, decreases chance to consume bait, and reduces enemy spawnrates
 }
+
+ClamMinionBuff: {
+	Description: Mods.WaasephisFishingPlus.Buffs.ClamMinionBuff.Description
+	DisplayName: Clam Minion Buff
+}

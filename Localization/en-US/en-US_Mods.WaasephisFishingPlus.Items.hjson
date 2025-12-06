@@ -736,3 +736,8 @@ ClamClapper: {
 	Tooltip: Shoots a bubble that bursts into streams of water
 	DisplayName: Clam Clapper
 }
+
+ClamTotem: {
+	Tooltip: ""
+	DisplayName: Clam Totem
+}
