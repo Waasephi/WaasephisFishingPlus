@@ -1,4 +1,3 @@
-using static WaasephisFishingPlus.UserInterfaces.FilletingUI;
 using Terraria.ID;
 using Terraria;
 using Terraria.ModLoader;
@@ -9,6 +8,8 @@ using WaasephisFishingPlus.Content.Items.Food;
 using WaasephisFishingPlus.Content.Items.Materials;
 using WaasephisFishingPlus.Content.Items.Weapons.Melee;
 using WaasephisFishingPlus.Content.Items.Weapons.Ranged;
+using static WaasephisFishingPlus.WaasephisFishingPlus;
+using static WaasephisFishingPlus.UserInterfaces.FilletingUI;
 
 namespace WaasephisFishingPlus.UserInterfaces
 {

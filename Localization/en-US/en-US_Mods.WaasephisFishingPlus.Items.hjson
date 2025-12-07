@@ -1,3 +1,5 @@
+FilletItemTooltip: This fish can be filleted [i:WaasephisFishingPlus/FilletKnife]
+
 FilletingTableItem: {
 	DisplayName: Filleting Table
 	Tooltip: Used to turn fish into items

@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static WaasephisFishingPlus.UserInterfaces.FilletingUI;
 using Terraria.ModLoader;
 using Terraria;
 using WaasephisFishingPlus.Content.Items.Filleting;
+using static WaasephisFishingPlus.WaasephisFishingPlus;
 
 namespace WaasephisFishingPlus.UserInterfaces
 {

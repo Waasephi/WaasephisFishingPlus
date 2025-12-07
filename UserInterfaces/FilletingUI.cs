@@ -10,6 +10,7 @@ using Microsoft.Xna.Framework.Input;
 using System.Collections.Generic;
 using Terraria.UI.Chat;
 using System.Linq;
+using static WaasephisFishingPlus.WaasephisFishingPlus;
 
 namespace WaasephisFishingPlus.UserInterfaces
 {
@@ -22,55 +23,11 @@ namespace WaasephisFishingPlus.UserInterfaces
 		public static Item CurrentlyHeldItem2 = new Item();
 		public static Item CurrentlyHeldItem3 = new Item();
 		public static float ItemScale = 2f;
-		public static List<Knife> knives = new List<Knife>();
 		public static Vector2 openingPos = Vector2.Zero;
 		public static float itemOpacity = 0.5f;
 		public static Vector2 itemPos = new Vector2(9, 9);
 
-		public struct Knife
-		{
-			public Item knife;
-			public int modifier;
-			public int level;
-		}
-
-		public struct FishRecipes
-		{
-			public int DefaultAmount;
-			public Item Output;
-			public int KnifeLevel;
-			public bool ignoreKnife = false;
-
-			public FishRecipes()
-			{
-			}
-		}
-
-
-		public static Dictionary<Item, FishRecipes> recipes = new Dictionary<Item, FishRecipes>();
-
 		public static Vector2 UITopLeft => new Vector2(Main.screenWidth * 0.5f, Main.screenHeight * 0.5f);
-		public static void AddKnife(Item knifeItem, int modifier, int knifeLevel)
-		{
-			if (knives.Any(k => k.knife.type == knifeItem.type))
-				return;
-			knives.Add(new Knife { knife = knifeItem, modifier = modifier, level = knifeLevel });
-		}
-		public static void AddRecipe(Item inputItem, Item outputItem, int defaultAmount, int knifeLevel, bool ignoreKnifeModifier)
-		{
-			if (recipes.ContainsKey(inputItem))
-				return; // Prevent duplicate recipes
-
-			FishRecipes recipe = new FishRecipes
-			{
-				DefaultAmount = defaultAmount,
-				Output = outputItem,
-				KnifeLevel = knifeLevel,
-				ignoreKnife = ignoreKnifeModifier
-			};
-
-			recipes.Add(inputItem, recipe);
-		}
 
 		public static Rectangle MouseScreenArea => Utils.CenteredRectangle(Main.MouseScreen, Vector2.One * 2f);
 
@@ -101,12 +58,6 @@ namespace WaasephisFishingPlus.UserInterfaces
 			if (Main.keyState.IsKeyDown(Keys.Escape))
 			{
 				closeUI();
-			}
-
-			if (UIOpen)
-			{
-				Recipes.SetRecipes();
-				Knives.setKnives();
 			}
 
 			Main.playerInventory = true;
@@ -205,7 +156,7 @@ namespace WaasephisFishingPlus.UserInterfaces
 			if (CurrentlyHeldItem2.IsAir) return;
 			if (!CurrentlyHeldItem3.IsAir) return;
 
-			foreach (var recipe in recipes)
+			foreach (var recipe in WaasephisFishingPlus.recipes)
 			{
 				if (recipe.Key.netID == CurrentlyHeldItem.netID)
 				{
@@ -232,7 +183,7 @@ namespace WaasephisFishingPlus.UserInterfaces
 
 		public static int knifeModifierAmount()
 		{
-			foreach (var i in knives)
+			foreach (var i in WaasephisFishingPlus.knives)
 			{
 				if (CurrentlyHeldItem2.netID == i.knife.netID) return i.modifier;
 			}
@@ -241,7 +192,7 @@ namespace WaasephisFishingPlus.UserInterfaces
 
 		public static int GetKnifeLevel()
 		{
-			foreach (var i in knives)
+			foreach (var i in WaasephisFishingPlus.knives)
 			{
 				if (CurrentlyHeldItem2.netID == i.knife.netID) return i.level;
 			}
@@ -250,7 +201,7 @@ namespace WaasephisFishingPlus.UserInterfaces
 
 		public static void AddRecipe(Item item, FishRecipes recipe)
 		{
-			if (!recipes.ContainsKey(item)) recipes.Add(item, recipe);
+			if (!WaasephisFishingPlus.recipes.ContainsKey(item)) WaasephisFishingPlus.recipes.Add(item, recipe);
 		}
 
 		public static void DrawTextDescription(SpriteBatch spriteBatch, Vector2 nameDrawCenter, string Text)
@@ -346,7 +297,7 @@ namespace WaasephisFishingPlus.UserInterfaces
 		public static bool mouseItemIsKnife(Item item)
 		{
 			if (item.IsAir) return true;
-			foreach (var i in knives)
+			foreach (var i in WaasephisFishingPlus.knives)
 			{
 				if (i.knife.Name == item.Name)
 				{
