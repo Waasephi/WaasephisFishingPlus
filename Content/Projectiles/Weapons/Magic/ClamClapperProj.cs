@@ -43,10 +43,15 @@ namespace WaasephisFishingPlus.Content.Projectiles.Weapons.Magic
 		{
 			Player player = Main.player[Projectile.owner];
 
-            if (!player.active || player.dead || player.noItems || player.CCed) 
+			if (!player.active || player.dead || player.noItems || player.CCed) 
             {
                 Projectile.Kill();
             }
+
+			if (!player.CheckMana(ItemGlobal.ActiveItem(player), ItemGlobal.ActiveItem(player).mana, false, false))
+			{
+				Projectile.Kill();
+			}
 
             if (Projectile.owner == Main.myPlayer)
             {
