@@ -1,4 +1,4 @@
-FilletItemTooltip: This fish can be filleted [i:WaasephisFishingPlus/FilletKnife]
+FilletItemTooltip: This item can be filleted [i:WaasephisFishingPlus/FilletKnife]
 
 FilletingTableItem: {
 	DisplayName: Filleting Table
