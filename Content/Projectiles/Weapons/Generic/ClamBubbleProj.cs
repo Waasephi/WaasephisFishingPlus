@@ -19,6 +19,7 @@ namespace WaasephisFishingPlus.Content.Projectiles.Weapons.Generic
 
 		public override void SetDefaults()
 		{
+			Projectile.DamageType = DamageClass.Generic;
 			Projectile.friendly = true;
 			Projectile.hostile = false;
 			Projectile.timeLeft = 200;

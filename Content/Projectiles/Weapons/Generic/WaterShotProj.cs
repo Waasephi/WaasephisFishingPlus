@@ -11,17 +11,11 @@ namespace WaasephisFishingPlus.Content.Projectiles.Weapons.Generic
 		public override void SetDefaults()
 		{
 			Projectile.CloneDefaults(ProjectileID.WaterStream);
+			Projectile.DamageType = DamageClass.Magic;
+			Projectile.friendly = true;
+			Projectile.hostile = false;
 			AIType = ProjectileID.WaterStream;
 			Projectile.penetrate = 1;
-		}
-
-		public override bool? CanHitNPC(NPC target)
-		{
-			return Projectile.ai[0] >= 20;
-		}
-		public override void AI()
-		{
-			Projectile.ai[0]++;
 		}
 	}
 }
