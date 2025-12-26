@@ -27,7 +27,7 @@ namespace WaasephisFishingPlus.Content.Projectiles.Fishing
 			AIType = ProjectileID.FishingBobber;
 			Projectile.bobber = true;
 
-			DrawOriginOffsetY = -12; // Adjusts the draw position
+			DrawOriginOffsetY = -12;
 		}
 
         public override void OnSpawn(IEntitySource source)

@@ -24,6 +24,6 @@ TackleBoxBuff: {
 }
 
 ClamMinionBuff: {
-	Description: Mods.WaasephisFishingPlus.Buffs.ClamMinionBuff.Description
-	DisplayName: Clam Minion Buff
+	Description: The clam will fight for you
+	DisplayName: Clam Minion
 }

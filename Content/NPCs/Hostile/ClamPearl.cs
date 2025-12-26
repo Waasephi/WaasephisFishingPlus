@@ -39,7 +39,7 @@ namespace WaasephisFishingPlus.Content.NPCs.Hostile
 		public override void ModifyNPCLoot(NPCLoot npcLoot)
 		{
 			npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<ClamShell>(), 1, 1, 6));
-			npcLoot.Add(ItemDropRule.Common(ItemID.WhitePearl, 4, 1, 2));
+			npcLoot.Add(ItemDropRule.Common(ItemID.WhitePearl, 1, 1, 2));
 		}
 
 		public override void SetBestiary(BestiaryDatabase database, BestiaryEntry bestiaryEntry)

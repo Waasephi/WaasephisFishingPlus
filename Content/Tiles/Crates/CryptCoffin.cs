@@ -1,28 +1,37 @@
 using Microsoft.Xna.Framework;
 using Terraria;
-using Terraria.ID;
 using Terraria.DataStructures;
-using Terraria.Localization;
+using Terraria.Enums;
+using Terraria.GameContent.ItemDropRules;
+using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
-using Terraria.GameContent.ItemDropRules;
-using Terraria.GameContent.Creative;
 using WaasephisFishingPlus.Content.Items.LockBoxes;
 
 namespace WaasephisFishingPlus.Content.Tiles.Crates
 {
-	internal class CryptCoffinTile : ModTile
+	internal class CryptCoffin : ModTile
 	{
 		public override void SetStaticDefaults()
 		{
             Main.tileFrameImportant[Type] = true;
             Main.tileSolidTop[Type] = false;
             Main.tileTable[Type] = false;
-            TileObjectData.newTile.CopyFrom(TileObjectData.Style3x2);
-            TileObjectData.newTile.CoordinateHeights = new int[2] { 16, 16 };
-            TileObjectData.newTile.StyleHorizontal = true;
-            TileObjectData.addTile(Type);
-            AddMapEntry(new Color(87, 117, 161));
+            TileObjectData.newTile.CopyFrom(TileObjectData.Style2xX);
+			TileObjectData.newTile.CoordinateHeights = new int[] { 16, 16, 16 };
+			TileObjectData.newTile.AnchorBottom = new AnchorData(AnchorType.SolidTile | AnchorType.SolidWithTop | AnchorType.SolidSide, TileObjectData.newTile.Width, 0);
+			TileObjectData.newTile.CoordinateWidth = 16;
+			TileObjectData.newTile.CoordinatePadding = 2;
+			TileObjectData.newTile.DrawYOffset = 2;
+			TileObjectData.newTile.StyleWrapLimit = 2;
+			TileObjectData.newTile.StyleMultiplier = 2;
+			TileObjectData.newTile.StyleHorizontal = true;
+			TileObjectData.newTile.Direction = TileObjectDirection.PlaceLeft;
+			TileObjectData.newAlternate.CopyFrom(TileObjectData.newTile);
+			TileObjectData.newAlternate.Direction = TileObjectDirection.PlaceRight;
+			TileObjectData.addAlternate(1);
+			TileObjectData.addTile(Type);
+			AddMapEntry(new Color(69, 78, 99));
             DustType = DustID.DungeonBlue;
         }
 
@@ -32,7 +41,7 @@ namespace WaasephisFishingPlus.Content.Tiles.Crates
         }
 	}
 
-	internal class CryptCoffin : ModItem
+	internal class CryptCoffinItem : ModItem
 	{
 		public override void SetStaticDefaults()
 		{
@@ -51,7 +60,7 @@ namespace WaasephisFishingPlus.Content.Tiles.Crates
             Item.maxStack = 9999;
             Item.rare = ItemRarityID.Yellow;
             Item.value = Item.buyPrice(gold: 1);
-            Item.createTile = ModContent.TileType<CryptCoffinTile>();
+            Item.createTile = ModContent.TileType<CryptCoffin>();
         }
         public override bool CanRightClick()
         {
@@ -102,32 +111,32 @@ namespace WaasephisFishingPlus.Content.Tiles.Crates
 			itemLoot.Add(ItemDropRule.Common(ModContent.ItemType<LockBoxMold>(), 5));
 
 			//extra
-			IItemDropRule[] rareAccessory =
+			int[] rareAccessory =
             [
-            itemLoot.Add(ItemDropRule.Common(ItemID.BlackBelt, 10)),
-            itemLoot.Add(ItemDropRule.Common(ItemID.Tabi, 10)),
-            itemLoot.Add(ItemDropRule.Common(ItemID.WispinaBottle, 15)),
-            itemLoot.Add(ItemDropRule.Common(ItemID.PaladinsShield, 12)),
-            itemLoot.Add(ItemDropRule.Common(ItemID.RifleScope, 10)),
+            ItemID.BlackBelt,
+            ItemID.Tabi,
+            ItemID.WispinaBottle,
+            ItemID.PaladinsShield,
+            ItemID.RifleScope,
             ];
-            itemLoot.Add(new OneFromRulesRule(5, rareAccessory));
+            itemLoot.Add(ItemDropRule.OneFromOptions(7, rareAccessory));
 
-            IItemDropRule[] rareWeapon =
+            int[] rareWeapon =
             [
-            itemLoot.Add(ItemDropRule.Common(ItemID.Keybrand, 15)),
-            itemLoot.Add(ItemDropRule.Common(ItemID.PaladinsHammer, 12)),
-            itemLoot.Add(ItemDropRule.Common(ItemID.PaladinsShield, 12)),
-            itemLoot.Add(ItemDropRule.Common(ItemID.ShadowbeamStaff, 10)),
-            itemLoot.Add(ItemDropRule.Common(ItemID.SpectreStaff, 15)),
-            itemLoot.Add(ItemDropRule.Common(ItemID.InfernoFork, 13)),
-            itemLoot.Add(ItemDropRule.Common(ItemID.RocketLauncher, 12)),
-            itemLoot.Add(ItemDropRule.Common(ItemID.SniperRifle, 15)),
-            itemLoot.Add(ItemDropRule.Common(ItemID.TacticalShotgun, 10)),
-            itemLoot.Add(ItemDropRule.Common(ItemID.Kraken, 10)),
-            itemLoot.Add(ItemDropRule.Common(ItemID.MaceWhip, 15)),
-            itemLoot.Add(ItemDropRule.Common(ItemID.ShadowJoustingLance, 10)),
+            ItemID.Keybrand,
+            ItemID.PaladinsHammer,
+            ItemID.PaladinsShield,
+            ItemID.ShadowbeamStaff,
+            ItemID.SpectreStaff,
+            ItemID.InfernoFork,
+            ItemID.RocketLauncher,
+            ItemID.SniperRifle,
+            ItemID.TacticalShotgun,
+            ItemID.Kraken,
+            ItemID.MaceWhip,
+            ItemID.ShadowJoustingLance,
             ];
-            itemLoot.Add(new OneFromRulesRule(12, rareWeapon));
+			itemLoot.Add(ItemDropRule.OneFromOptions(10, rareWeapon));
         }
     }
 }

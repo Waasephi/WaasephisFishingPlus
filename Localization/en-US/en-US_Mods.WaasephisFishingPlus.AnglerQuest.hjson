@@ -10,7 +10,12 @@ Garnite: {
 
 HellstoneSnail: {
 	Description: Have you been to the Underworld yet? There are unique fish that live in lava down there! I've GOT to see some! I'm not going myself, that place isn't very kid friendly, you do it! You can fish in lava with the critters found down there, just need a fireproof net to get them.
-	CatchLocation: Caught in the Underworld
+	CatchLocation: Caught in lava in the Underworld
+}
+
+GlassAnomalocaris: {
+	Description: Ever wonder why there is a Dirt and Mud fish, but no Sand fish? That's because the heat of the Desert turned them all into Glass! Go get me one, I bet it would look great as a candelabra.
+	CatchLocation: Caught in lava in the Desert
 }
 
 Marbeel: {

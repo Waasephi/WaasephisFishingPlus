@@ -38,11 +38,6 @@ CrystalCatcher: {
 	Tooltip: Casts 3 bobbers
 }
 
-FrigidCrate: {
-	DisplayName: Frigid Crate
-	Tooltip: Right Click to open
-}
-
 CoralHeart: {
 	DisplayName: Coral Heart
 	Tooltip:
@@ -152,11 +147,6 @@ TrawlerVest: {
 	Tooltip: Increases fishing skill by 10
 }
 
-HeartFin: {
-	DisplayName: Heart Fin
-	Tooltip: ""
-}
-
 Ebonthodian: {
 	Tooltip: ""
 	DisplayName: Ebonthodii
@@ -214,11 +204,6 @@ Asterovy: {
 	DisplayName: Asterovy
 }
 
-CryptCoffin: {
-	Tooltip: "{$CommonItemTooltip.RightClickToOpen}"
-	DisplayName: Crypt Coffin
-}
-
 Stardustfish: {
 	Tooltip: ""
 	DisplayName: Stardustfish
@@ -266,11 +251,6 @@ AetherianAngler: {
 Ectolione: {
 	Tooltip: ""
 	DisplayName: Ectolione
-}
-
-LihzahrdCrate: {
-	DisplayName: Lihzahrd Crate
-	Tooltip: "{$CommonItemTooltip.RightClickToOpen}"
 }
 
 BassStatueItem: {
@@ -787,4 +767,28 @@ ClamHelmet: {
 		Provides a small amount of light when worn
 		Enemies are more likely to target you
 		'''
+}
+
+GlassAnomalocaris: {
+	DisplayName: Glass Anomalocaris
+	Tooltip: "'Caught in Lava in the Desert'"
+}
+
+GlassCandelabrolacarisItem: {
+	DisplayName: Glass Candelabrolacaris
+	Tooltip:
+		'''
+		The only thing worse then its name is the way it looks...
+		The Angler does NOT have a good sense of style...
+		'''
+}
+
+LihzahrdCrateItem: {
+	Tooltip: "{$CommonItemTooltip.RightClickToOpen}"
+	DisplayName: Lihzahrd Crate
+}
+
+CryptCoffinItem: {
+	Tooltip: "{$CommonItemTooltip.RightClickToOpen}"
+	DisplayName: Crypt Coffin
 }

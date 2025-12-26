@@ -1,16 +1,13 @@
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ID;
-using Terraria.DataStructures;
-using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
 using Terraria.GameContent.ItemDropRules;
-using Terraria.GameContent.Creative;
 
 namespace WaasephisFishingPlus.Content.Tiles.Crates
 {
-	internal class LihzahrdCrateTile : ModTile
+	internal class LihzahrdCrate : ModTile
 	{
 		public override void SetStaticDefaults()
 		{
@@ -21,8 +18,8 @@ namespace WaasephisFishingPlus.Content.Tiles.Crates
             TileObjectData.newTile.CoordinateHeights = new int[2] { 16, 16 };
             TileObjectData.newTile.StyleHorizontal = true;
             TileObjectData.addTile(Type);
-            AddMapEntry(new Color(145, 81, 85));
-            DustType = DustID.RichMahogany;
+            AddMapEntry(new Color(161, 79, 18));
+            DustType = DustID.Lihzahrd;
         }
 
         public override void NumDust(int i, int j, bool fail, ref int num)
@@ -31,7 +28,7 @@ namespace WaasephisFishingPlus.Content.Tiles.Crates
         }
 	}
 
-	internal class LihzahrdCrate : ModItem
+	internal class LihzahrdCrateItem : ModItem
 	{
 		public override void SetStaticDefaults()
 		{
@@ -50,7 +47,7 @@ namespace WaasephisFishingPlus.Content.Tiles.Crates
             Item.maxStack = 9999;
             Item.rare = ItemRarityID.Lime;
             Item.value = Item.buyPrice(gold: 1);
-            Item.createTile = ModContent.TileType<LihzahrdCrateTile>();
+            Item.createTile = ModContent.TileType<LihzahrdCrate>();
         }
         public override bool CanRightClick()
         {

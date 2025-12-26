@@ -93,9 +93,5 @@ namespace WaasephisFishingPlus.Content.Projectiles.Weapons.Summon.Minions
 
 			return true;
 		}
-		public override Color? GetAlpha(Color lightColor)
-		{
-			return new Color(255, 255, 255, 255);
-		}
 	}
 }

@@ -62,79 +62,79 @@ namespace WaasephisFishingPlus.Core
 			#region Hallowed Dredger
 
 			#region PreHM Crates
-			if (inWater && !Main.hardMode && ItemGlobal.ActiveItem(Player).type == ModContent.ItemType<HallowedDredger>() && attempt.common && Main.rand.NextBool(3))
+			if (inWater && !Main.hardMode && ItemGlobal.ActiveItem(Player).type == ModContent.ItemType<HallowedDredger>() && attempt.crate && attempt.common && Main.rand.NextBool(3))
 			{
 				itemDrop = ItemID.WoodenCrate;
 				return;
 			}
 
-			if (inWater && !Main.hardMode && ItemGlobal.ActiveItem(Player).type == ModContent.ItemType<HallowedDredger>() && attempt.uncommon && Main.rand.NextBool(5))
+			if (inWater && !Main.hardMode && ItemGlobal.ActiveItem(Player).type == ModContent.ItemType<HallowedDredger>() && attempt.crate && attempt.uncommon && Main.rand.NextBool(5))
 			{
 				itemDrop = ItemID.IronCrate;
 				return;
 			}
 
-			if (inWater && !Main.hardMode && ItemGlobal.ActiveItem(Player).type == ModContent.ItemType<HallowedDredger>() && attempt.rare && Main.rand.NextBool(7))
+			if (inWater && !Main.hardMode && ItemGlobal.ActiveItem(Player).type == ModContent.ItemType<HallowedDredger>() && attempt.crate && attempt.rare && Main.rand.NextBool(7))
 			{
 				itemDrop = ItemID.GoldenCrate;
 				return;
 			}
 
-			if (inWater && Player.ZoneCorrupt && !Main.hardMode && ItemGlobal.ActiveItem(Player).type == ModContent.ItemType<HallowedDredger>() && attempt.uncommon && Main.rand.NextBool(5))
+			if (inWater && Player.ZoneCorrupt && !Main.hardMode && ItemGlobal.ActiveItem(Player).type == ModContent.ItemType<HallowedDredger>() && attempt.crate && attempt.uncommon && Main.rand.NextBool(5))
 			{
 				itemDrop = ItemID.CorruptFishingCrate;
 				return;
 			}
 
-			if (inWater && Player.ZoneCrimson && !Main.hardMode && ItemGlobal.ActiveItem(Player).type == ModContent.ItemType<HallowedDredger>() && attempt.uncommon && Main.rand.NextBool(5))
+			if (inWater && Player.ZoneCrimson && !Main.hardMode && ItemGlobal.ActiveItem(Player).type == ModContent.ItemType<HallowedDredger>() && attempt.crate && attempt.uncommon && Main.rand.NextBool(5))
 			{
 				itemDrop = ItemID.CrimsonFishingCrate;
 				return;
 			}
 
-			if (inWater && Player.ZoneJungle && !Main.hardMode && ItemGlobal.ActiveItem(Player).type == ModContent.ItemType<HallowedDredger>() && attempt.rare && Main.rand.NextBool(5))
+			if (inWater && Player.ZoneJungle && !Main.hardMode && ItemGlobal.ActiveItem(Player).type == ModContent.ItemType<HallowedDredger>() && attempt.crate && attempt.rare && Main.rand.NextBool(5))
 			{
 				itemDrop = ItemID.JungleFishingCrate;
 				return;
 			}
 
-			if (inWater && Player.ZoneSnow && !Main.hardMode && ItemGlobal.ActiveItem(Player).type == ModContent.ItemType<HallowedDredger>() && attempt.uncommon && Main.rand.NextBool(5))
+			if (inWater && Player.ZoneSnow && !Main.hardMode && ItemGlobal.ActiveItem(Player).type == ModContent.ItemType<HallowedDredger>() && attempt.crate && attempt.uncommon && Main.rand.NextBool(5))
 			{
 				itemDrop = ItemID.FrozenCrate;
 				return;
 			}
 
-			if (inWater && Player.ZoneHallow && !Main.hardMode && ItemGlobal.ActiveItem(Player).type == ModContent.ItemType<HallowedDredger>() && attempt.uncommon && Main.rand.NextBool(5))
+			if (inWater && Player.ZoneHallow && !Main.hardMode && ItemGlobal.ActiveItem(Player).type == ModContent.ItemType<HallowedDredger>() && attempt.crate && attempt.uncommon && Main.rand.NextBool(5))
 			{
 				itemDrop = ItemID.HallowedFishingCrate;
 				return;
 			}
 
-			if (inWater && Player.ZoneDesert || Player.ZoneUndergroundDesert && !Main.hardMode && ItemGlobal.ActiveItem(Player).type == ModContent.ItemType<HallowedDredger>() && attempt.rare && Main.rand.NextBool(5))
+			if (inWater && Player.ZoneDesert || Player.ZoneUndergroundDesert && !Main.hardMode && ItemGlobal.ActiveItem(Player).type == ModContent.ItemType<HallowedDredger>() && attempt.crate && attempt.rare && Main.rand.NextBool(5))
 			{
 				itemDrop = ItemID.OasisCrate;
 				return;
 			}
 
-			if (inWater && Player.ZoneNormalSpace && !Main.hardMode && ItemGlobal.ActiveItem(Player).type == ModContent.ItemType<HallowedDredger>() && attempt.uncommon && Main.rand.NextBool(5))
+			if (inWater && Player.ZoneNormalSpace && !Main.hardMode && ItemGlobal.ActiveItem(Player).type == ModContent.ItemType<HallowedDredger>() && attempt.crate && attempt.uncommon && Main.rand.NextBool(5))
 			{
 				itemDrop = ItemID.FloatingIslandFishingCrate;
 				return;
 			}
 
-			if (attempt.inLava && !Main.hardMode && ItemGlobal.ActiveItem(Player).type == ModContent.ItemType<HallowedDredger>() && attempt.uncommon && Main.rand.NextBool(5))
+			if (attempt.inLava && !Main.hardMode && ItemGlobal.ActiveItem(Player).type == ModContent.ItemType<HallowedDredger>() && attempt.crate && attempt.uncommon && Main.rand.NextBool(5))
 			{
 				itemDrop = ItemID.LavaCrate;
 				return;
 			}
 
-			if (inWater && Player.ZoneBeach && !Main.hardMode && attempt.crate && ItemGlobal.ActiveItem(Player).type == ModContent.ItemType<HallowedDredger>() && attempt.uncommon && Main.rand.NextBool(5))
+			if (inWater && Player.ZoneBeach && !Main.hardMode && attempt.crate && ItemGlobal.ActiveItem(Player).type == ModContent.ItemType<HallowedDredger>() && attempt.crate && attempt.uncommon && Main.rand.NextBool(5))
 			{
 				itemDrop = ItemID.OceanCrate;
 				return;
 			}
 
-			if (inWater && Player.ZoneDungeon && !Main.hardMode && attempt.crate && ItemGlobal.ActiveItem(Player).type == ModContent.ItemType<HallowedDredger>() && attempt.uncommon && Main.rand.NextBool(5))
+			if (inWater && Player.ZoneDungeon && !Main.hardMode && attempt.crate && ItemGlobal.ActiveItem(Player).type == ModContent.ItemType<HallowedDredger>() && attempt.crate && attempt.uncommon && Main.rand.NextBool(5))
 			{
 				itemDrop = ItemID.OceanCrate;
 				return;
@@ -143,73 +143,73 @@ namespace WaasephisFishingPlus.Core
 			#endregion
 
 			#region HM Crates
-			if (inWater && Main.hardMode && ItemGlobal.ActiveItem(Player).type == ModContent.ItemType<HallowedDredger>() && attempt.common && Main.rand.NextBool(3))
+			if (inWater && Main.hardMode && ItemGlobal.ActiveItem(Player).type == ModContent.ItemType<HallowedDredger>() && attempt.crate && attempt.common && Main.rand.NextBool(3))
 			{
 				itemDrop = ItemID.WoodenCrateHard;
 				return;
 			}
 
-			if (inWater && Main.hardMode && ItemGlobal.ActiveItem(Player).type == ModContent.ItemType<HallowedDredger>() && attempt.uncommon && Main.rand.NextBool(5))
+			if (inWater && Main.hardMode && ItemGlobal.ActiveItem(Player).type == ModContent.ItemType<HallowedDredger>() && attempt.crate && attempt.uncommon && Main.rand.NextBool(5))
 			{
 				itemDrop = ItemID.IronCrateHard;
 				return;
 			}
 
-			if (inWater && Main.hardMode && ItemGlobal.ActiveItem(Player).type == ModContent.ItemType<HallowedDredger>() && attempt.rare && Main.rand.NextBool(7))
+			if (inWater && Main.hardMode && ItemGlobal.ActiveItem(Player).type == ModContent.ItemType<HallowedDredger>() && attempt.crate && attempt.rare && Main.rand.NextBool(7))
 			{
 				itemDrop = ItemID.GoldenCrateHard;
 				return;
 			}
 
-			if (inWater && Player.ZoneCorrupt && Main.hardMode && ItemGlobal.ActiveItem(Player).type == ModContent.ItemType<HallowedDredger>() && attempt.uncommon && Main.rand.NextBool(5))
+			if (inWater && Player.ZoneCorrupt && Main.hardMode && ItemGlobal.ActiveItem(Player).type == ModContent.ItemType<HallowedDredger>() && attempt.crate && attempt.uncommon && Main.rand.NextBool(5))
 			{
 				itemDrop = ItemID.CorruptFishingCrateHard;
 				return;
 			}
 
-			if (inWater && Player.ZoneCrimson && Main.hardMode && ItemGlobal.ActiveItem(Player).type == ModContent.ItemType<HallowedDredger>() && attempt.uncommon && Main.rand.NextBool(5))
+			if (inWater && Player.ZoneCrimson && Main.hardMode && ItemGlobal.ActiveItem(Player).type == ModContent.ItemType<HallowedDredger>() && attempt.crate && attempt.uncommon && Main.rand.NextBool(5))
 			{
 				itemDrop = ItemID.CrimsonFishingCrateHard;
 				return;
 			}
 
-			if (inWater && Player.ZoneJungle && Main.hardMode && ItemGlobal.ActiveItem(Player).type == ModContent.ItemType<HallowedDredger>() && attempt.uncommon && Main.rand.NextBool(5))
+			if (inWater && Player.ZoneJungle && Main.hardMode && ItemGlobal.ActiveItem(Player).type == ModContent.ItemType<HallowedDredger>() && attempt.crate && attempt.uncommon && Main.rand.NextBool(5))
 			{
 				itemDrop = ItemID.JungleFishingCrateHard;
 				return;
 			}
 
-			if (inWater && Player.ZoneSnow && Main.hardMode && ItemGlobal.ActiveItem(Player).type == ModContent.ItemType<HallowedDredger>() && attempt.uncommon && Main.rand.NextBool(5))
+			if (inWater && Player.ZoneSnow && Main.hardMode && ItemGlobal.ActiveItem(Player).type == ModContent.ItemType<HallowedDredger>() && attempt.crate && attempt.uncommon && Main.rand.NextBool(5))
 			{
 				itemDrop = ItemID.FrozenCrateHard;
 				return;
 			}
 
-			if (inWater && Player.ZoneHallow && Main.hardMode && ItemGlobal.ActiveItem(Player).type == ModContent.ItemType<HallowedDredger>() && attempt.uncommon && Main.rand.NextBool(5))
+			if (inWater && Player.ZoneHallow && Main.hardMode && ItemGlobal.ActiveItem(Player).type == ModContent.ItemType<HallowedDredger>() && attempt.crate && attempt.uncommon && Main.rand.NextBool(5))
 			{
 				itemDrop = ItemID.HallowedFishingCrateHard;
 				return;
 			}
 
-			if (inWater && Player.ZoneDesert || Player.ZoneUndergroundDesert && Main.hardMode && ItemGlobal.ActiveItem(Player).type == ModContent.ItemType<HallowedDredger>() && attempt.uncommon && Main.rand.NextBool(5))
+			if (inWater && Player.ZoneDesert || Player.ZoneUndergroundDesert && Main.hardMode && ItemGlobal.ActiveItem(Player).type == ModContent.ItemType<HallowedDredger>() && attempt.crate && attempt.uncommon && Main.rand.NextBool(5))
 			{
 				itemDrop = ItemID.OasisCrateHard;
 				return;
 			}
 
-			if (inWater && Player.ZoneNormalSpace && Main.hardMode && ItemGlobal.ActiveItem(Player).type == ModContent.ItemType<HallowedDredger>() && attempt.uncommon && Main.rand.NextBool(5))
+			if (inWater && Player.ZoneNormalSpace && Main.hardMode && ItemGlobal.ActiveItem(Player).type == ModContent.ItemType<HallowedDredger>() && attempt.crate && attempt.uncommon && Main.rand.NextBool(5))
 			{
 				itemDrop = ItemID.FloatingIslandFishingCrateHard;
 				return;
 			}
 
-			if (attempt.inLava && Main.hardMode && ItemGlobal.ActiveItem(Player).type == ModContent.ItemType<HallowedDredger>() && attempt.uncommon && Main.rand.NextBool(5))
+			if (attempt.inLava && Main.hardMode && ItemGlobal.ActiveItem(Player).type == ModContent.ItemType<HallowedDredger>() && attempt.crate && attempt.uncommon && Main.rand.NextBool(5))
 			{
 				itemDrop = ItemID.LavaCrateHard;
 				return;
 			}
 
-			if (inWater && Player.ZoneBeach && Main.hardMode && attempt.crate && ItemGlobal.ActiveItem(Player).type == ModContent.ItemType<HallowedDredger>() && attempt.uncommon && Main.rand.NextBool(5))
+			if (inWater && Player.ZoneBeach && Main.hardMode && attempt.crate && ItemGlobal.ActiveItem(Player).type == ModContent.ItemType<HallowedDredger>() && attempt.crate && attempt.uncommon && Main.rand.NextBool(5))
 			{
 				itemDrop = ItemID.OceanCrateHard;
 				return;
@@ -218,19 +218,17 @@ namespace WaasephisFishingPlus.Core
 			#endregion
 
 			#region Modded Crates
-			if (inWater && Main.hardMode && NPC.downedPlantBoss && Player.ZoneLihzhardTemple && ItemGlobal.ActiveItem(Player).type == ModContent.ItemType<HallowedDredger>() && attempt.rare && Main.rand.NextBool(7))
+			if (inWater && Main.hardMode && NPC.downedPlantBoss && Player.ZoneLihzhardTemple && ItemGlobal.ActiveItem(Player).type == ModContent.ItemType<HallowedDredger>() && attempt.crate && attempt.rare && Main.rand.NextBool(7))
 			{
-				itemDrop = ModContent.ItemType<LihzahrdCrate>();
+				itemDrop = ModContent.ItemType<LihzahrdCrateItem>();
 				return;
 			}
 
-			if (inWater && Main.hardMode && NPC.downedPlantBoss && Player.ZoneDungeon && ItemGlobal.ActiveItem(Player).type == ModContent.ItemType<HallowedDredger>() && attempt.rare && Main.rand.NextBool(7))
+			if (inWater && Main.hardMode && NPC.downedPlantBoss && Player.ZoneDungeon && ItemGlobal.ActiveItem(Player).type == ModContent.ItemType<HallowedDredger>() && attempt.crate && attempt.rare && Main.rand.NextBool(7))
 			{
-				itemDrop = ModContent.ItemType<LihzahrdCrate>();
+				itemDrop = ModContent.ItemType<CryptCoffinItem>();
 				return;
 			}
-
-			#endregion
 
 			#endregion
 
@@ -334,16 +332,18 @@ namespace WaasephisFishingPlus.Core
 
 			#endregion
 
+			#endregion
+
 			#region Crates
 
 			if (inWater && Main.hardMode && NPC.downedPlantBoss && Player.ZoneLihzhardTemple && attempt.crate && attempt.rare)
 			{
-				itemDrop = ModContent.ItemType<LihzahrdCrate>();
+				itemDrop = ModContent.ItemType<LihzahrdCrateItem>();
             }
 
             if (inWater && Player.ZoneDungeon && Main.hardMode && NPC.downedPlantBoss && attempt.crate && attempt.legendary)
             {
-                itemDrop = ModContent.ItemType<CryptCoffin>();
+                itemDrop = ModContent.ItemType<CryptCoffinItem>();
             }
 			#endregion
 
@@ -362,27 +362,47 @@ namespace WaasephisFishingPlus.Core
 
 			#region Quest Fish
 
-			int mecherel = ModContent.ItemType<Mecherel>();
-			int garnite = ModContent.ItemType<Garnite>();
-			int marbeel = ModContent.ItemType<Marbeel>();
-			int santaray = ModContent.ItemType<SantaRay>();
 			int aetherianAngler = ModContent.ItemType<AetherianAngler>();
+			int garnite = ModContent.ItemType<Garnite>();
+			int glassAnomalocaris = ModContent.ItemType<GlassAnomalocaris>();
 			int hellstoneSnail = ModContent.ItemType<HellstoneSnail>();
+			int marbeel = ModContent.ItemType<Marbeel>();
+			int mecherel = ModContent.ItemType<Mecherel>();
+			int santaray = ModContent.ItemType<SantaRay>();
 
-			if (Main.hardMode && NPC.downedMechBossAny && attempt.questFish == mecherel)
-            {
-                if (attempt.uncommon)
-                {
-                    itemDrop = mecherel;
-                    return;
-                }
-            }
+
+			if (NPC.downedBoss2 && Player.ZoneShimmer && inWater && attempt.questFish == aetherianAngler)
+			{
+				if (attempt.uncommon)
+				{
+					itemDrop = aetherianAngler;
+					return;
+				}
+			}
 
 			if (Player.ZoneGranite && attempt.questFish == garnite)
 			{
 				if (attempt.uncommon)
 				{
 					itemDrop = garnite;
+					return;
+				}
+			}
+
+			if (NPC.downedBoss2 && attempt.CanFishInLava && (Player.ZoneDesert || Player.ZoneUndergroundDesert) && attempt.inLava && attempt.questFish == glassAnomalocaris)
+			{
+				if (attempt.uncommon)
+				{
+					itemDrop = glassAnomalocaris;
+					return;
+				}
+			}
+
+			if (NPC.downedBoss2 && attempt.CanFishInLava && Player.ZoneUnderworldHeight && attempt.inLava && attempt.questFish == hellstoneSnail)
+			{
+				if (attempt.uncommon)
+				{
+					itemDrop = hellstoneSnail;
 					return;
 				}
 			}
@@ -396,23 +416,14 @@ namespace WaasephisFishingPlus.Core
 				}
 			}
 
-			if (NPC.downedBoss2 && Player.ZoneShimmer && inWater && attempt.questFish == aetherianAngler)
-			{
-				if (attempt.uncommon)
-				{
-					itemDrop = aetherianAngler;
-					return;
-				}
-			}
-
-			if (NPC.downedBoss2 && attempt.CanFishInLava && Player.ZoneUnderworldHeight && attempt.inLava && attempt.questFish == hellstoneSnail)
-			{
-				if (attempt.uncommon)
-				{
-					itemDrop = hellstoneSnail;
-					return;
-				}
-			}
+			if (Main.hardMode && NPC.downedMechBossAny && attempt.questFish == mecherel)
+            {
+                if (attempt.uncommon)
+                {
+                    itemDrop = mecherel;
+                    return;
+                }
+            }
 
 			if (Main.hardMode && Player.ZoneSnow && attempt.questFish == santaray)
 			{
