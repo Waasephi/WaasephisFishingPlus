@@ -1,7 +1,8 @@
 ﻿using Terraria;
-using Terraria.ModLoader;
 using Terraria.ID;
+using Terraria.ModLoader;
 using WaasephisFishingPlus.Content.Projectiles.Fishing;
+using WaasephisFishingPlus.Core;
 
 namespace WaasephisFishingPlus.Content.Items.Accessories
 {
@@ -22,7 +23,7 @@ namespace WaasephisFishingPlus.Content.Items.Accessories
 			Item.width = 18;
 			Item.height = 30;
 			Item.value = Item.buyPrice(gold: 1);
-			Item.rare = ItemRarityID.Blue;
+			Item.rare = ModContent.RarityType<BaxterRarity>();
 			Item.accessory = true;
 			Item.expert = false;
 		}

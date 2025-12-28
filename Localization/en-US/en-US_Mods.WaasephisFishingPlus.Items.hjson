@@ -792,3 +792,8 @@ CryptCoffinItem: {
 	Tooltip: "{$CommonItemTooltip.RightClickToOpen}"
 	DisplayName: Crypt Coffin
 }
+
+BaxterByThePondItem: {
+	Tooltip: "'Waasephi'"
+	DisplayName: Baxter By The Pond
+}
