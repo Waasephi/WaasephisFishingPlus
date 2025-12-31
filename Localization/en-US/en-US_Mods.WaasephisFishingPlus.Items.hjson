@@ -148,13 +148,13 @@ TrawlerVest: {
 }
 
 Ebonthodian: {
-	Tooltip: ""
+	Tooltip: "'Caught in the Corruption'"
 	DisplayName: Ebonthodii
 }
 
 Heartang: {
 	DisplayName: Heartang
-	Tooltip: ""
+	Tooltip: "'Caught Underground'"
 }
 
 BonePole: {
@@ -190,32 +190,32 @@ InterstellarCaster: {
 }
 
 SporeSnapper: {
-	Tooltip: ""
+	Tooltip: "'Caught in the Underground Jungle'"
 	DisplayName: Spore Snapper
 }
 
 Gobee: {
-	Tooltip: ""
+	Tooltip: "'Caught in Honey'"
 	DisplayName: Gobee
 }
 
 Asterovy: {
-	Tooltip: ""
+	Tooltip: "'Caught near a Meteorite'"
 	DisplayName: Asterovy
 }
 
 Stardustfish: {
-	Tooltip: ""
+	Tooltip: "'Caught in Space after a Lunar Invasion'"
 	DisplayName: Stardustfish
 }
 
 Solamola: {
-	Tooltip: ""
+	Tooltip: "'Caught in Space after a Lunar Invasion'"
 	DisplayName: Solamola
 }
 
 Nebulagazer: {
-	Tooltip: ""
+	Tooltip: "'Caught in Space after a Lunar Invasion'"
 	DisplayName: Nebulagazer
 }
 
@@ -230,7 +230,7 @@ LihzahrdFilletKnife: {
 
 Vortexeye: {
 	DisplayName: Vortexeye
-	Tooltip: ""
+	Tooltip: "'Caught in Space after a Lunar Invasion'"
 }
 
 SeaCarrot: {
@@ -249,7 +249,7 @@ AetherianAngler: {
 }
 
 Ectolione: {
-	Tooltip: ""
+	Tooltip: "'Caught in a Graveyard'"
 	DisplayName: Ectolione
 }
 
@@ -358,12 +358,12 @@ StablizingPotion: {
 }
 
 Woodskip: {
-	Tooltip: ""
+	Tooltip: "'Caught in the Forest'"
 	DisplayName: Woodskip
 }
 
 AncientSquid: {
-	Tooltip: ""
+	Tooltip: "'Caught during a Sandstorm'"
 	DisplayName: Ancient Squid
 }
 
@@ -396,7 +396,7 @@ LifeBobber: {
 
 Squid: {
 	DisplayName: Squid
-	Tooltip: ""
+	Tooltip: "'Caught in the Ocean'"
 }
 
 Calamari: {
@@ -466,7 +466,7 @@ Oarfish: {
 
 SunRay: {
 	DisplayName: Sun Ray
-	Tooltip: ""
+	Tooltip: "'Caught in Space during the Day'"
 }
 
 TrashHook: {
@@ -533,7 +533,7 @@ FishFlakes: {
 
 EtherianSeadragon: {
 	DisplayName: Etherian Seadragon
-	Tooltip: Can be caught during an Old One's Army after Golem has been defeated
+	Tooltip: "'Caught during an Old One's Army after Golem has been defeated'"
 }
 
 FlaskofBetsy: {
@@ -796,4 +796,23 @@ CryptCoffinItem: {
 BaxterByThePondItem: {
 	Tooltip: "'Waasephi'"
 	DisplayName: Baxter By The Pond
+}
+
+AnglersLostPocketWatch: {
+	Tooltip:
+		'''
+		Cycles the current Angler Quest on use
+		'I don't think he will mind if you keep this...'
+		'''
+	DisplayName: Angler's Lost Pocket Watch
+}
+
+FrigidLoach: {
+	DisplayName: Frigid Loach
+	Tooltip: "'Caught during a Blizzard in Hardmode'"
+}
+
+GrassyGrouper: {
+	DisplayName: Grassy Grouper
+	Tooltip: "'Caught during a Windy Day'"
 }

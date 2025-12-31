@@ -15,17 +15,19 @@ namespace WaasephisFishingPlus.Core
     {
         public override void ModifyNPCLoot(NPC npc, NPCLoot npcLoot)
         {
-			if (npc.type == NPCID.DukeFishron)
+			if (npc.type == NPCID.DukeFishron && !Main.expertMode)
 				npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<RegalScepter>(), 3));
-
-			if (npc.type == NPCID.AnglerFish)
-				npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<AnglerLantern>(), 15));
 
 			if (npc.type == NPCID.AngryNimbus)
 				npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<HappyNimbus>(), 10));
 
 			if (npc.type == NPCID.BloodNautilus)
 				npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<DreadnautilusTrophyItem>(), 10));
+
+			if (npc.type == NPCID.AnglerFish)
+				npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<AnglerLantern>(), 15));
+
+			#region Fish Mush
 
 			if (npc.type == NPCID.Goldfish)
 				npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<FishMush>(), 4, 1, 3));
@@ -71,6 +73,7 @@ namespace WaasephisFishingPlus.Core
 
 			if (npc.type == NPCID.Arapaima)
 				npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<FishMush>(), 3, 3, 6));
+			#endregion
 		}
 
 		public override void EditSpawnRate(Player player, ref int spawnRate, ref int maxSpawns)

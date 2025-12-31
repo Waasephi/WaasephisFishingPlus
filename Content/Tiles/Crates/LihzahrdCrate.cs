@@ -57,19 +57,11 @@ namespace WaasephisFishingPlus.Content.Tiles.Crates
         public override void ModifyItemLoot(ItemLoot itemLoot)
         {
 
-            //<drop vanilla ores>
-            IItemDropRule[] oreTypes = new IItemDropRule[]
-            {
-                ItemDropRule.Common(ItemID.ChlorophyteOre, 1, 6, 12),
-            };
-            itemLoot.Add(new OneFromRulesRule(1, oreTypes));
+			//<drop vanilla ores>
+				itemLoot.Add(ItemDropRule.Common(ItemID.ChlorophyteOre, 1, 6, 12));
 
-            //drop vanilla bars
-            IItemDropRule[] oreBars = new IItemDropRule[]
-            {
-                ItemDropRule.Common(ItemID.ChlorophyteBar, 1, 3, 6),
-            };
-            itemLoot.Add(new OneFromRulesRule(1, oreBars));
+			//drop vanilla bars
+				itemLoot.Add(ItemDropRule.Common(ItemID.ChlorophyteBar, 1, 3, 6));
 
             //drop some potions
             IItemDropRule[] combatPotions = new IItemDropRule[]
@@ -79,7 +71,7 @@ namespace WaasephisFishingPlus.Content.Tiles.Crates
                 ItemDropRule.Common(ItemID.SwiftnessPotion, 3, 1, 3),
                 ItemDropRule.Common(ItemID.SummoningPotion, 2, 1, 2),
                 ItemDropRule.Common(ItemID.AmmoReservationPotion, 2, 1, 2),
-        };
+			};
             itemLoot.Add(new OneFromRulesRule(2, combatPotions));
 
             //healing and mana potions
@@ -103,11 +95,7 @@ namespace WaasephisFishingPlus.Content.Tiles.Crates
             itemLoot.Add(ItemDropRule.Common(ItemID.GoldCoin, 1, 2, 5));
 
 			//extra
-			IItemDropRule[] rareItem =
-			[
-			itemLoot.Add(ItemDropRule.Common(ItemID.LifeFruit, 3)),
-			];
-			itemLoot.Add(new OneFromRulesRule(3, rareItem));
+			itemLoot.Add(ItemDropRule.Common(ItemID.LifeFruit, 3));
 
 			//extra
 			IItemDropRule[] templeItem =
@@ -118,7 +106,7 @@ namespace WaasephisFishingPlus.Content.Tiles.Crates
 			];
 			itemLoot.Add(new OneFromRulesRule(3, templeItem));
 
-
+			itemLoot.Add(ItemDropRule.Common(ItemID.JungleKey, 25));
 		}
     }
 }

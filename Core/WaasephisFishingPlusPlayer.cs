@@ -232,6 +232,8 @@ namespace WaasephisFishingPlus.Core
 
 			#endregion
 
+			#endregion
+
 			#region Fish
 
 			if (inWater && Player.ZoneSandstorm && Player.ZoneDesert && attempt.uncommon && Main.rand.NextBool(5))
@@ -259,9 +261,19 @@ namespace WaasephisFishingPlus.Core
 				itemDrop = ModContent.ItemType<EtherianSeadragon>();
 			}
 
+			if (inWater && Main.hardMode && Player.ZoneSnow && Main.raining && attempt.rare && Main.rand.NextBool(7))
+			{
+				itemDrop = ModContent.ItemType<FrigidLoach>();
+			}
+
 			if (attempt.inHoney && attempt.uncommon && Main.rand.NextBool(3))
 			{
 				itemDrop = ModContent.ItemType<Gobee>();
+			}
+
+			if (inWater && Player.ZonePurity && Main.WindyEnoughForKiteDrops && attempt.uncommon && Main.rand.NextBool(5))
+			{
+				itemDrop = ModContent.ItemType<GrassyGrouper>();
 			}
 
 			if (inWater && underground && attempt.rare && Player.fishingSkill >= 20 && Main.rand.NextBool(5))
@@ -294,7 +306,7 @@ namespace WaasephisFishingPlus.Core
 				itemDrop = ModContent.ItemType<Stardustfish>();
 			}
 
-			if (inWater && attempt.rare && Player.ZoneNormalSpace && Player.fishingSkill >= 30 && Main.rand.NextBool(5))
+			if (inWater && attempt.rare && Main.dayTime && Player.ZoneNormalSpace && Player.fishingSkill >= 30 && Main.rand.NextBool(5))
 			{
 				itemDrop = ModContent.ItemType<SunRay>();
 			}
@@ -330,7 +342,7 @@ namespace WaasephisFishingPlus.Core
 
 			#endregion
 
-			#endregion
+
 
 			#endregion
 

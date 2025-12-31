@@ -8,6 +8,7 @@ using Terraria.GameContent.ObjectInteractions;
 using WaasephisFishingPlus.UserInterfaces;
 using Terraria.Audio;
 using WaasephisFishingPlus.Content.Items.Blocks;
+using WaasephisFishingPlus.Content.Items.Filleting;
 
 namespace WaasephisFishingPlus.Content.Tiles
 {
@@ -38,7 +39,7 @@ namespace WaasephisFishingPlus.Content.Tiles
         {
             Player player = Main.LocalPlayer;
             player.cursorItemIconEnabled = true;
-            player.cursorItemIconID = ModContent.ItemType<FilletingTableItem>();
+            player.cursorItemIconID = ModContent.ItemType<FilletKnife>();
             player.cursorItemIconText = "";
         }
 
@@ -49,7 +50,7 @@ namespace WaasephisFishingPlus.Content.Tiles
             if (player.cursorItemIconText == "")
             {
                 player.cursorItemIconEnabled = false;
-                player.cursorItemIconID = 0;
+                player.cursorItemIconID = ItemID.None;
             }
         }
 

@@ -44,7 +44,7 @@ namespace WaasephisFishingPlus.Content.NPCs.Friendly
 			NPC.HitSound = SoundID.NPCHit1;
 			NPC.DeathSound = SoundID.NPCDeath14;
 			NPC.knockBackResist = 0f;
-			NPC.aiStyle = 7;
+			NPC.aiStyle = NPCAIStyleID.Passive;
 			TownNPCStayingHomeless = true;
 		}
 
@@ -70,6 +70,7 @@ namespace WaasephisFishingPlus.Content.NPCs.Friendly
 		{
 			var npcShop = new NPCShop(Type, ShopName)
 			.Add<GoldfishMirror>()
+			.Add<AnglersLostPocketWatch>(Condition.DownedDeerclops, Condition.Thunderstorm)
 			.Add(ItemID.WoodFishingPole)
 			.Add(ItemID.ReinforcedFishingPole, Condition.DownedSkeletron)
 			.Add<GoldfishingRod>(Condition.Hardmode)

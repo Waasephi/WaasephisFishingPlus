@@ -15,8 +15,6 @@ namespace WaasephisFishingPlus.Content.Items.Tools
 		{
 			Item.width = 34;
 			Item.height = 46;
-			Item.useTime = 30;
-			Item.useAnimation = 22;
 			Item.useTime = 35;
 			Item.useAnimation = 35;
 			Item.noUseGraphic = true;

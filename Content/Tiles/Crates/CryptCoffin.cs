@@ -70,12 +70,9 @@ namespace WaasephisFishingPlus.Content.Tiles.Crates
         public override void ModifyItemLoot(ItemLoot itemLoot)
         {
 
-            //<drop vanilla ores>
-            IItemDropRule[] ectoplasm = new IItemDropRule[]
-            {
-                ItemDropRule.Common(ItemID.Ectoplasm, 1, 1, 3),
-            };
-            itemLoot.Add(new OneFromRulesRule(1, ectoplasm));
+            //Ectoplasm
+				itemLoot.Add(ItemDropRule.Common(ItemID.Ectoplasm, 1, 1, 3));
+
 
             //drop some potions
             IItemDropRule[] combatPotions = new IItemDropRule[]
@@ -97,14 +94,10 @@ namespace WaasephisFishingPlus.Content.Tiles.Crates
 
             itemLoot.Add(new OneFromRulesRule(2, resourcePotions));
 
-            //fishing bait
-            IItemDropRule[] highendBait = new IItemDropRule[]
-            {
-                ItemDropRule.Common(ItemID.MasterBait, 1, 4, 8),
-            };
-            itemLoot.Add(new OneFromRulesRule(1, highendBait));
+			//Master Bait
+			itemLoot.Add(ItemDropRule.Common(ItemID.MasterBait, 1, 4, 8));
 
-			//coins
+			//Coins
 			itemLoot.Add(ItemDropRule.Common(ItemID.GoldCoin, 1, 5, 10));
 
 			//Lock Box Mold

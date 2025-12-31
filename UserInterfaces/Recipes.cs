@@ -498,9 +498,21 @@ namespace WaasephisFishingPlus.UserInterfaces
 			AddRecipe(item, Recipe);
 
 			item = new Item();
+			item.SetDefaults(ModContent.ItemType<FrigidLoach>());
+			Recipe = new FishRecipes { DefaultAmount = 1, Output = new Item(), KnifeLevel = 1, ignoreKnife = true };
+			Recipe.Output.SetDefaults(ItemID.FrostCore);
+			AddRecipe(item, Recipe);
+
+			item = new Item();
 			item.SetDefaults(ModContent.ItemType<Gobee>());
 			Recipe = new FishRecipes { DefaultAmount = 1, Output = new Item(), KnifeLevel = 0 };
 			Recipe.Output.SetDefaults(ItemID.Stinger);
+			AddRecipe(item, Recipe);
+
+			item = new Item();
+			item.SetDefaults(ModContent.ItemType<GrassyGrouper>());
+			Recipe = new FishRecipes { DefaultAmount = 1, Output = new Item(), KnifeLevel = 0 };
+			Recipe.Output.SetDefaults(ItemID.HerbBag);
 			AddRecipe(item, Recipe);
 
 			item = new Item();

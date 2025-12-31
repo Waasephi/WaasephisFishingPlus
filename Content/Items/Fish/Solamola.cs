@@ -51,7 +51,7 @@ namespace WaasephisFishingPlus.Content.Items.Fish
             recipe.AddTile(TileID.Bottles);
             recipe.Register();
 
-            Recipe recipe2 = Recipe.Create(ItemID.WarmthPotion, 3);
+            Recipe recipe2 = Recipe.Create(ItemID.RagePotion, 3);
             recipe2.AddIngredient(ItemID.BottledWater, 3);
             recipe2.AddIngredient(ModContent.ItemType<Solamola>());
             recipe2.AddIngredient(ItemID.Shiverthorn);

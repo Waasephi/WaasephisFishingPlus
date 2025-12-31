@@ -12,7 +12,7 @@ namespace WaasephisFishingPlus.Content.Items.Materials
 
 		public override void SetDefaults() 
 		{
-			Item.width = 22;
+			Item.width = 20;
 			Item.height = 22;
 			Item.value = Item.sellPrice(silver: 2);
 			Item.rare = ItemRarityID.Blue;

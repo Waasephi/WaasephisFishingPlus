@@ -64,9 +64,8 @@ namespace WaasephisFishingPlus.Content.Tiles
 
         public override bool RightClick(int i, int j)
         {
-
-
             Player player = Main.LocalPlayer;
+			SoundEngine.PlaySound(SoundID.Grab, player.Center);
 
 			player.AddBuff(ModContent.BuffType<TackleBoxBuff>(), 14400);
 
