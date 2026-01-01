@@ -4,10 +4,11 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.GameContent.ItemDropRules;
 using WaasephisFishingPlus.Content.Items.Bait;
+using WaasephisFishingPlus.Content.Items.Materials;
 
-namespace WaasephisFishingPlus.Content.NPCs.Passive
+namespace WaasephisFishingPlus.Content.NPCs.Passive.FishCritters
 {
-    public class DamselFishCritter : ModNPC
+    public class NeonTetraCritter : ModNPC
     {
         public override void SetStaticDefaults()
         {
@@ -17,8 +18,8 @@ namespace WaasephisFishingPlus.Content.NPCs.Passive
 
         public override void SetDefaults()
         {
-            NPC.width = 34;
-            NPC.height = 22;
+            NPC.width = 36;
+            NPC.height = 16;
             NPC.damage = 0;
             NPC.lifeMax = 5;
             NPC.life = 5;
@@ -31,15 +32,15 @@ namespace WaasephisFishingPlus.Content.NPCs.Passive
             NPC.noGravity = true;
             AIType = NPCID.Piranha;
             AnimationType = NPCID.Piranha;
-            NPC.catchItem = ItemID.Damselfish;
+            NPC.catchItem = ItemID.NeonTetra;
         }
 
-        public override float SpawnChance(NPCSpawnInfo spawnInfo)
-        {
-            return spawnInfo.Water && (spawnInfo.Player.ZoneSkyHeight || spawnInfo.Player.ZoneNormalSpace) ? 0.6f : 0f;
-        }
+		public override float SpawnChance(NPCSpawnInfo spawnInfo)
+		{
+			return spawnInfo.Water && spawnInfo.Player.ZoneJungle ? 0.6f : 0f;
+		}
 
-        public override void HitEffect(NPC.HitInfo hit)
+		public override void HitEffect(NPC.HitInfo hit)
         {
             if (NPC.life <= 0)
             {
@@ -54,15 +55,16 @@ namespace WaasephisFishingPlus.Content.NPCs.Passive
         }
 		public override void ModifyNPCLoot(NPCLoot npcLoot)
 		{
-			npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<FishMush>(), 15, 1, 2));
+			npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<NeonScales>(), 5, 1, 2));
+			npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<FishMush>(), 3, 1, 2));
 		}
 
 		public override void SetBestiary(BestiaryDatabase database, BestiaryEntry bestiaryEntry)
         {
             bestiaryEntry.Info.AddRange(
             [
-               BestiaryDatabaseNPCsPopulator.CommonTags.SpawnConditions.Biomes.Sky,
-				new FlavorTextBestiaryInfoElement("Mods.WaasephisFishingPlus.Bestiary.DamselFishCritter"),
+               BestiaryDatabaseNPCsPopulator.CommonTags.SpawnConditions.Biomes.Jungle,
+				new FlavorTextBestiaryInfoElement("Mods.WaasephisFishingPlus.Bestiary.NeonTetraCritter"),
 			]);
         }
     }

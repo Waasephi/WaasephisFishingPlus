@@ -816,3 +816,8 @@ GrassyGrouper: {
 	DisplayName: Grassy Grouper
 	Tooltip: "'Caught during a Windy Day'"
 }
+
+PotSnailUGItem: {
+	Tooltip: ""
+	DisplayName: Pot Snail U G Item
+}

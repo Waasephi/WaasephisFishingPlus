@@ -5,7 +5,7 @@ using Terraria.ModLoader;
 using Terraria.GameContent.ItemDropRules;
 using WaasephisFishingPlus.Content.Items.Bait;
 
-namespace WaasephisFishingPlus.Content.NPCs.Passive
+namespace WaasephisFishingPlus.Content.NPCs.Passive.FishCritters
 {
     public class FlounderCritter : ModNPC
     {

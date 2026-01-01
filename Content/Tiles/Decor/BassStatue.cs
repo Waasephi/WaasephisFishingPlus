@@ -5,7 +5,7 @@ using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
-using WaasephisFishingPlus.Content.NPCs.Passive;
+using WaasephisFishingPlus.Content.NPCs.Passive.FishCritters;
 
 namespace WaasephisFishingPlus.Content.Tiles.Decor
 {

@@ -5,9 +5,9 @@ using Terraria.ModLoader;
 using Terraria.GameContent.ItemDropRules;
 using WaasephisFishingPlus.Content.Items.Bait;
 
-namespace WaasephisFishingPlus.Content.NPCs.Passive
+namespace WaasephisFishingPlus.Content.NPCs.Passive.FishCritters
 {
-    public class AtlanticCodCritter : ModNPC
+    public class ShrimpCritter : ModNPC
     {
         public override void SetStaticDefaults()
         {
@@ -17,8 +17,8 @@ namespace WaasephisFishingPlus.Content.NPCs.Passive
 
         public override void SetDefaults()
         {
-            NPC.width = 36;
-            NPC.height = 26;
+            NPC.width = 24;
+            NPC.height = 30;
             NPC.damage = 0;
             NPC.lifeMax = 5;
             NPC.life = 5;
@@ -27,16 +27,16 @@ namespace WaasephisFishingPlus.Content.NPCs.Passive
             NPC.DeathSound = SoundID.NPCDeath1;
             NPC.value = 0f;
             NPC.knockBackResist = 0f;
-            NPC.aiStyle = NPCAIStyleID.Piranha;
+            NPC.aiStyle = NPCAIStyleID.Seahorse;
             NPC.noGravity = true;
-            AIType = NPCID.Piranha;
-            AnimationType = NPCID.Piranha;
-            NPC.catchItem = ItemID.AtlanticCod;
+            AIType = NPCID.Seahorse;
+            AnimationType = NPCID.Seahorse;
+            NPC.catchItem = ItemID.Shrimp;
         }
 
         public override float SpawnChance(NPCSpawnInfo spawnInfo)
         {
-            return spawnInfo.Water && spawnInfo.Player.ZoneSnow ? 0.75f : 0f;
+            return spawnInfo.Water && spawnInfo.Player.ZoneBeach ? 0.7f : 0f;
         }
 
         public override void HitEffect(NPC.HitInfo hit)
@@ -61,8 +61,8 @@ namespace WaasephisFishingPlus.Content.NPCs.Passive
         {
             bestiaryEntry.Info.AddRange(
             [
-               BestiaryDatabaseNPCsPopulator.CommonTags.SpawnConditions.Biomes.Snow,
-				new FlavorTextBestiaryInfoElement("Mods.WaasephisFishingPlus.Bestiary.AtlanticCodCritter"),
+               BestiaryDatabaseNPCsPopulator.CommonTags.SpawnConditions.Biomes.Ocean,
+				new FlavorTextBestiaryInfoElement("Mods.WaasephisFishingPlus.Bestiary.ShrimpCritter"),
 			]);
         }
     }

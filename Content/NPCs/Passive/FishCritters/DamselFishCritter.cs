@@ -2,11 +2,12 @@ using Terraria.GameContent.Bestiary;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using Microsoft.Xna.Framework;
+using Terraria.GameContent.ItemDropRules;
+using WaasephisFishingPlus.Content.Items.Bait;
 
-namespace WaasephisFishingPlus.Content.NPCs.Passive
+namespace WaasephisFishingPlus.Content.NPCs.Passive.FishCritters
 {
-    public class BombfishCritter : ModNPC
+    public class DamselFishCritter : ModNPC
     {
         public override void SetStaticDefaults()
         {
@@ -16,12 +17,12 @@ namespace WaasephisFishingPlus.Content.NPCs.Passive
 
         public override void SetDefaults()
         {
-            NPC.width = 40;
-            NPC.height = 36;
+            NPC.width = 34;
+            NPC.height = 22;
             NPC.damage = 0;
             NPC.lifeMax = 5;
             NPC.life = 5;
-            NPC.defense = 20;
+            NPC.defense = 5;
             NPC.HitSound = SoundID.NPCHit1;
             NPC.DeathSound = SoundID.NPCDeath1;
             NPC.value = 0f;
@@ -30,12 +31,12 @@ namespace WaasephisFishingPlus.Content.NPCs.Passive
             NPC.noGravity = true;
             AIType = NPCID.Piranha;
             AnimationType = NPCID.Piranha;
-            NPC.catchItem = ItemID.BombFish;
+            NPC.catchItem = ItemID.Damselfish;
         }
 
         public override float SpawnChance(NPCSpawnInfo spawnInfo)
         {
-            return spawnInfo.Water ? 0.1f : 0f;
+            return spawnInfo.Water && (spawnInfo.Player.ZoneSkyHeight || spawnInfo.Player.ZoneNormalSpace) ? 0.6f : 0f;
         }
 
         public override void HitEffect(NPC.HitInfo hit)
@@ -48,22 +49,20 @@ namespace WaasephisFishingPlus.Content.NPCs.Passive
                     int dust = Dust.NewDust(NPC.position, NPC.width, NPC.height, DustID.Blood);
                     Main.dust[dust].noGravity = false;
                     Main.dust[dust].velocity *= 0.5f;
-				}
-			}
-		}
-
-		public override void OnKill()
+                }
+            }
+        }
+		public override void ModifyNPCLoot(NPCLoot npcLoot)
 		{
-			Projectile.NewProjectile(Terraria.Entity.InheritSource(NPC), NPC.Center, new Vector2(),
-			ProjectileID.TNTBarrel, 100, 0f, Main.myPlayer);
+			npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<FishMush>(), 15, 1, 2));
 		}
 
 		public override void SetBestiary(BestiaryDatabase database, BestiaryEntry bestiaryEntry)
         {
             bestiaryEntry.Info.AddRange(
             [
-               BestiaryDatabaseNPCsPopulator.CommonTags.SpawnConditions.Biomes.Surface,
-				new FlavorTextBestiaryInfoElement("Mods.WaasephisFishingPlus.Bestiary.BombfishCritter"),
+               BestiaryDatabaseNPCsPopulator.CommonTags.SpawnConditions.Biomes.Sky,
+				new FlavorTextBestiaryInfoElement("Mods.WaasephisFishingPlus.Bestiary.DamselFishCritter"),
 			]);
         }
     }

@@ -5,9 +5,9 @@ using Terraria.ModLoader;
 using Terraria.GameContent.ItemDropRules;
 using WaasephisFishingPlus.Content.Items.Bait;
 
-namespace WaasephisFishingPlus.Content.NPCs.Passive
+namespace WaasephisFishingPlus.Content.NPCs.Passive.FishCritters
 {
-    public class EbonkoiCritter : ModNPC
+    public class AtlanticCodCritter : ModNPC
     {
         public override void SetStaticDefaults()
         {
@@ -18,7 +18,7 @@ namespace WaasephisFishingPlus.Content.NPCs.Passive
         public override void SetDefaults()
         {
             NPC.width = 36;
-            NPC.height = 22;
+            NPC.height = 26;
             NPC.damage = 0;
             NPC.lifeMax = 5;
             NPC.life = 5;
@@ -31,15 +31,15 @@ namespace WaasephisFishingPlus.Content.NPCs.Passive
             NPC.noGravity = true;
             AIType = NPCID.Piranha;
             AnimationType = NPCID.Piranha;
-            NPC.catchItem = ItemID.Ebonkoi;
+            NPC.catchItem = ItemID.AtlanticCod;
         }
 
-		public override float SpawnChance(NPCSpawnInfo spawnInfo)
-		{
-			return spawnInfo.Water && spawnInfo.Player.ZoneCorrupt ? 0.6f : 0f;
-		}
+        public override float SpawnChance(NPCSpawnInfo spawnInfo)
+        {
+            return spawnInfo.Water && spawnInfo.Player.ZoneSnow ? 0.75f : 0f;
+        }
 
-		public override void HitEffect(NPC.HitInfo hit)
+        public override void HitEffect(NPC.HitInfo hit)
         {
             if (NPC.life <= 0)
             {
@@ -54,15 +54,15 @@ namespace WaasephisFishingPlus.Content.NPCs.Passive
         }
 		public override void ModifyNPCLoot(NPCLoot npcLoot)
 		{
-			npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<FishMush>(), 4, 1, 2));
+			npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<FishMush>(), 3, 1, 2));
 		}
 
 		public override void SetBestiary(BestiaryDatabase database, BestiaryEntry bestiaryEntry)
         {
             bestiaryEntry.Info.AddRange(
             [
-               BestiaryDatabaseNPCsPopulator.CommonTags.SpawnConditions.Biomes.TheCorruption,
-				new FlavorTextBestiaryInfoElement("Mods.WaasephisFishingPlus.Bestiary.EbonkoiCritter"),
+               BestiaryDatabaseNPCsPopulator.CommonTags.SpawnConditions.Biomes.Snow,
+				new FlavorTextBestiaryInfoElement("Mods.WaasephisFishingPlus.Bestiary.AtlanticCodCritter"),
 			]);
         }
     }
