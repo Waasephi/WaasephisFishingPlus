@@ -8,15 +8,12 @@ namespace WaasephisFishingPlus.Content.NPCs.Passive.PotSnails
 {
     public class PotSnailUGPot : ModProjectile
     {
-        //public override void SetStaticDefaults() => DisplayName.SetDefault("Unicorn Spike");
-
         public override void SetDefaults()
         {
             Projectile.friendly = true;
             Projectile.ignoreWater = false;
             Projectile.tileCollide = true;
             Projectile.DamageType = DamageClass.Ranged;
-
             Projectile.height = 18;
             Projectile.width = 20;
             Projectile.penetrate = -1;
@@ -30,15 +27,14 @@ namespace WaasephisFishingPlus.Content.NPCs.Passive.PotSnails
 			return false;
 		}
 
-		public static void SpawnItem(int Type, int Amount)
+		public void SpawnItem(int Type, int Amount)
 		{
-			int newItem = Item.NewItem(Projectile.GetSource_DropAsItem, Projectile.GetSource_DropAsItem(), Type, Amount);
+			int newItem = Item.NewItem(Projectile.GetSource_Death(), Projectile.Hitbox, Type, Amount);
 			NetMessage.SendData(MessageID.SyncItem, -1, -1, null, newItem, 1f);
 		}
 
 		public override void Kill(int timeLeft)
 		{
-
 			SoundEngine.PlaySound(SoundID.Shatter, Projectile.position);
 			for (int i = 0; i < 5; i++)
 			{
