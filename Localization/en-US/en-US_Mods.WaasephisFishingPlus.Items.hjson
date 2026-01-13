@@ -818,6 +818,128 @@ GrassyGrouper: {
 }
 
 PotSnailUGItem: {
-	Tooltip: ""
-	DisplayName: Pot Snail U G Item
+	DisplayName: Potted Snail
+	Tooltip:
+		'''
+		Throw the Pot on the ground to see what you get!
+		'How rude...'
+		'''
+}
+
+PotSnailCorruptionItem: {
+	DisplayName: Potted Snail
+	Tooltip:
+		'''
+		Throw the Pot on the ground to see what you get!
+		'How rude...'
+		'''
+}
+
+PotSnailTempleItem: {
+	DisplayName: Potted Snail
+	Tooltip:
+		'''
+		Throw the Pot on the ground to see what you get!
+		'How rude...'
+		'''
+}
+
+PotSnailJungleItem: {
+	DisplayName: Potted Snail
+	Tooltip:
+		'''
+		Throw the Pot on the ground to see what you get!
+		'How rude...'
+		'''
+}
+
+PotSnailIceItem: {
+	DisplayName: Potted Snail
+	Tooltip:
+		'''
+		Throw the Pot on the ground to see what you get!
+		'How rude...'
+		'''
+}
+
+PotSnailHellItem: {
+	DisplayName: Potted Snail
+	Tooltip:
+		'''
+		Throw the Pot on the ground to see what you get!
+		'How rude...'
+		'''
+}
+
+PotSnailDungeonItem: {
+	DisplayName: Potted Snail
+	Tooltip:
+		'''
+		Throw the Pot on the ground to see what you get!
+		'How rude...'
+		'''
+}
+
+PotSnailDesertItem: {
+	DisplayName: Potted Snail
+	Tooltip:
+		'''
+		Throw the Pot on the ground to see what you get!
+		'How rude...'
+		'''
+}
+
+RedGelatin: {
+	DisplayName: Red Gelatin
+	Tooltip:
+		'''
+		Minor improvements to all stats
+		Slightly increases life regeneration
+		'Tastes like cherries'
+		'''
+}
+
+PurpleGelatin: {
+	Tooltip:
+		'''
+		Minor improvements to all stats
+		Slightly increases damage
+		'Tastes like grapes'
+		'''
+	DisplayName: Purple Gelatin
+}
+
+GreenGelatin: {
+	Tooltip:
+		'''
+		Minor improvements to all stats
+		Slightly increases movement speed
+		'Tastes like limes'
+		'''
+	DisplayName: Green Gelatin
+}
+
+BlueGelatin: {
+	Tooltip:
+		'''
+		Minor improvements to all stats
+		Slightly increases defense
+		'Tastes like blueberries'
+		'''
+	DisplayName: Blue Gelatin
+}
+
+YellowGelatin: {
+	DisplayName: Yellow Gelatin
+	Tooltip:
+		'''
+		Minor improvements to all stats
+		Emits a slight aura of light
+		'Tastes like lemons'
+		'''
+}
+
+TheSludge: {
+	Tooltip: "[c/000000:Excuse me?! That's my ][c/ff0000:SLUDGE][c/000000:!!!]"
+	DisplayName: The Sludge
 }

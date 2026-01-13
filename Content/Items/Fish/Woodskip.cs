@@ -6,11 +6,6 @@ namespace WaasephisFishingPlus.Content.Items.Fish
 {
     public class Woodskip : ModItem
     {
-        public override void SetStaticDefaults()
-        {
-
-        }
-
         public override void SetDefaults()
         {
             Item.width = 38;

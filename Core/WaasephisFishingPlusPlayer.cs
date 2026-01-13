@@ -11,6 +11,7 @@ using WaasephisFishingPlus.Content.Items.FishingRods;
 using WaasephisFishingPlus.Content.Items.Pets;
 using WaasephisFishingPlus.Content.Items.Weapons.Melee;
 using WaasephisFishingPlus.Content.Items.Weapons.Ranged;
+using WaasephisFishingPlus.Content.Items.Tools;
 
 namespace WaasephisFishingPlus.Core
 {
@@ -110,7 +111,7 @@ namespace WaasephisFishingPlus.Core
 				return;
 			}
 
-			if (inWater && Player.ZoneDesert || Player.ZoneUndergroundDesert && !Main.hardMode && ItemGlobal.ActiveItem(Player).type == ModContent.ItemType<HallowedDredger>() && attempt.crate && attempt.rare && Main.rand.NextBool(5))
+			if (inWater && (Player.ZoneDesert || Player.ZoneUndergroundDesert) && !Main.hardMode && ItemGlobal.ActiveItem(Player).type == ModContent.ItemType<HallowedDredger>() && attempt.crate && attempt.rare && Main.rand.NextBool(5))
 			{
 				itemDrop = ItemID.OasisCrate;
 				return;
@@ -191,7 +192,7 @@ namespace WaasephisFishingPlus.Core
 				return;
 			}
 
-			if (inWater && Player.ZoneDesert || Player.ZoneUndergroundDesert && Main.hardMode && ItemGlobal.ActiveItem(Player).type == ModContent.ItemType<HallowedDredger>() && attempt.crate && attempt.uncommon && Main.rand.NextBool(5))
+			if (inWater && (Player.ZoneDesert || Player.ZoneUndergroundDesert) && Main.hardMode && ItemGlobal.ActiveItem(Player).type == ModContent.ItemType<HallowedDredger>() && attempt.crate && attempt.uncommon && Main.rand.NextBool(5))
 			{
 				itemDrop = ItemID.OasisCrateHard;
 				return;
@@ -261,7 +262,7 @@ namespace WaasephisFishingPlus.Core
 				itemDrop = ModContent.ItemType<EtherianSeadragon>();
 			}
 
-			if (inWater && Main.hardMode && Player.ZoneSnow && Main.raining && attempt.rare && Main.rand.NextBool(7))
+			if (inWater && Main.hardMode && Player.ZoneSnow && Main.raining && attempt.rare && Main.rand.NextBool(5))
 			{
 				itemDrop = ModContent.ItemType<FrigidLoach>();
 			}
@@ -309,6 +310,11 @@ namespace WaasephisFishingPlus.Core
 			if (inWater && attempt.rare && Main.dayTime && Player.ZoneNormalSpace && Player.fishingSkill >= 30 && Main.rand.NextBool(5))
 			{
 				itemDrop = ModContent.ItemType<SunRay>();
+			}
+
+			if (inWater && attempt.legendary && Main.rand.NextBool(1000))
+			{
+				itemDrop = ModContent.ItemType<TheSludge>();
 			}
 
 			if (inWater && attempt.veryrare && Player.ZoneNormalSpace && NPC.downedTowerVortex && Main.rand.NextBool(8))

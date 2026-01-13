@@ -47,15 +47,11 @@ namespace WaasephisFishingPlus.Core
 			#region Crate Adjustments
 			if (item.type == ItemID.WoodenCrate)
 			{
-				int[] baxterPainting = new int[] { ModContent.ItemType<BaxterByThePondItem>() };
-
-				itemLoot.Add(ItemDropRule.OneFromOptions(20, baxterPainting));
+				itemLoot.Add(ItemDropRule.Common(ModContent.ItemType<BaxterByThePondItem>(), 20));
 			}
 			if (item.type == ItemID.WoodenCrateHard)
 			{
-				int[] baxterPainting = new int[] { ModContent.ItemType<BaxterByThePondItem>() };
-
-				itemLoot.Add(ItemDropRule.OneFromOptions(10, baxterPainting));
+				itemLoot.Add(ItemDropRule.Common(ModContent.ItemType<BaxterByThePondItem>(), 10));
 			}
 			if (item.type == ItemID.FrozenCrateHard)
 			{
@@ -72,6 +68,8 @@ namespace WaasephisFishingPlus.Core
 			if (item.type == ItemID.JungleFishingCrateHard)
 			{
 				itemLoot.Add(ItemDropRule.Common(ItemID.JungleKey, 50));
+
+				itemLoot.Add(ItemDropRule.Common(ItemID.Uzi, 10));
 			}
 			if (item.type == ItemID.CorruptFishingCrateHard)
 			{

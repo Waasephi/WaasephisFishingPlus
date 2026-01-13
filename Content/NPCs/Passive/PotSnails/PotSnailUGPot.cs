@@ -45,12 +45,25 @@ namespace WaasephisFishingPlus.Content.NPCs.Passive.PotSnails
             {
                 int item = 0;
 
+				SpawnItem(ItemID.Torch, Main.rand.Next(1, 8));
+				SpawnItem(ItemID.LesserHealingPotion, Main.rand.Next(1, 3));
+
+				if (Main.rand.NextBool(5))
+				{
+					SpawnItem(ItemID.Bomb, Main.rand.Next(1, 5));
+				}
+
+				if (Main.rand.NextBool(5))
+				{
+					SpawnItem(ItemID.Rope, Main.rand.Next(1, 15));
+				}
+
 				SpawnItem(ItemID.CopperCoin, Main.rand.Next(1, 90));
 				SpawnItem(ItemID.SilverCoin, Main.rand.Next(1, 30));
 
                 if (Main.rand.NextBool(5))
                 {
-                    item = Item.NewItem(Projectile.GetSource_DropAsItem(), Projectile.getRect(), ItemID.GoldCoin);
+                    SpawnItem(ItemID.GoldCoin, 1);
                 }
                 if (Main.rand.NextBool(50))
                 {
@@ -58,7 +71,7 @@ namespace WaasephisFishingPlus.Content.NPCs.Passive.PotSnails
                     Projectile.position, Vector2.Zero, ProjectileID.CoinPortal, 0, 0, Projectile.owner);
                 }
 				//drop some potions
-				if (Main.rand.NextBool(2))
+				if (Main.rand.NextBool(5))
 				{
 					int[] BuffPotions = new int[] { ItemID.IronskinPotion, ItemID.RegenerationPotion, ItemID.SpelunkerPotion, ItemID.ShinePotion, ItemID.FeatherfallPotion,
 					ItemID.NightOwlPotion, ItemID.SwiftnessPotion, ItemID.WaterWalkingPotion, ItemID.MiningPotion, ItemID.ArcheryPotion, ItemID.CalmingPotion,
@@ -67,12 +80,18 @@ namespace WaasephisFishingPlus.Content.NPCs.Passive.PotSnails
 
 					SpawnItem(Main.rand.Next(BuffPotions), 1);
 				}
-				if (!Main.rand.NextBool(1))
+				if (Main.rand.NextBool(3))
 				{
 					int[] TeleportPotions = new int[] { ItemID.RecallPotion, ItemID.RecallPotion, ItemID.RecallPotion, ItemID.WormholePotion };
 
 					SpawnItem(Main.rand.Next(TeleportPotions), 1);
 				}
+
+				if (Main.rand.NextBool(5))
+				{
+					SpawnItem(ItemID.Heart, Main.rand.Next(1, 2));
+				}
+
 				// Sync the drop for multiplayer
 				// Note the usage of Terraria.ID.MessageID, please use this!
 				if (Main.netMode == NetmodeID.MultiplayerClient && item >= 0)

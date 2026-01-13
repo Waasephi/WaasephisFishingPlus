@@ -10,6 +10,9 @@ using WaasephisFishingPlus.Content.Items.Weapons.Melee;
 using WaasephisFishingPlus.Content.Items.Weapons.Ranged;
 using static WaasephisFishingPlus.WaasephisFishingPlus;
 using static WaasephisFishingPlus.UserInterfaces.FilletingUI;
+using Terraria.ModLoader.Default;
+using WaasephisFishingPlus.Content.Items.Consumables.PotSnails;
+using WaasephisFishingPlus.Content.Items.Tools;
 
 namespace WaasephisFishingPlus.UserInterfaces
 {
@@ -558,6 +561,12 @@ namespace WaasephisFishingPlus.UserInterfaces
 			AddRecipe(item, Recipe);
 
 			item = new Item();
+			item.SetDefaults(ModContent.ItemType<TheSludge>());
+			Recipe = new FishRecipes { DefaultAmount = 1, Output = new Item(), KnifeLevel = 0 };
+			Recipe.Output.SetDefaults(ModContent.ItemType<TheSludge>());
+			AddRecipe(item, Recipe);
+
+			item = new Item();
 			item.SetDefaults(ModContent.ItemType<Vortexeye>());
 			Recipe = new FishRecipes { DefaultAmount = 2, Output = new Item(), KnifeLevel = 2 };
 			Recipe.Output.SetDefaults(ItemID.FragmentVortex);
@@ -761,6 +770,58 @@ namespace WaasephisFishingPlus.UserInterfaces
 			item.SetDefaults(ModContent.ItemType<SeaUrchin>());
 			Recipe = new FishRecipes { DefaultAmount = 1, Output = new Item(), KnifeLevel = 1 };
 			Recipe.Output.SetDefaults(ItemID.VialofVenom);
+			AddRecipe(item, Recipe);
+
+			#endregion
+
+			#region Modded Critters
+
+			item = new Item();
+			item.SetDefaults(ModContent.ItemType<PotSnailCorruptionItem>());
+			Recipe = new FishRecipes { DefaultAmount = 1, Output = new Item(), KnifeLevel = 0 };
+			Recipe.Output.SetDefaults(ModContent.ItemType<PurpleGelatin>());
+			AddRecipe(item, Recipe);
+
+			item = new Item();
+			item.SetDefaults(ModContent.ItemType<PotSnailDesertItem>());
+			Recipe = new FishRecipes { DefaultAmount = 1, Output = new Item(), KnifeLevel = 0 };
+			Recipe.Output.SetDefaults(ModContent.ItemType<YellowGelatin>());
+			AddRecipe(item, Recipe);
+
+			item = new Item();
+			item.SetDefaults(ModContent.ItemType<PotSnailDungeonItem>());
+			Recipe = new FishRecipes { DefaultAmount = 1, Output = new Item(), KnifeLevel = 0 };
+			Recipe.Output.SetDefaults(ModContent.ItemType<PurpleGelatin>());
+			AddRecipe(item, Recipe);
+
+			item = new Item();
+			item.SetDefaults(ModContent.ItemType<PotSnailHellItem>());
+			Recipe = new FishRecipes { DefaultAmount = 1, Output = new Item(), KnifeLevel = 0 };
+			Recipe.Output.SetDefaults(ModContent.ItemType<RedGelatin>());
+			AddRecipe(item, Recipe);
+
+			item = new Item();
+			item.SetDefaults(ModContent.ItemType<PotSnailIceItem>());
+			Recipe = new FishRecipes { DefaultAmount = 1, Output = new Item(), KnifeLevel = 0 };
+			Recipe.Output.SetDefaults(ModContent.ItemType<BlueGelatin>());
+			AddRecipe(item, Recipe);
+
+			item = new Item();
+			item.SetDefaults(ModContent.ItemType<PotSnailJungleItem>());
+			Recipe = new FishRecipes { DefaultAmount = 1, Output = new Item(), KnifeLevel = 0 };
+			Recipe.Output.SetDefaults(ModContent.ItemType<GreenGelatin>());
+			AddRecipe(item, Recipe);
+
+			item = new Item();
+			item.SetDefaults(ModContent.ItemType<PotSnailTempleItem>());
+			Recipe = new FishRecipes { DefaultAmount = 1, Output = new Item(), KnifeLevel = 0 };
+			Recipe.Output.SetDefaults(ModContent.ItemType<GreenGelatin>());
+			AddRecipe(item, Recipe);
+
+			item = new Item();
+			item.SetDefaults(ModContent.ItemType<PotSnailUGItem>());
+			Recipe = new FishRecipes { DefaultAmount = 1, Output = new Item(), KnifeLevel = 0 };
+			Recipe.Output.SetDefaults(ModContent.ItemType<BlueGelatin>());
 			AddRecipe(item, Recipe);
 
 			#endregion

@@ -27,3 +27,28 @@ ClamMinionBuff: {
 	Description: The clam will fight for you
 	DisplayName: Clam Minion
 }
+
+MinorSwiftnessBuff: {
+	Description: 15% increased movement speed
+	DisplayName: Minor Swiftness
+}
+
+MinorShineBuff: {
+	Description: Emitting a small amount of light
+	DisplayName: Minor Shine
+}
+
+MinorRegenerationBuff: {
+	Description: Provides slight life regeneration
+	DisplayName: Minor Regeneration
+}
+
+MinorDefenseBuff: {
+	Description: Increases defense by 4
+	DisplayName: Minor Ironskin
+}
+
+MinorDamageBuff: {
+	Description: 5% increased damage
+	DisplayName: Minor Wrath
+}

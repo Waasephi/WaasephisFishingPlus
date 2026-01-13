@@ -1,7 +1,30 @@
-This is a simple content mod focused entirely on adding new content related to fishing.
-This includes many new fish, quests, food, and more.
+Waasephi's Fishing Plus is a simple content mod focused on making fishing in terraria easier to interact with, and less of a grind.
 
-The main feature of this mod is the Filleting Table, which allows fish to have more uses through the entire game.
-All you need is a fish, and a strong enough filleting knife, and you can turn fish into useful materials.
+This mod contains: 
 
-This mod also includes some new fishing rods, equipment, and armor to help you fish a bit easier.
+- Many different fish in unique areas to encourage fishing more
+
+- Super rare "legendary fish" if you want a "challenge"
+
+- New fishing quests in new areas for more variety
+
+- New crates with later game items, as well as tweaks to existing crate loot tables (only additions!)
+
+- Passive critters in most biomes to add life to the world
+
+- New quality of life tools, including Fishing Rods, Angler quest rerolling, and more
+
+- A couple new armor sets and equipment, all related to fishing buffs
+
+- Clams and their furniture
+
+- Custom fish filleting system, which turns fish into useful items, and mitigates some of Terraria's grinds
+
+
+I am not a professional coder by any means, so there are likely bugs and oversights.
+Informing me of such issues is the easiest way to get me to fix them.
+
+Thank you to these people who have helped me with this mod.
+- DylanDoe21
+- Vortex Of Rainbows
+- Slayer6409
