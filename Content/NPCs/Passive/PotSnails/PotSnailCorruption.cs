@@ -12,6 +12,7 @@ namespace WaasephisFishingPlus.Content.NPCs.Passive.PotSnails
 		{
             Main.npcCatchable[NPC.type] = true;
             Main.npcFrameCount[NPC.type] = 6;
+			NPCID.Sets.CountsAsCritter[Type] = true;
 		}
 
 		public override void SetDefaults()
