@@ -943,3 +943,13 @@ TheSludge: {
 	Tooltip: "[c/000000:Excuse me?! That's my ][c/ff0000:SLUDGE][c/000000:!!!]"
 	DisplayName: The Sludge
 }
+
+BaxterBeanItem: {
+	DisplayName: Baxter Bean
+	Tooltip: A placeable Baxter, you like Baxter
+}
+
+TrueCatFish: {
+	Tooltip: What a wonderous creature!
+	DisplayName: True Cat Fish
+}

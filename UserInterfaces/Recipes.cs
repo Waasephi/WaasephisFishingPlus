@@ -13,6 +13,7 @@ using static WaasephisFishingPlus.UserInterfaces.FilletingUI;
 using Terraria.ModLoader.Default;
 using WaasephisFishingPlus.Content.Items.Consumables.PotSnails;
 using WaasephisFishingPlus.Content.Items.Tools;
+using WaasephisFishingPlus.Content.Items.Fish.LegendaryFish;
 
 namespace WaasephisFishingPlus.UserInterfaces
 {

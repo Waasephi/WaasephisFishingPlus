@@ -15,7 +15,7 @@ namespace WaasephisFishingPlus.Content.Projectiles.Weapons.Melee
 			Projectile.friendly = true;
 			Projectile.ignoreWater = false;
 			Projectile.tileCollide = true;
-			Projectile.DamageType = DamageClass.Ranged;
+			Projectile.DamageType = DamageClass.Melee;
 
 			Projectile.height = 10;
 			Projectile.width = 16;

@@ -12,6 +12,7 @@ using WaasephisFishingPlus.Content.Items.Pets;
 using WaasephisFishingPlus.Content.Items.Weapons.Melee;
 using WaasephisFishingPlus.Content.Items.Weapons.Ranged;
 using WaasephisFishingPlus.Content.Items.Tools;
+using WaasephisFishingPlus.Content.Items.Fish.LegendaryFish;
 
 namespace WaasephisFishingPlus.Core
 {

@@ -3,9 +3,9 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using WaasephisFishingPlus.Core;
 
-namespace WaasephisFishingPlus.Content.Items.Fish
+namespace WaasephisFishingPlus.Content.Items.Fish.LegendaryFish
 {
-    public class Oarfish : ModItem
+    public class Searobin : ModItem
     {
         public override void SetStaticDefaults()
         {
@@ -14,10 +14,10 @@ namespace WaasephisFishingPlus.Content.Items.Fish
 
         public override void SetDefaults()
         {
-            Item.width = 216;
-            Item.height = 62;
-            Item.value = Item.sellPrice(platinum: 1);
-			Item.rare = ModContent.RarityType<OarfishRarity>();
+            Item.width = 40;
+            Item.height = 30;
+            Item.value = Item.sellPrice(gold: 50);
+			Item.rare = ModContent.RarityType<SearobinRarity>();
 			Item.useTurn = true;
             Item.maxStack = 1;
         }

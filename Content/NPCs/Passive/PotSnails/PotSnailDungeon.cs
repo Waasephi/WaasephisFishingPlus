@@ -13,6 +13,7 @@ namespace WaasephisFishingPlus.Content.NPCs.Passive.PotSnails
             Main.npcCatchable[NPC.type] = true;
             Main.npcFrameCount[NPC.type] = 6;
 			NPCID.Sets.CountsAsCritter[Type] = true;
+			NPCID.Sets.ShimmerTransformToNPC[Type] = NPCID.Shimmerfly;
 		}
 
 		public override void SetDefaults()
@@ -27,7 +28,7 @@ namespace WaasephisFishingPlus.Content.NPCs.Passive.PotSnails
 			NPC.DeathSound = SoundID.NPCDeath1;
 			NPC.value = 100f;
 			NPC.knockBackResist = 0f;
-			NPC.aiStyle = 67;
+			NPC.aiStyle = NPCAIStyleID.Snail;
 			AIType = NPCID.Snail;
 			AnimationType = NPCID.Snail;
             NPC.catchItem = (short)ModContent.ItemType<PotSnailDungeonItem>();
@@ -35,7 +36,7 @@ namespace WaasephisFishingPlus.Content.NPCs.Passive.PotSnails
 
 		public override float SpawnChance(NPCSpawnInfo spawnInfo)
 		{
-			return spawnInfo.Player.ZoneDungeon ? 0.4f : 0f;
+			return spawnInfo.Player.ZoneDungeon ? 0.2f : 0f;
 		}
 
 		public override void SetBestiary(BestiaryDatabase database, BestiaryEntry bestiaryEntry)

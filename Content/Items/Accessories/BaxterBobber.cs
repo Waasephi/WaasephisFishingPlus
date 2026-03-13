@@ -1,6 +1,7 @@
 ﻿using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
+using WaasephisFishingPlus.Content.Items.Fish.LegendaryFish;
 using WaasephisFishingPlus.Content.Projectiles.Fishing;
 using WaasephisFishingPlus.Core;
 
@@ -31,8 +32,8 @@ namespace WaasephisFishingPlus.Content.Items.Accessories
         {
             Recipe recipe = CreateRecipe();
             recipe.AddIngredient(ItemID.FishingBobberGlowingStar);
-            recipe.AddIngredient(ItemID.Catfish);
-            recipe.AddTile(TileID.TinkerersWorkbench);
+			recipe.AddIngredient(ModContent.ItemType<TrueCatFish>());
+			recipe.AddTile(TileID.TinkerersWorkbench);
             recipe.Register();
         }
     }

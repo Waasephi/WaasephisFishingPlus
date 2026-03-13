@@ -15,6 +15,7 @@ namespace WaasephisFishingPlus.Content.NPCs.Passive.FishCritters
             Main.npcCatchable[NPC.type] = true;
             Main.npcFrameCount[NPC.type] = 6;
 			NPCID.Sets.CountsAsCritter[Type] = true;
+			NPCID.Sets.ShimmerTransformToNPC[Type] = NPCID.Shimmerfly;
 		}
 
         public override void SetDefaults()

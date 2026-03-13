@@ -3,7 +3,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using WaasephisFishingPlus.Core;
 
-namespace WaasephisFishingPlus.Content.Items.Fish
+namespace WaasephisFishingPlus.Content.Items.Fish.LegendaryFish
 {
     public class RegalMoonsquid : ModItem
     {

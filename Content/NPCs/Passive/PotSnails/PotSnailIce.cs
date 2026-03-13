@@ -13,6 +13,7 @@ namespace WaasephisFishingPlus.Content.NPCs.Passive.PotSnails
             Main.npcCatchable[NPC.type] = true;
             Main.npcFrameCount[NPC.type] = 6;
 			NPCID.Sets.CountsAsCritter[Type] = true;
+			NPCID.Sets.ShimmerTransformToNPC[Type] = NPCID.Shimmerfly;
 		}
 
 		public override void SetDefaults()
@@ -35,7 +36,7 @@ namespace WaasephisFishingPlus.Content.NPCs.Passive.PotSnails
 
 		public override float SpawnChance(NPCSpawnInfo spawnInfo)
 		{
-			return spawnInfo.Player.ZoneRockLayerHeight && !spawnInfo.Player.ZoneDungeon && spawnInfo.Player.ZoneSnow ? 0.5f : 0f;
+			return spawnInfo.Player.ZoneRockLayerHeight && !spawnInfo.Player.ZoneDungeon && spawnInfo.Player.ZoneSnow ? 0.2f : 0f;
 		}
 
 		public override void SetBestiary(BestiaryDatabase database, BestiaryEntry bestiaryEntry)

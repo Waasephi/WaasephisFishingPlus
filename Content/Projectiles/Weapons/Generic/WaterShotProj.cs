@@ -11,7 +11,7 @@ namespace WaasephisFishingPlus.Content.Projectiles.Weapons.Generic
 		public override void SetDefaults()
 		{
 			Projectile.CloneDefaults(ProjectileID.WaterStream);
-			Projectile.DamageType = DamageClass.Magic;
+			Projectile.DamageType = DamageClass.Generic;
 			Projectile.friendly = true;
 			Projectile.hostile = false;
 			AIType = ProjectileID.WaterStream;
