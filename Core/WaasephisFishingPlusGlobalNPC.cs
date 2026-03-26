@@ -7,7 +7,7 @@ using WaasephisFishingPlus.Content.Items.Accessories;
 using WaasephisFishingPlus.Content.Items.Bait;
 using WaasephisFishingPlus.Content.Items.FishingRods;
 using WaasephisFishingPlus.Content.Items.Pets.LightPets;
-using WaasephisFishingPlus.Content.Tiles.Decor;
+using WaasephisFishingPlus.Content.Tiles.Decor.Trophies;
 
 namespace WaasephisFishingPlus.Core
 {

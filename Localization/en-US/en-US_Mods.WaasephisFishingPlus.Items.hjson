@@ -685,7 +685,7 @@ ShellforgeItem: {
 BottledLava: {
 	Tooltip: While you COULD drink this... you probably shouldn't.
 	DisplayName: Bottled Lava
-	RestoreLifeText: Mods.WaasephisFishingPlus.Items.BottledLava.RestoreLifeText
+	RestoreLifeText: "80"
 }
 
 LavaBombDispenserItem: {
@@ -952,4 +952,18 @@ BaxterBeanItem: {
 TrueCatFish: {
 	Tooltip: What a wonderous creature!
 	DisplayName: True Cat Fish
+}
+
+KingSalmon: {
+	Tooltip:
+		'''
+		A Legendary fish that is found rarely in large forest ponds.
+		'I want to see a salmon coronation.'
+		'''
+	DisplayName: King Salmon
+}
+
+KingSalmonTrophyItem: {
+	DisplayName: King Salmon Trophy Item
+	Tooltip: ""
 }

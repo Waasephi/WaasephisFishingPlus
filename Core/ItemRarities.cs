@@ -13,6 +13,10 @@ namespace WaasephisFishingPlus.Core
 	{
 		public override Color RarityColor => Color.Lerp(new Color(243, 185, 147), new Color(117, 29, 29), (float)Math.Cos((double)(Main.GlobalTimeWrappedHourly % 2.5f / 2.5f * 5f)) / 2f + 0.5f);
 	}
+	public class SalmonRarity : ModRarity
+	{
+		public override Color RarityColor => Color.Lerp(new Color(240, 109, 109), new Color(77, 106, 75), (float)Math.Cos((double)(Main.GlobalTimeWrappedHourly % 2.5f / 2.5f * 5f)) / 2f + 0.5f);
+	}
 	public class MoonsquidRarity : ModRarity
 	{
 		public override Color RarityColor => Color.Lerp(new Color(206, 255, 239), new Color(33, 156, 140), (float)Math.Cos((double)(Main.GlobalTimeWrappedHourly % 2.5f / 2.5f * 5f)) / 2f + 0.5f);

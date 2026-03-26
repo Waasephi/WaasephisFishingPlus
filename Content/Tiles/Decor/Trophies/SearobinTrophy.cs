@@ -7,9 +7,9 @@ using Terraria.ModLoader;
 using Terraria.ObjectData;
 using WaasephisFishingPlus.Core;
 
-namespace WaasephisFishingPlus.Content.Tiles.Decor
+namespace WaasephisFishingPlus.Content.Tiles.Decor.Trophies
 {
-    internal class OarfishTrophy : ModTile
+    internal class SearobinTrophy : ModTile
     {
         public override void SetStaticDefaults()
         {
@@ -28,7 +28,7 @@ namespace WaasephisFishingPlus.Content.Tiles.Decor
         }
     }
 
-    internal class OarfishTrophyItem : ModItem
+    internal class SearobinTrophyItem : ModItem
     {
         public override void SetStaticDefaults()
         {
@@ -47,8 +47,8 @@ namespace WaasephisFishingPlus.Content.Tiles.Decor
             Item.useStyle = ItemUseStyleID.Swing;
             Item.consumable = true;
 			Item.value = Item.sellPrice(gold: 1);
-			Item.rare = ModContent.RarityType<OarfishRarity>();
-			Item.createTile = ModContent.TileType<OarfishTrophy>();
+			Item.rare = ModContent.RarityType<SearobinRarity>();
+			Item.createTile = ModContent.TileType<SearobinTrophy>();
         }
     }
 }

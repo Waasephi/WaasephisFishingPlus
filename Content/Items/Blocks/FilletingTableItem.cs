@@ -1,6 +1,8 @@
 using Terraria;
+using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
+using WaasephisFishingPlus.Content.Achievements;
 using WaasephisFishingPlus.Content.Tiles;
 
 namespace WaasephisFishingPlus.Content.Items.Blocks

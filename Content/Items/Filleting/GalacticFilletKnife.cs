@@ -1,6 +1,8 @@
 using Terraria;
+using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
+using WaasephisFishingPlus.Content.Achievements;
 
 namespace WaasephisFishingPlus.Content.Items.Filleting
 {

@@ -337,6 +337,11 @@ namespace WaasephisFishingPlus.Core
 				itemDrop = ModContent.ItemType<Oarfish>();
 			}
 
+			if (inWater && attempt.waterTilesCount >= 1000 && attempt.legendary && Player.ZoneForest && Main.rand.NextBool(15))
+			{
+				itemDrop = ModContent.ItemType<KingSalmon>();
+			}
+
 			if (inWater && NPC.downedMoonlord && attempt.legendary && Player.ZoneSkyHeight && Main.rand.NextBool(20))
 			{
 				itemDrop = ModContent.ItemType<RegalMoonsquid>();

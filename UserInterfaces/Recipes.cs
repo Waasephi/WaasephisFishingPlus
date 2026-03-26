@@ -14,6 +14,7 @@ using Terraria.ModLoader.Default;
 using WaasephisFishingPlus.Content.Items.Consumables.PotSnails;
 using WaasephisFishingPlus.Content.Items.Tools;
 using WaasephisFishingPlus.Content.Items.Fish.LegendaryFish;
+using WaasephisFishingPlus.Content.Tiles.Decor.Trophies;
 
 namespace WaasephisFishingPlus.UserInterfaces
 {
@@ -630,6 +631,12 @@ namespace WaasephisFishingPlus.UserInterfaces
 			#region Legendary Fish
 
 			item = new Item();
+			item.SetDefaults(ModContent.ItemType<KingSalmon>());
+			Recipe = new FishRecipes { DefaultAmount = 1, Output = new Item(), KnifeLevel = 0, ignoreKnife = true };
+			Recipe.Output.SetDefaults(ModContent.ItemType<KingSalmonTrophyItem>());
+			AddRecipe(item, Recipe);
+
+			item = new Item();
 			item.SetDefaults(ModContent.ItemType<Oarfish>());
 			Recipe = new FishRecipes { DefaultAmount = 1, Output = new Item(), KnifeLevel = 0, ignoreKnife = true };
 			Recipe.Output.SetDefaults(ModContent.ItemType<OarfishTrophyItem>());
@@ -645,6 +652,12 @@ namespace WaasephisFishingPlus.UserInterfaces
 			item.SetDefaults(ModContent.ItemType<Searobin>());
 			Recipe = new FishRecipes { DefaultAmount = 1, Output = new Item(), KnifeLevel = 0, ignoreKnife = true };
 			Recipe.Output.SetDefaults(ModContent.ItemType<SearobinTrophyItem>());
+			AddRecipe(item, Recipe);
+
+			item = new Item();
+			item.SetDefaults(ModContent.ItemType<TrueCatFish>());
+			Recipe = new FishRecipes { DefaultAmount = 1, Output = new Item(), KnifeLevel = 0, ignoreKnife = true };
+			Recipe.Output.SetDefaults(ModContent.ItemType<TrueCatFish>());
 			AddRecipe(item, Recipe);
 
 			#endregion

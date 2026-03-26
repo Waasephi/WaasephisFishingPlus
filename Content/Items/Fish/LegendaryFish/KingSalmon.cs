@@ -1,5 +1,6 @@
 using Terraria;
 using Terraria.DataStructures;
+using Terraria.GameContent.Achievements;
 using Terraria.ID;
 using Terraria.ModLoader;
 using WaasephisFishingPlus.Content.Achievements;
@@ -7,7 +8,7 @@ using WaasephisFishingPlus.Core;
 
 namespace WaasephisFishingPlus.Content.Items.Fish.LegendaryFish
 {
-    public class TrueCatFish : ModItem
+    public class KingSalmon : ModItem
     {
         public override void SetStaticDefaults()
         {
@@ -16,20 +17,12 @@ namespace WaasephisFishingPlus.Content.Items.Fish.LegendaryFish
 
         public override void SetDefaults()
         {
-            Item.width = 44;
-            Item.height = 34;
-            Item.value = Item.sellPrice(gold: 3);
-			Item.rare = ModContent.RarityType<BaxterRarity>();
+            Item.width = 58;
+            Item.height = 54;
+            Item.value = Item.sellPrice(gold: 75);
+			Item.rare = ModContent.RarityType<SalmonRarity>();
 			Item.useTurn = true;
             Item.maxStack = 1;
         }
-
-		public override void AddRecipes()
-		{
-			Recipe recipe = CreateRecipe();
-			recipe.AddIngredient(ItemID.Catfish, 5);
-			recipe.AddTile(TileID.TinkerersWorkbench);
-			recipe.Register();
-		}
 	}
 }

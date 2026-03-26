@@ -5,11 +5,10 @@ using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
-using WaasephisFishingPlus.Core;
 
-namespace WaasephisFishingPlus.Content.Tiles.Decor
+namespace WaasephisFishingPlus.Content.Tiles.Decor.Trophies
 {
-    internal class SearobinTrophy : ModTile
+    internal class DreadnautilusTrophy : ModTile
     {
         public override void SetStaticDefaults()
         {
@@ -28,7 +27,7 @@ namespace WaasephisFishingPlus.Content.Tiles.Decor
         }
     }
 
-    internal class SearobinTrophyItem : ModItem
+    internal class DreadnautilusTrophyItem : ModItem
     {
         public override void SetStaticDefaults()
         {
@@ -47,8 +46,8 @@ namespace WaasephisFishingPlus.Content.Tiles.Decor
             Item.useStyle = ItemUseStyleID.Swing;
             Item.consumable = true;
 			Item.value = Item.sellPrice(gold: 1);
-			Item.rare = ModContent.RarityType<SearobinRarity>();
-			Item.createTile = ModContent.TileType<SearobinTrophy>();
+			Item.rare = ItemRarityID.Blue;
+			Item.createTile = ModContent.TileType<DreadnautilusTrophy>();
         }
     }
 }

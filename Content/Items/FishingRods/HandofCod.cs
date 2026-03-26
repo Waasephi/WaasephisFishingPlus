@@ -4,6 +4,7 @@ using Terraria;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
+using WaasephisFishingPlus.Content.Achievements;
 using WaasephisFishingPlus.Content.Items.Tools;
 
 namespace WaasephisFishingPlus.Content.Items.FishingRods
@@ -46,6 +47,7 @@ namespace WaasephisFishingPlus.Content.Items.FishingRods
 			}
 			return false;
 		}
+
 		public override void AddRecipes()
         {
             Recipe recipe = CreateRecipe();

@@ -1,0 +1,51 @@
+//Challenger Achievements
+ChallengerAchievementOarfish: {
+	FriendlyName: The Long Awaited Arrival
+	Description: Catch the Oarfish, the Legendary Fish of the Underground Ocean.
+}
+
+ChallengerAchievementKingSalmon: {
+	FriendlyName: Underwater Emperor
+	Description: Catch the King Salmon, the Legendary Fish of the Forest.
+}
+
+ChallengerAchievementSearobin: {
+	FriendlyName: Dangers of the Deep
+	Description: Catch the Searobin, the Legendary Fish of the Underworld.
+}
+
+ChallengerAchievementMoonsquid: {
+	FriendlyName: King of the Skies
+	Description: Catch the Regal Moonsquid, the Legendary Fish of the Skies.
+}
+
+ChallengerAchievementEnderPearl: {
+	FriendlyName: Needless Sidequest
+	Description: Defeat the rarest Clam, and claim the prize from within.
+}
+
+//Collector Achievements
+CollectorAchievementFilletingTable: {
+	FriendlyName: Clocking In
+	Description: Craft the Fillet Table.
+}
+
+CollectorAchievementGalacticKnife: {
+	FriendlyName: Final Promotion
+	Description: Craft the Galactic Fillet Knife.
+}
+
+CollectorAchievementHandofCod: {
+	FriendlyName: Infinity +1 Rod
+	Description: Obtain the Hand of Cod, the greatest of all Fishing Rods... No refunds!
+}
+
+CollectorAchievementPrismaline: {
+	FriendlyName: Fishing it Off
+	Description: Obtain the Prismaline, the less greatest, but still great Fishing Rod... No regrets!
+}
+
+CollectorAchievementCatfish: {
+	FriendlyName: Deadliest Cat-ch
+	Description: Obtain the True Cat Fish, the rarest and greatest Fish in the land.
+}
