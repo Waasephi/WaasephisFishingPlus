@@ -9,7 +9,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using System.Collections.Generic;
 using Terraria.UI.Chat;
-using System.Linq;
+using System;
 using static WaasephisFishingPlus.WaasephisFishingPlus;
 
 namespace WaasephisFishingPlus.UserInterfaces
@@ -34,6 +34,8 @@ namespace WaasephisFishingPlus.UserInterfaces
 		public static Item PreviousOutputItem = new Item();
 		public static void Draw(SpriteBatch spriteBatch)
 		{
+			Player player = Main.LocalPlayer;
+
 			if (!UIOpen)
 			{
 				Filleting = -1;
@@ -69,12 +71,13 @@ namespace WaasephisFishingPlus.UserInterfaces
 
 			spriteBatch.Draw(UIBoxTexture, UITopLeft, null, Color.White, 0f, UIBoxTexture.Size() / 2, UIBoxScale, SpriteEffects.None, 0f);
 
-			if (IsMouseOverUI((int)UITopLeft.X, (int)UITopLeft.Y, UIBoxTexture, UIBoxScale))
+			spriteBatch.Draw(UIBoxTexture, UITopLeft, null, Color.White, 0f, UIBoxTexture.Size() / 2, UIBoxScale, SpriteEffects.None, 0f);
+
+			if (IsMouseOverUIBox(UITopLeft, UIBoxTexture, UIBoxScale))
 			{
 				IsHoveringOverAnyButton = false;
 
-				Main.LocalPlayer.mouseInterface = false;
-				Main.blockMouse = true;
+				player.mouseInterface = true;
 			}
 
 			Texture2D CloseIconTexture = ModContent.Request<Texture2D>("WaasephisFishingPlus/UserInterfaces/CloseIcon").Value;
@@ -219,6 +222,21 @@ namespace WaasephisFishingPlus.UserInterfaces
 		{
 			Rectangle backgroundArea = new Rectangle(TopLeftX, TopLeftY, (int)(texture.Width * backgroundScale.X), (int)(texture.Height * backgroundScale.Y));
 			return MouseScreenArea.Intersects(backgroundArea);
+		}
+		public static bool IsMouseOverUIBox(Vector2 TopLeft, Texture2D texture, Vector2 scale)
+		{
+			Rectangle backgroundArea = new Rectangle((int)TopLeft.X - (int)(texture.Width / 2 * scale.X),
+			(int)TopLeft.Y - (int)(texture.Height / 2 * scale.Y),
+			(int)(texture.Width * scale.X), (int)(texture.Height * scale.Y));
+
+			if (backgroundArea.Contains(Main.mouseX, Main.mouseY))
+			{
+				return true;
+			}
+			else
+			{
+				return false;
+			}
 		}
 
 		public static void DrawItemIcon(SpriteBatch spriteBatch, Vector2 itemSlotDrawPosition, Vector2 scale, Item item, Texture2D texture, int slotNumber)

@@ -13,6 +13,7 @@ using WaasephisFishingPlus.Content.Items.Weapons.Melee;
 using WaasephisFishingPlus.Content.Items.Weapons.Ranged;
 using WaasephisFishingPlus.Content.Items.Tools;
 using WaasephisFishingPlus.Content.Items.Fish.LegendaryFish;
+using WaasephisFishingPlus.Content.Items.Weapons.Magic;
 
 namespace WaasephisFishingPlus.Core
 {
@@ -373,14 +374,34 @@ namespace WaasephisFishingPlus.Core
 
 			#region Weapons
 
-			if (inWater && Player.ZoneBeach && attempt.veryrare && Main.rand.NextBool(15))
+			if (inWater && Player.ZoneBeach && !Main.hardMode && attempt.rare && Main.rand.NextBool(15))
+			{
+				itemDrop = ModContent.ItemType<SeaUrchin>();
+			}
+			// Rarer in Hardmode
+			if (inWater && Player.ZoneBeach && Main.hardMode && attempt.veryrare && Main.rand.NextBool(20))
 			{
 				itemDrop = ModContent.ItemType<SeaUrchin>();
 			}
 
-			if (inWater && Player.ZoneCrimson && attempt.rare && Main.rand.NextBool(20))
+			if (inWater && Player.ZoneCrimson && !Main.hardMode && attempt.rare && Main.rand.NextBool(15))
 			{
 				itemDrop = ModContent.ItemType<FleshySpewer>();
+			}
+			// Rarer in Hardmode
+			if (inWater && Player.ZoneCrimson && !Main.hardMode && attempt.veryrare && Main.rand.NextBool(20))
+			{
+				itemDrop = ModContent.ItemType<FleshySpewer>();
+			}
+
+			if (attempt.inLava && attempt.CanFishInLava && Main.hardMode && attempt.rare && Main.rand.NextBool(15))
+			{
+				itemDrop = ModContent.ItemType<HadalGulper>();
+			}
+			// Rarer in Hardmode
+			if (attempt.inLava && attempt.CanFishInLava && !Main.hardMode && attempt.veryrare && Main.rand.NextBool(20))
+			{
+				itemDrop = ModContent.ItemType<HadalGulper>();
 			}
 			#endregion
 
@@ -461,17 +482,29 @@ namespace WaasephisFishingPlus.Core
 
 			#region Other
 
-            if (inWater && Player.ZoneBeach && attempt.veryrare && Player.fishingSkill >= 30 && Main.rand.NextBool(8))
-            {
-                itemDrop = ModContent.ItemType<SeaCarrot>();
-                return;
-            }
+			if (inWater && Player.ZoneBeach && !Main.hardMode && attempt.rare && Player.fishingSkill >= 30 && Main.rand.NextBool(8))
+			{
+				itemDrop = ModContent.ItemType<SeaCarrot>();
+				return;
+			}
+			// Rarer in Hardmode
+			if (inWater && Player.ZoneBeach && Main.hardMode && attempt.veryrare && Player.fishingSkill >= 30 && Main.rand.NextBool(15))
+			{
+				itemDrop = ModContent.ItemType<SeaCarrot>();
+				return;
+			}
 
-            if (inWater && Player.ZoneDungeon && attempt.rare && Player.fishingSkill >= 20 && Main.rand.NextBool(20))
-            {
-                itemDrop = ItemID.BoneWelder;
-                return;
-            }
+			if (inWater && Player.ZoneDungeon && !Main.hardMode && attempt.rare && Player.fishingSkill >= 20 && Main.rand.NextBool(15))
+			{
+				itemDrop = ItemID.BoneWelder;
+				return;
+			}
+			// Rarer in Hardmode
+			if (inWater && Player.ZoneDungeon && Main.hardMode && attempt.veryrare && Player.fishingSkill >= 20 && Main.rand.NextBool(12))
+			{
+				itemDrop = ItemID.BoneWelder;
+				return;
+			}
 
 			#endregion
 

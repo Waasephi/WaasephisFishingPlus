@@ -967,3 +967,17 @@ KingSalmonTrophyItem: {
 	DisplayName: King Salmon Trophy Item
 	Tooltip: ""
 }
+
+HadalGulper: {
+	DisplayName: Hadal Gulper
+	Tooltip: Shoots a spread of flames
+}
+
+HadopelagicFlamethrower: {
+	DisplayName: Hadopelagic Flamethrower
+	Tooltip:
+		'''
+		Uses gel for ammo
+		Ignores 15 points of enemy Defense
+		'''
+}

@@ -3,6 +3,34 @@
   "WorkspaceRootPath": "C:\\Users\\Slime\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\WaasephisFishingPlus\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{103EEBC9-B78A-4C93-B3F1-549745F35044}|WaasephisFishingPlus.csproj|c:\\users\\slime\\onedrive\\documents\\my games\\terraria\\tmodloader\\modsources\\waasephisfishingplus\\localization\\en-us\\en-us_mods.waasephisfishingplus.achievements.hjson||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{103EEBC9-B78A-4C93-B3F1-549745F35044}|WaasephisFishingPlus.csproj|solutionrelative:localization\\en-us\\en-us_mods.waasephisfishingplus.achievements.hjson||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{103EEBC9-B78A-4C93-B3F1-549745F35044}|WaasephisFishingPlus.csproj|c:\\users\\slime\\onedrive\\documents\\my games\\terraria\\tmodloader\\modsources\\waasephisfishingplus\\content\\achievements\\challengerachievements.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{103EEBC9-B78A-4C93-B3F1-549745F35044}|WaasephisFishingPlus.csproj|solutionrelative:content\\achievements\\challengerachievements.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{103EEBC9-B78A-4C93-B3F1-549745F35044}|WaasephisFishingPlus.csproj|c:\\users\\slime\\onedrive\\documents\\my games\\terraria\\tmodloader\\modsources\\waasephisfishingplus\\userinterfaces\\recipes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{103EEBC9-B78A-4C93-B3F1-549745F35044}|WaasephisFishingPlus.csproj|solutionrelative:userinterfaces\\recipes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{103EEBC9-B78A-4C93-B3F1-549745F35044}|WaasephisFishingPlus.csproj|c:\\users\\slime\\onedrive\\documents\\my games\\terraria\\tmodloader\\modsources\\waasephisfishingplus\\content\\tiles\\decor\\trophies\\kingsalmontrophy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{103EEBC9-B78A-4C93-B3F1-549745F35044}|WaasephisFishingPlus.csproj|solutionrelative:content\\tiles\\decor\\trophies\\kingsalmontrophy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{103EEBC9-B78A-4C93-B3F1-549745F35044}|WaasephisFishingPlus.csproj|c:\\users\\slime\\onedrive\\documents\\my games\\terraria\\tmodloader\\modsources\\waasephisfishingplus\\localization\\en-us\\en-us_mods.waasephisfishingplus.items.hjson||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{103EEBC9-B78A-4C93-B3F1-549745F35044}|WaasephisFishingPlus.csproj|solutionrelative:localization\\en-us\\en-us_mods.waasephisfishingplus.items.hjson||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{103EEBC9-B78A-4C93-B3F1-549745F35044}|WaasephisFishingPlus.csproj|c:\\users\\slime\\onedrive\\documents\\my games\\terraria\\tmodloader\\modsources\\waasephisfishingplus\\core\\waasephisfishingplusplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{103EEBC9-B78A-4C93-B3F1-549745F35044}|WaasephisFishingPlus.csproj|solutionrelative:core\\waasephisfishingplusplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{103EEBC9-B78A-4C93-B3F1-549745F35044}|WaasephisFishingPlus.csproj|c:\\users\\slime\\onedrive\\documents\\my games\\terraria\\tmodloader\\modsources\\waasephisfishingplus\\core\\itemrarities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{103EEBC9-B78A-4C93-B3F1-549745F35044}|WaasephisFishingPlus.csproj|solutionrelative:core\\itemrarities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{103EEBC9-B78A-4C93-B3F1-549745F35044}|WaasephisFishingPlus.csproj|c:\\users\\slime\\onedrive\\documents\\my games\\terraria\\tmodloader\\modsources\\waasephisfishingplus\\content\\items\\fish\\legendaryfish\\truecatfish.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{103EEBC9-B78A-4C93-B3F1-549745F35044}|WaasephisFishingPlus.csproj|solutionrelative:content\\items\\fish\\legendaryfish\\truecatfish.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,28 +39,8 @@
       "RelativeMoniker": "D:0:0:{103EEBC9-B78A-4C93-B3F1-549745F35044}|WaasephisFishingPlus.csproj|solutionrelative:content\\items\\blocks\\filletingtableitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{103EEBC9-B78A-4C93-B3F1-549745F35044}|WaasephisFishingPlus.csproj|c:\\users\\slime\\onedrive\\documents\\my games\\terraria\\tmodloader\\modsources\\waasephisfishingplus\\content\\achievements\\collectorachievements.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{103EEBC9-B78A-4C93-B3F1-549745F35044}|WaasephisFishingPlus.csproj|solutionrelative:content\\achievements\\collectorachievements.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{103EEBC9-B78A-4C93-B3F1-549745F35044}|WaasephisFishingPlus.csproj|c:\\users\\slime\\onedrive\\documents\\my games\\terraria\\tmodloader\\modsources\\waasephisfishingplus\\core\\waasephisfishingplusglobalnpc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{103EEBC9-B78A-4C93-B3F1-549745F35044}|WaasephisFishingPlus.csproj|solutionrelative:core\\waasephisfishingplusglobalnpc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{103EEBC9-B78A-4C93-B3F1-549745F35044}|WaasephisFishingPlus.csproj|c:\\users\\slime\\onedrive\\documents\\my games\\terraria\\tmodloader\\modsources\\waasephisfishingplus\\content\\tiles\\decor\\trophies\\dreadnautilustrophy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{103EEBC9-B78A-4C93-B3F1-549745F35044}|WaasephisFishingPlus.csproj|solutionrelative:content\\tiles\\decor\\trophies\\dreadnautilustrophy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{103EEBC9-B78A-4C93-B3F1-549745F35044}|WaasephisFishingPlus.csproj|c:\\users\\slime\\onedrive\\documents\\my games\\terraria\\tmodloader\\modsources\\waasephisfishingplus\\content\\tiles\\decor\\trophies\\searobintrophy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{103EEBC9-B78A-4C93-B3F1-549745F35044}|WaasephisFishingPlus.csproj|solutionrelative:content\\tiles\\decor\\trophies\\searobintrophy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{103EEBC9-B78A-4C93-B3F1-549745F35044}|WaasephisFishingPlus.csproj|c:\\users\\slime\\onedrive\\documents\\my games\\terraria\\tmodloader\\modsources\\waasephisfishingplus\\content\\tiles\\decor\\trophies\\oarfishtrophy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{103EEBC9-B78A-4C93-B3F1-549745F35044}|WaasephisFishingPlus.csproj|solutionrelative:content\\tiles\\decor\\trophies\\oarfishtrophy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{103EEBC9-B78A-4C93-B3F1-549745F35044}|WaasephisFishingPlus.csproj|c:\\users\\slime\\onedrive\\documents\\my games\\terraria\\tmodloader\\modsources\\waasephisfishingplus\\content\\tiles\\decor\\trophies\\regalmoonsquidtrophy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{103EEBC9-B78A-4C93-B3F1-549745F35044}|WaasephisFishingPlus.csproj|solutionrelative:content\\tiles\\decor\\trophies\\regalmoonsquidtrophy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{103EEBC9-B78A-4C93-B3F1-549745F35044}|WaasephisFishingPlus.csproj|c:\\users\\slime\\onedrive\\documents\\my games\\terraria\\tmodloader\\modsources\\waasephisfishingplus\\content\\items\\fish\\legendaryfish\\kingsalmon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{103EEBC9-B78A-4C93-B3F1-549745F35044}|WaasephisFishingPlus.csproj|solutionrelative:content\\items\\fish\\legendaryfish\\kingsalmon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,11 +50,108 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Recipes.cs",
+              "DocumentMoniker": "C:\\Users\\Slime\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\WaasephisFishingPlus\\UserInterfaces\\Recipes.cs",
+              "RelativeDocumentMoniker": "UserInterfaces\\Recipes.cs",
+              "ToolTip": "C:\\Users\\Slime\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\WaasephisFishingPlus\\UserInterfaces\\Recipes.cs",
+              "RelativeToolTip": "UserInterfaces\\Recipes.cs",
+              "ViewState": "AgIAANcBAAAAAAAAAAAgwJACAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-26T19:18:01.49Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "KingSalmonTrophy.cs",
+              "DocumentMoniker": "C:\\Users\\Slime\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\WaasephisFishingPlus\\Content\\Tiles\\Decor\\Trophies\\KingSalmonTrophy.cs",
+              "RelativeDocumentMoniker": "Content\\Tiles\\Decor\\Trophies\\KingSalmonTrophy.cs",
+              "ToolTip": "C:\\Users\\Slime\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\WaasephisFishingPlus\\Content\\Tiles\\Decor\\Trophies\\KingSalmonTrophy.cs",
+              "RelativeToolTip": "Content\\Tiles\\Decor\\Trophies\\KingSalmonTrophy.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAgwCcAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-26T19:15:17.231Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ChallengerAchievements.cs",
+              "DocumentMoniker": "C:\\Users\\Slime\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\WaasephisFishingPlus\\Content\\Achievements\\ChallengerAchievements.cs",
+              "RelativeDocumentMoniker": "Content\\Achievements\\ChallengerAchievements.cs",
+              "ToolTip": "C:\\Users\\Slime\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\WaasephisFishingPlus\\Content\\Achievements\\ChallengerAchievements.cs",
+              "RelativeToolTip": "Content\\Achievements\\ChallengerAchievements.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-26T18:56:13.005Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "en-US_Mods.WaasephisFishingPlus.Achievements.hjson",
+              "DocumentMoniker": "C:\\Users\\Slime\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\WaasephisFishingPlus\\Localization\\en-US\\en-US_Mods.WaasephisFishingPlus.Achievements.hjson",
+              "RelativeDocumentMoniker": "Localization\\en-US\\en-US_Mods.WaasephisFishingPlus.Achievements.hjson",
+              "ToolTip": "C:\\Users\\Slime\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\WaasephisFishingPlus\\Localization\\en-US\\en-US_Mods.WaasephisFishingPlus.Achievements.hjson",
+              "RelativeToolTip": "Localization\\en-US\\en-US_Mods.WaasephisFishingPlus.Achievements.hjson",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-03-26T18:55:24.952Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "en-US_Mods.WaasephisFishingPlus.Items.hjson",
+              "DocumentMoniker": "C:\\Users\\Slime\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\WaasephisFishingPlus\\Localization\\en-US\\en-US_Mods.WaasephisFishingPlus.Items.hjson",
+              "RelativeDocumentMoniker": "Localization\\en-US\\en-US_Mods.WaasephisFishingPlus.Items.hjson",
+              "ToolTip": "C:\\Users\\Slime\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\WaasephisFishingPlus\\Localization\\en-US\\en-US_Mods.WaasephisFishingPlus.Items.hjson",
+              "RelativeToolTip": "Localization\\en-US\\en-US_Mods.WaasephisFishingPlus.Items.hjson",
+              "ViewState": "AgIAAK4DAAAAAAAAAAAAAMkDAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-03-26T18:41:41.196Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "WaasephisFishingPlusPlayer.cs",
+              "DocumentMoniker": "C:\\Users\\Slime\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\WaasephisFishingPlus\\Core\\WaasephisFishingPlusPlayer.cs",
+              "RelativeDocumentMoniker": "Core\\WaasephisFishingPlusPlayer.cs",
+              "ToolTip": "C:\\Users\\Slime\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\WaasephisFishingPlus\\Core\\WaasephisFishingPlusPlayer.cs",
+              "RelativeToolTip": "Core\\WaasephisFishingPlusPlayer.cs",
+              "ViewState": "AgIAAEABAAAAAAAAAAAgwFcBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-26T18:39:18.498Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ItemRarities.cs",
+              "DocumentMoniker": "C:\\Users\\Slime\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\WaasephisFishingPlus\\Core\\ItemRarities.cs",
+              "RelativeDocumentMoniker": "Core\\ItemRarities.cs",
+              "ToolTip": "C:\\Users\\Slime\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\WaasephisFishingPlus\\Core\\ItemRarities.cs",
+              "RelativeToolTip": "Core\\ItemRarities.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-26T18:36:20.283Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "KingSalmon.cs",
+              "DocumentMoniker": "C:\\Users\\Slime\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\WaasephisFishingPlus\\Content\\Items\\Fish\\LegendaryFish\\KingSalmon.cs",
+              "RelativeDocumentMoniker": "Content\\Items\\Fish\\LegendaryFish\\KingSalmon.cs",
+              "ToolTip": "C:\\Users\\Slime\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\WaasephisFishingPlus\\Content\\Items\\Fish\\LegendaryFish\\KingSalmon.cs",
+              "RelativeToolTip": "Content\\Items\\Fish\\LegendaryFish\\KingSalmon.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-26T18:35:40.463Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "TrueCatFish.cs",
               "DocumentMoniker": "C:\\Users\\Slime\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\WaasephisFishingPlus\\Content\\Items\\Fish\\LegendaryFish\\TrueCatFish.cs",
               "RelativeDocumentMoniker": "Content\\Items\\Fish\\LegendaryFish\\TrueCatFish.cs",
@@ -54,12 +159,11 @@
               "RelativeToolTip": "Content\\Items\\Fish\\LegendaryFish\\TrueCatFish.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-25T20:40:23.963Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-25T20:40:23.963Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 8,
               "Title": "FilletingTableItem.cs",
               "DocumentMoniker": "C:\\Users\\Slime\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\WaasephisFishingPlus\\Content\\Items\\Blocks\\FilletingTableItem.cs",
               "RelativeDocumentMoniker": "Content\\Items\\Blocks\\FilletingTableItem.cs",
@@ -67,86 +171,7 @@
               "RelativeToolTip": "Content\\Items\\Blocks\\FilletingTableItem.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-25T20:39:43.451Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CollectorAchievements.cs",
-              "DocumentMoniker": "C:\\Users\\Slime\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\WaasephisFishingPlus\\Content\\Achievements\\CollectorAchievements.cs",
-              "RelativeDocumentMoniker": "Content\\Achievements\\CollectorAchievements.cs",
-              "ToolTip": "C:\\Users\\Slime\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\WaasephisFishingPlus\\Content\\Achievements\\CollectorAchievements.cs",
-              "RelativeToolTip": "Content\\Achievements\\CollectorAchievements.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-25T20:38:14.57Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "WaasephisFishingPlusGlobalNPC.cs",
-              "DocumentMoniker": "C:\\Users\\Slime\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\WaasephisFishingPlus\\Core\\WaasephisFishingPlusGlobalNPC.cs",
-              "RelativeDocumentMoniker": "Core\\WaasephisFishingPlusGlobalNPC.cs",
-              "ToolTip": "C:\\Users\\Slime\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\WaasephisFishingPlus\\Core\\WaasephisFishingPlusGlobalNPC.cs",
-              "RelativeToolTip": "Core\\WaasephisFishingPlusGlobalNPC.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-25T19:47:38.105Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "SearobinTrophy.cs",
-              "DocumentMoniker": "C:\\Users\\Slime\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\WaasephisFishingPlus\\Content\\Tiles\\Decor\\Trophies\\SearobinTrophy.cs",
-              "RelativeDocumentMoniker": "Content\\Tiles\\Decor\\Trophies\\SearobinTrophy.cs",
-              "ToolTip": "C:\\Users\\Slime\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\WaasephisFishingPlus\\Content\\Tiles\\Decor\\Trophies\\SearobinTrophy.cs",
-              "RelativeToolTip": "Content\\Tiles\\Decor\\Trophies\\SearobinTrophy.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-25T19:37:39.465Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "RegalMoonsquidTrophy.cs",
-              "DocumentMoniker": "C:\\Users\\Slime\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\WaasephisFishingPlus\\Content\\Tiles\\Decor\\Trophies\\RegalMoonsquidTrophy.cs",
-              "RelativeDocumentMoniker": "Content\\Tiles\\Decor\\Trophies\\RegalMoonsquidTrophy.cs",
-              "ToolTip": "C:\\Users\\Slime\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\WaasephisFishingPlus\\Content\\Tiles\\Decor\\Trophies\\RegalMoonsquidTrophy.cs",
-              "RelativeToolTip": "Content\\Tiles\\Decor\\Trophies\\RegalMoonsquidTrophy.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-25T19:37:39.395Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "OarfishTrophy.cs",
-              "DocumentMoniker": "C:\\Users\\Slime\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\WaasephisFishingPlus\\Content\\Tiles\\Decor\\Trophies\\OarfishTrophy.cs",
-              "RelativeDocumentMoniker": "Content\\Tiles\\Decor\\Trophies\\OarfishTrophy.cs",
-              "ToolTip": "C:\\Users\\Slime\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\WaasephisFishingPlus\\Content\\Tiles\\Decor\\Trophies\\OarfishTrophy.cs",
-              "RelativeToolTip": "Content\\Tiles\\Decor\\Trophies\\OarfishTrophy.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-25T19:37:39.298Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DreadnautilusTrophy.cs",
-              "DocumentMoniker": "C:\\Users\\Slime\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\WaasephisFishingPlus\\Content\\Tiles\\Decor\\Trophies\\DreadnautilusTrophy.cs",
-              "RelativeDocumentMoniker": "Content\\Tiles\\Decor\\Trophies\\DreadnautilusTrophy.cs",
-              "ToolTip": "C:\\Users\\Slime\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\WaasephisFishingPlus\\Content\\Tiles\\Decor\\Trophies\\DreadnautilusTrophy.cs",
-              "RelativeToolTip": "Content\\Tiles\\Decor\\Trophies\\DreadnautilusTrophy.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAwAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-25T19:37:39.214Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-25T20:39:43.451Z"
             }
           ]
         }

@@ -4,6 +4,7 @@ using WaasephisFishingPlus.Content.Items.Blocks;
 using WaasephisFishingPlus.Content.Items.Filleting;
 using WaasephisFishingPlus.Content.Items.Fish.LegendaryFish;
 using WaasephisFishingPlus.Content.Items.FishingRods;
+using WaasephisFishingPlus.Content.Items.Tools;
 
 namespace WaasephisFishingPlus.Content.Achievements
 {
@@ -15,12 +16,12 @@ namespace WaasephisFishingPlus.Content.Achievements
 			AddItemPickupCondition(ModContent.ItemType<FilletingTableItem>());
 		}
 	}
-	public class CollectorAchievementGalacticKnife : ModAchievement
+	public class CollectorAchievementPortableShop : ModAchievement
 	{
 		public override void SetStaticDefaults()
 		{
 			Achievement.SetCategory(AchievementCategory.Collector);
-			AddItemPickupCondition(ModContent.ItemType<GalacticFilletKnife>());
+			AddItemPickupCondition(ModContent.ItemType<PortableShopBox>());
 		}
 	}
 	public class CollectorAchievementHandofCod : ModAchievement
@@ -31,6 +32,15 @@ namespace WaasephisFishingPlus.Content.Achievements
 			AddItemPickupCondition(ModContent.ItemType<HandofCod>());
 		}
 	}
+	public class CollectorAchievementGalacticKnife : ModAchievement
+	{
+		public override void SetStaticDefaults()
+		{
+			Achievement.SetCategory(AchievementCategory.Collector);
+			AddItemPickupCondition(ModContent.ItemType<GalacticFilletKnife>());
+		}
+	}
+
 	public class CollectorAchievementPrismaline : ModAchievement
 	{
 		public override void SetStaticDefaults()

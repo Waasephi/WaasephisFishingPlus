@@ -15,6 +15,7 @@ using WaasephisFishingPlus.Content.Items.Consumables.PotSnails;
 using WaasephisFishingPlus.Content.Items.Tools;
 using WaasephisFishingPlus.Content.Items.Fish.LegendaryFish;
 using WaasephisFishingPlus.Content.Tiles.Decor.Trophies;
+using WaasephisFishingPlus.Content.Items.Weapons.Magic;
 
 namespace WaasephisFishingPlus.UserInterfaces
 {
@@ -778,6 +779,12 @@ namespace WaasephisFishingPlus.UserInterfaces
 			item.SetDefaults(ModContent.ItemType<FleshySpewer>());
 			Recipe = new FishRecipes { DefaultAmount = 25, Output = new Item(), KnifeLevel = 0 };
 			Recipe.Output.SetDefaults(ItemID.CrimstoneBlock);
+			AddRecipe(item, Recipe);
+
+			item = new Item();
+			item.SetDefaults(ModContent.ItemType<HadalGulper>());
+			Recipe = new FishRecipes { DefaultAmount = 1, Output = new Item(), KnifeLevel = 0, ignoreKnife = true };
+			Recipe.Output.SetDefaults(ModContent.ItemType<HadopelagicFlamethrower>());
 			AddRecipe(item, Recipe);
 
 			item = new Item();

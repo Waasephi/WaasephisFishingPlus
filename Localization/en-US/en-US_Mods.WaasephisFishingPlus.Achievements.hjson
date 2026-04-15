@@ -1,22 +1,22 @@
 //Challenger Achievements
-ChallengerAchievementOarfish: {
-	FriendlyName: The Long Awaited Arrival
-	Description: Catch the Oarfish, the Legendary Fish of the Underground Ocean.
-}
-
-ChallengerAchievementKingSalmon: {
-	FriendlyName: Underwater Emperor
-	Description: Catch the King Salmon, the Legendary Fish of the Forest.
-}
-
 ChallengerAchievementSearobin: {
 	FriendlyName: Dangers of the Deep
 	Description: Catch the Searobin, the Legendary Fish of the Underworld.
 }
 
+ChallengerAchievementOarfish: {
+	FriendlyName: The Long Awaited Arrival
+	Description: Catch the Oarfish, the Legendary Fish of the Underground Ocean.
+}
+
 ChallengerAchievementMoonsquid: {
 	FriendlyName: King of the Skies
 	Description: Catch the Regal Moonsquid, the Legendary Fish of the Skies.
+}
+
+ChallengerAchievementKingSalmon: {
+	FriendlyName: Underwater Emperor
+	Description: Catch the King Salmon, the Legendary Fish of the Forest.
 }
 
 ChallengerAchievementEnderPearl: {
@@ -25,14 +25,14 @@ ChallengerAchievementEnderPearl: {
 }
 
 //Collector Achievements
-CollectorAchievementFilletingTable: {
-	FriendlyName: Clocking In
-	Description: Craft the Fillet Table.
+CollectorAchievementPrismaline: {
+	FriendlyName: Fishing it Off
+	Description: Obtain the Prismaline, the less greatest, but still great Fishing Rod... No regrets!
 }
 
-CollectorAchievementGalacticKnife: {
-	FriendlyName: Final Promotion
-	Description: Craft the Galactic Fillet Knife.
+CollectorAchievementPortableShop: {
+	FriendlyName: Open for Business!
+	Description: Craft the Portable Shop Box, and make yourself a new best friend.
 }
 
 CollectorAchievementHandofCod: {
@@ -40,9 +40,14 @@ CollectorAchievementHandofCod: {
 	Description: Obtain the Hand of Cod, the greatest of all Fishing Rods... No refunds!
 }
 
-CollectorAchievementPrismaline: {
-	FriendlyName: Fishing it Off
-	Description: Obtain the Prismaline, the less greatest, but still great Fishing Rod... No regrets!
+CollectorAchievementGalacticKnife: {
+	FriendlyName: Final Promotion
+	Description: Craft the Galactic Fillet Knife.
+}
+
+CollectorAchievementFilletingTable: {
+	FriendlyName: Clocking In
+	Description: Craft the Fillet Table.
 }
 
 CollectorAchievementCatfish: {
