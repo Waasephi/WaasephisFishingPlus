@@ -964,7 +964,7 @@ KingSalmon: {
 }
 
 KingSalmonTrophyItem: {
-	DisplayName: King Salmon Trophy Item
+	DisplayName: King Salmon Trophy
 	Tooltip: ""
 }
 
@@ -979,5 +979,40 @@ HadopelagicFlamethrower: {
 		'''
 		Uses gel for ammo
 		Ignores 15 points of enemy Defense
+		'''
+}
+
+SpookyPigron: {
+	DisplayName: Spooky Pigron
+	Tooltip: ""
+}
+
+SandSharkShirt: {
+	DisplayName: Sand Shark Shirt
+	Tooltip:
+		'''
+		Increases fishing skill by 8
+		8% increased damage
+		Grants the ability to swim
+		'''
+}
+
+SandSharkMask: {
+	DisplayName: Sand Shark Mask
+	Tooltip:
+		'''
+		Increases fishing skill by 8
+		Increases crit chance by 5
+		Greatly extends underwater breathing
+		'''
+}
+
+SandSharkFins: {
+	DisplayName: Sand Shark Fins
+	Tooltip:
+		'''
+		Increases fishing skill by 8
+		12% increased movement speed
+		Allows quick travel in water
 		'''
 }

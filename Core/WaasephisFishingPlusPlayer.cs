@@ -294,6 +294,11 @@ namespace WaasephisFishingPlus.Core
 				itemDrop = ModContent.ItemType<Solamola>();
 			}
 
+			if (inWater && Main.pumpkinMoon && attempt.rare && Main.rand.NextBool(5))
+			{
+				itemDrop = ModContent.ItemType<SpookyPigron>();
+			}
+
 			if (inWater && undergroundJungle && attempt.uncommon && Main.rand.NextBool(3))
 			{
 				itemDrop = ModContent.ItemType<SporeSnapper>();

@@ -34,6 +34,14 @@ namespace WaasephisFishingPlus.Content.Items.Fish
             recipe2.AddIngredient(ModContent.ItemType<Heartang>());
             recipe2.AddTile(TileID.CookingPots);
             recipe2.Register();
-        }
+
+			Recipe recipe3 = Recipe.Create(ItemID.GreaterHealingPotion);
+			recipe3.AddIngredient(ItemID.BottledWater);
+			recipe3.AddIngredient(ModContent.ItemType<Heartang>());
+			recipe3.AddIngredient(ItemID.Prismite);
+			recipe3.AddIngredient(ItemID.Moonglow);
+			recipe3.AddTile(TileID.Bottles);
+			recipe3.Register();
+		}
     }
 }

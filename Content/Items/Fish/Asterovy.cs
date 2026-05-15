@@ -22,8 +22,8 @@ namespace WaasephisFishingPlus.Content.Items.Fish
         }
         public override void AddRecipes()
         {
-            Recipe recipe = Recipe.Create(ItemID.WrathPotion, 3);
-            recipe.AddIngredient(ItemID.BottledWater, 3);
+            Recipe recipe = Recipe.Create(ItemID.WrathPotion, 2);
+            recipe.AddIngredient(ItemID.BottledWater, 2);
             recipe.AddIngredient(ModContent.ItemType<Asterovy>());
             recipe.AddIngredient(ItemID.Moonglow);
             recipe.AddIngredient(ItemID.Daybloom);

@@ -21,6 +21,10 @@ namespace WaasephisFishingPlus.Content
 			ItemID.MythrilBar, ItemID.OrichalcumBar);
 			RecipeGroup.RegisterGroup(nameof(ItemID.MythrilBar), MythrilBarRecipeGroup);
 
+			RecipeGroup EvilMaterial = new RecipeGroup(() => $"{Language.GetTextValue("LegacyMisc.37")} {Lang.GetItemNameValue(ItemID.RottenChunk)}",
+			ItemID.RottenChunk, ItemID.Vertebrae);
+			RecipeGroup.RegisterGroup(nameof(ItemID.RottenChunk), EvilMaterial);
+
 			RecipeGroup SquidRecipeGroup = new RecipeGroup(() => $"{Language.GetTextValue("LegacyMisc.37")} {Lang.GetItemNameValue(ModContent.ItemType<Squid>())}",
 			ModContent.ItemType<Squid>(), ModContent.ItemType<AncientSquid>());
 			RecipeGroup.RegisterGroup(nameof(Squid), SquidRecipeGroup);

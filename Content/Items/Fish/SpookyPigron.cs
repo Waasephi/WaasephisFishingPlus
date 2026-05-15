@@ -7,7 +7,7 @@ using Terraria.ModLoader;
 
 namespace WaasephisFishingPlus.Content.Items.Fish
 {
-    public class Solamola : ModItem
+    public class SpookyPigron : ModItem
     {
         public override void SetStaticDefaults()
         {
@@ -16,13 +16,14 @@ namespace WaasephisFishingPlus.Content.Items.Fish
 
         public override void SetDefaults()
         {
-            Item.width = 40;
-            Item.height = 40;
+            Item.width = 46;
+            Item.height = 32;
             Item.value = Item.sellPrice(gold: 1);
-            Item.rare = ItemRarityID.Cyan;
+            Item.rare = ItemRarityID.Yellow;
             Item.useTurn = true;
             Item.maxStack = 9999;
         }
+
 		public override void PostDrawInWorld(SpriteBatch spriteBatch, Color lightColor, Color alphaColor, float rotation, float scale, int whoAmI)
 		{
 			Texture2D texture = TextureAssets.Item[Item.type].Value;
@@ -42,36 +43,25 @@ namespace WaasephisFishingPlus.Content.Items.Fish
 		}
 
 		public override void AddRecipes()
-        {
-            Recipe recipe = Recipe.Create(ItemID.InfernoPotion, 3);
-            recipe.AddIngredient(ItemID.BottledWater, 3);
-            recipe.AddIngredient(ModContent.ItemType<Solamola>());
-            recipe.AddIngredient(ItemID.Moonglow);
-            recipe.AddIngredient(ItemID.Daybloom);
-            recipe.AddTile(TileID.Bottles);
-            recipe.Register();
+		{
+			Recipe recipe = Recipe.Create(ItemID.WrathPotion, 3);
+			recipe.AddIngredient(ItemID.BottledWater, 3);
+			recipe.AddIngredient(ModContent.ItemType<SpookyPigron>());
+			recipe.AddIngredient(ItemID.Fireblossom);
+			recipe.AddTile(TileID.Bottles);
+			recipe.Register();
 
-            Recipe recipe2 = Recipe.Create(ItemID.RagePotion, 3);
-            recipe2.AddIngredient(ItemID.BottledWater, 3);
-            recipe2.AddIngredient(ModContent.ItemType<Solamola>());
-            recipe2.AddIngredient(ItemID.Shiverthorn);
-            recipe2.AddIngredient(ItemID.Daybloom);
-            recipe2.AddTile(TileID.Bottles);
-            recipe2.Register();
+			Recipe recipe2 = Recipe.Create(ItemID.RagePotion, 3);
+			recipe2.AddIngredient(ItemID.BottledWater, 3);
+			recipe2.AddIngredient(ModContent.ItemType<SpookyPigron>());
+			recipe2.AddIngredient(ItemID.Shiverthorn);
+			recipe2.AddTile(TileID.Bottles);
+			recipe2.Register();
 
 			Recipe recipe3 = Recipe.Create(ItemID.SeafoodDinner);
-			recipe3.AddIngredient(ModContent.ItemType<Solamola>());
+			recipe3.AddIngredient(ModContent.ItemType<SpookyPigron>());
 			recipe3.AddTile(TileID.CookingPots);
 			recipe3.Register();
-
-			Recipe recipe4 = Recipe.Create(ItemID.SuperHealingPotion, 5);
-			recipe4.AddIngredient(ItemID.BottledWater, 5);
-			recipe4.AddIngredient(ModContent.ItemType<Solamola>());
-			recipe4.AddIngredient(ModContent.ItemType<Vortexeye>());
-			recipe4.AddIngredient(ModContent.ItemType<Nebulagazer>());
-			recipe4.AddIngredient(ModContent.ItemType<Stardustfish>());
-			recipe4.AddTile(TileID.LunarCraftingStation);
-			recipe4.Register();
 		}
-    }
+	}
 }

@@ -540,6 +540,12 @@ namespace WaasephisFishingPlus.UserInterfaces
 			AddRecipe(item, Recipe);
 
 			item = new Item();
+			item.SetDefaults(ModContent.ItemType<SpookyPigron>());
+			Recipe = new FishRecipes { DefaultAmount = 25, Output = new Item(), KnifeLevel = 2 };
+			Recipe.Output.SetDefaults(ItemID.SpookyWood);
+			AddRecipe(item, Recipe);
+
+			item = new Item();
 			item.SetDefaults(ModContent.ItemType<SporeSnapper>());
 			Recipe = new FishRecipes { DefaultAmount = 2, Output = new Item(), KnifeLevel = 0 };
 			Recipe.Output.SetDefaults(ItemID.JungleSpores);
